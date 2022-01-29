@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 01 29 | JS Loops
+Completed the Ex in Loops.  This included While, Do While, For i, Breaks and Continue.  The final Ex was a fun Do While loop to conclude if all the ice cream cones were sold (or if you could sell them based on the order number).  Each Ex required their own JS file.  These are in the js folder.  I tied them all into the loops.html and commented-out the link so there weren't a mess of console logs.  
+Possible Issue:  I kept going past the zero trigger used to stop the do while loop in the last Ex.  This could cause some problems in other projects.  I need to figure out how to stop the loop prior to it actually going past zero.    
+
+---
+
 ## 2022 01 28 | JS Conditionals
 Today, our classroom has a "day off." This was good since I needed to do some "family-life-maintenance."  Still, I was able to complete the JS conditionals lesson and exercise.  There is an "Introduction to Unit Tests" lesson and exercise that I will be starting as well.  However, this will probably take a couple of days to complete since I've not done anything in this subject (unlike most of the intro JS stuff).
 
