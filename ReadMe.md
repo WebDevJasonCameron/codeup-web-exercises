@@ -1,5 +1,10 @@
 # Intro To Front End
 
+## 2022 01 30 | JS Objects 1
+Completed the Ls and Ex in Objects.  This section focused on how JS doesn't use "classes."  Rather, it uses objects which pretty much do the same thing.  I also remember reading that JS actually does use classes (even if that might be recently added).  None-the-less, this was a very interesting topic.  The Ex instructions were a little confusing.  I did the bonus, but I think I would like to practice more with creating, manipulating and reporting objects.  I created a sandbox folder just so I can do just that. 
+
+----
+
 ## 2022 01 29 | JS Loops
 Completed the Ex in Loops.  This included While, Do While, For i, Breaks and Continue.  The final Ex was a fun Do While loop to conclude if all the ice cream cones were sold (or if you could sell them based on the order number).  Each Ex required their own JS file.  These are in the js folder.  I tied them all into the loops.html and commented-out the link so there weren't a mess of console logs.  
 Possible Issue:  I kept going past the zero trigger used to stop the do while loop in the last Ex.  This could cause some problems in other projects.  I need to figure out how to stop the loop prior to it actually going past zero.    
