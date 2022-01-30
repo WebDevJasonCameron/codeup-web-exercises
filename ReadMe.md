@@ -6,6 +6,9 @@ Possible Issue:  I kept going past the zero trigger used to stop the do while lo
 
 ### 2100 | JS Arrays
 Completed the first Ls and Ex on arrays.  This required adding another HTML and JS file to the repo.  The For Each loop is a new tool that I wasn't completely aware of.  I need to practice with it.  It would be good to ask the instructor when we have some time on the subject. 
+
+### 2330 | JS Arrays 2nd
+Completed the second Ls and Ex on arrays (need to go to bed!).  This ended with a nice bonus problem where we needed to run the ".map" method on each item within the array.  This gave me the ability to add an open and closing list item HTML tags on each item within the array.  At first, I thought I could do this with a For Each loop.  While this didn't work, I did notice that the For Each and .Map syntax is nearly the same.  Finally, I was able to unshift and push the final unordered list tags to the front and end of the array.  Afterwards, I converted the array into a string using the .join method (with empty string as the argument).  
  
 
 ---
