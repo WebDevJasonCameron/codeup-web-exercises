@@ -4,6 +4,10 @@
 Completed the Ex in Loops.  This included While, Do While, For i, Breaks and Continue.  The final Ex was a fun Do While loop to conclude if all the ice cream cones were sold (or if you could sell them based on the order number).  Each Ex required their own JS file.  These are in the js folder.  I tied them all into the loops.html and commented-out the link so there weren't a mess of console logs.  
 Possible Issue:  I kept going past the zero trigger used to stop the do while loop in the last Ex.  This could cause some problems in other projects.  I need to figure out how to stop the loop prior to it actually going past zero.    
 
+### 2100 | JS Arrays
+Completed the first Ls and Ex on arrays.  This required adding another HTML and JS file to the repo.  The For Each loop is a new tool that I wasn't completely aware of.  I need to practice with it.  It would be good to ask the instructor when we have some time on the subject. 
+ 
+
 ---
 
 ## 2022 01 28 | JS Conditionals
