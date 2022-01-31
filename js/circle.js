@@ -2,19 +2,21 @@
     "use strict";
 
     // create a circle object
-    var circle = {
+    let circle = {
         radius: 3,
 
         getArea: function () {
-            // TODO: complete this method
+            // 1. TODO: complete this method
             // hint: area = pi * radius^2
+            let area = Math.PI * (this.radius  * 2);
 
-            return; // TODO: return the proper value
+            return area; // ２。TODO: return the proper value
         },
 
         logInfo: function (doRounding) {
-            // TODO: complete this method.
+            // ３. TODO: complete this method.           //  <-- Yeah, but it doesn't make sense
 
+            Math.round(doRounding);
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
 
@@ -29,7 +31,7 @@
     circle.logInfo(true);
 
     console.log("=======================================================");
-    // TODO: Change the radius of the circle to 5.
+    // ４. TODO: Change the radius of the circle to 5.
 
     // log info about the circle
     console.log("Raw circle information");

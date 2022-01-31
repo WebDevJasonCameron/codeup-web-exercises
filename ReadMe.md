@@ -3,6 +3,10 @@
 ## 2022 01 30 | JS Objects 1
 Completed the Ls and Ex in Objects.  This section focused on how JS doesn't use "classes."  Rather, it uses objects which pretty much do the same thing.  I also remember reading that JS actually does use classes (even if that might be recently added).  None-the-less, this was a very interesting topic.  The Ex instructions were a little confusing.  I did the bonus, but I think I would like to practice more with creating, manipulating and reporting objects.  I created a sandbox folder just so I can do just that. 
 
+### 2020 | Not as Far
+I'm going to say it... I didn't get as far as I wanted this weekend.  I absolutely didn't understand the Obj2 Ex instructions.  I understood the Ls, but the Ex didn't make much since to me.  I'll need to listen to the instructor when he explains it later.  Therefore, I have the files in this repo while also marking the area in my notes for clarification.  I also started the BOM Ls and Ex.  The Ls examples are confusing.  It looks like the act of creating variables is forcing the functions to work... but that really doesn't make sense to me.  I need to listen to the instructor during this portion of the class as well. 
+
+
 ----
 
 ## 2022 01 29 | JS Loops
