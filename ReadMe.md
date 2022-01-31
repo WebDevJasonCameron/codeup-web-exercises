@@ -9,6 +9,9 @@ Hurray!  Figured out what the instructions were tyring to ask us to do.  At the 
 ### 1500 | Review
 Lesson learned: JS inputs are always taken in as a string.  We can force the input into a string by using ```Number(prompt("give me a number);``` or ```parseInt(prompt("give me a number);```.  I don't really know the difference.  
 
+### 1700 | Update Work
+I didn't know what the final assignment (#3) was asking for.  It was a review of what we were doing so far.
+
 
 ---
 
