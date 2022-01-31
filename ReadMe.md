@@ -3,6 +3,10 @@
 ## 2022 01 31 | In Class
 First day to work in class physically.  As such, we are review the "Working with Data Types, Operators and Variables." Found out a better way of completing the fourth Ex.  Specifically, to check for empty spaces at the beginning and end of a variable could be ``` variable.includes(" ");```.  Also, it is a good practice to trim a user's input so there aren't any spaces at in their inputs.
 
+### 1100 | JS Object 2
+Hurray!  Figured out what the instructions were tyring to ask us to do.  At the beginning I wasn't able to think correctly.  After some time, I figured out the structure of the JS file.  It was an object with one parameter and two functions.  One of the functions needed to call the other, so it could manipulate the results if the user highlighted that it should.  
+
+
 ---
 
 ## 2022 01 30 | JS Objects 1
