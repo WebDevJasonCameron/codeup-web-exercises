@@ -1,5 +1,10 @@
 # Intro To Front End
 
+## 2022 01 31 | In Class
+First day to work in class physically.  As such, we are review the "Working with Data Types, Operators and Variables." Found out a better way of completing the fourth Ex.  Specifically, to check for empty spaces at the beginning and end of a variable could be ``` variable.includes(" ");```.  Also, it is a good practice to trim a user's input so there aren't any spaces at in their inputs.
+
+---
+
 ## 2022 01 30 | JS Objects 1
 Completed the Ls and Ex in Objects.  This section focused on how JS doesn't use "classes."  Rather, it uses objects which pretty much do the same thing.  I also remember reading that JS actually does use classes (even if that might be recently added).  None-the-less, this was a very interesting topic.  The Ex instructions were a little confusing.  I did the bonus, but I think I would like to practice more with creating, manipulating and reporting objects.  I created a sandbox folder just so I can do just that. 
 

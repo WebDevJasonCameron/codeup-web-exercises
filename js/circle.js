@@ -5,22 +5,20 @@
     let circle = {
         radius: 3,
 
-        getArea: function () {
-            // 1. TODO: complete this method
-            // hint: area = pi * radius^2
-            let area = Math.PI * (this.radius  * 2);
-
-            return area; // ２。TODO: return the proper value
+        getArea: function () {                                  // 1. TODO: complete this method
+            this.area = Math.PI * (this.radius * 2);
+            return this.area;                                   // 2. TODO: return the proper value
         },
 
         logInfo: function (doRounding) {
-            // ３. TODO: complete this method.           //  <-- Yeah, but it doesn't make sense
-
-            Math.round(doRounding);
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
 
-            console.log("Area of a circle with radius: " + this.radius + ", is: ");
+            if(doRounding){
+                this.area = Math.round(this.getArea());
+            }
+
+            console.log("Area of a circle with radius: " + this.radius + ", is: " + this.area);
         }
     };
 
@@ -31,7 +29,7 @@
     circle.logInfo(true);
 
     console.log("=======================================================");
-    // ４. TODO: Change the radius of the circle to 5.
+    // TODO: Change the radius of the circle to 5.
 
     // log info about the circle
     console.log("Raw circle information");
