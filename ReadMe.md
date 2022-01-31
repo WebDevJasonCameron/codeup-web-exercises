@@ -6,6 +6,9 @@ First day to work in class physically.  As such, we are review the "Working with
 ### 1100 | JS Object 2
 Hurray!  Figured out what the instructions were tyring to ask us to do.  At the beginning I wasn't able to think correctly.  After some time, I figured out the structure of the JS file.  It was an object with one parameter and two functions.  One of the functions needed to call the other, so it could manipulate the results if the user highlighted that it should.  
 
+### 1500 | Review
+Lesson learned: JS inputs are always taken in as a string.  We can force the input into a string by using ```Number(prompt("give me a number);``` or ```parseInt(prompt("give me a number);```.  I don't really know the difference.  
+
 
 ---
 
