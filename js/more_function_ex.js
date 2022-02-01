@@ -72,7 +72,7 @@ console.log("--------------Number 05-------------------");
  *      --> bool
  */
 function getSmallerSegment(myString, num){
-    return myString.substring(0, num);
+    return myString.toLowerCase().substring(0, num);
 }
 
 console.log(getSmallerSegment("CaptSmash", 4));
@@ -97,13 +97,64 @@ console.log(addNum(c, d));
 console.log("--------------Function Drills-------------------");
 // https://java.codeup.com/extra-exercises/javascript/functions/
 
-// Make a function named isOdd(number)
+// 1. Make a function named isOdd(number)
 function isOdd(num){
     if(num % 2 === 0) return false;
     else return true;
 }
+console.log("1. The number 3 is odd: " + isOdd(3));
 
-console.log("The number 3 is " + isOdd(3));
+// 2. Make a function named isEven(number)
+function isEven(num){
+    if(num % 2 === 0) return true;
+    else return false;
+}
+console.log("2. The number 3 is even: " + isEven(3));
+
+// 3. Make a function named identity(input) that returns the input exactly as provided.
+function identy(input){
+    return input;
+}
+console.log("3. You gave us " + identy("CodeUp"));
+
+// 4. Make a function named isFive(input)
+function isFive(input){
+    return input == 5;
+}
+console.log("4. It is " + isFive(5) + " that your input was 5");
+
+// 5. Make a function named addFive(input) that adds five to some input
+function addFive(input){
+    return input + 5;
+}
+console.log("5. You added 5 to your input and received: " + addFive(15) + " as your total");
+
+// 6. Make a function named isMultipleOfFive(input)
+function isMultipleOfFive(input){
+    return input % 5 === 0;
+}
+console.log("6. It is " + isMultipleOfFive(5) + " that your input is a multiple of five");
+
+// 7. Make a function named isThree(input)
+function isThree(input){
+    return input == 3;
+}
+console.log("7. It is " + isThree(5) + " that your input was 3");
+
+// 8. Make a function named isMultipleOfThree(input)
+function isMultipleOfThree(input){
+    return input % 3 === 0;
+}
+console.log("8. It is " + isMultipleOfThree(27) + " that your input is a multiple of three");
+
+// 9. Make a function named isMultipleOfThreeAndFive(input)
+function isMultipleOfThreeAndFive(input){
+    return input % 3 === 0 && input % 5 === 0;
+}
+console.log("9. It is " + isMultipleOfThreeAndFive(`15`) + " that your input is a multiple of three and five");
+
+// 10. Make a function named isMultipleOfThreeAndFive(input)
+
 
 
 
