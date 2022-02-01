@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 02 01 | Functions
+We have notes!  These are now in my Notion DB along with the Titan Slack channel.  First, intro to the day had us listing instructions to create a PBJ. Our team's instructions are placed in the notion notes.  I am still trying to figure out how to grab DOM stuff.  Finally, we completed a mini ex with functions.  I placed this in sandbox_02 for now.  The code is also in the notion notes
+
+
+---
+
 ## 2022 01 31 | In Class
 First day to work in class physically.  As such, we are review the "Working with Data Types, Operators and Variables." Found out a better way of completing the fourth Ex.  Specifically, to check for empty spaces at the beginning and end of a variable could be ``` variable.includes(" ");```.  Also, it is a good practice to trim a user's input so there aren't any spaces at in their inputs.
 

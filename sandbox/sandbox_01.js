@@ -1,4 +1,9 @@
 /* SANDBOX 01  */
-// Working with Math.round
+"use strict";
 
+function greet() {
+    console.log("Hey there clicker");
+}
 
+let getList = document.querySelector('li');
+console.log(getList);
