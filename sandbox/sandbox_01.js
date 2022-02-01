@@ -5,5 +5,7 @@ function greet() {
     console.log("Hey there clicker");
 }
 
-let getList = document.querySelector('li');
-console.log(getList);
+
+console.log(document.getElementsByClassName('.second_title'));
+
+console.log(document.querySelector('.listen'));

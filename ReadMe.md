@@ -3,6 +3,9 @@
 ## 2022 02 01 | Functions
 We have notes!  These are now in my Notion DB along with the Titan Slack channel.  First, intro to the day had us listing instructions to create a PBJ. Our team's instructions are placed in the notion notes.  I am still trying to figure out how to grab DOM stuff.  Finally, we completed a mini ex with functions.  I placed this in sandbox_02 for now.  The code is also in the notion notes
 
+### 1500 | File Restructure
+We are working through a lot of extra Ex on functions.  This code was moved from the sandbox files.  I am noticing that I have a lot of mistakes in my code when I run through it the first time.  When I come back to it later, it is a lot fresher to my eyes.  That is when I can refactor the code, making a better quality product.  Need to do this often.  
+
 
 ---
 

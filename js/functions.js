@@ -1,5 +1,8 @@
 "use strict";
 
+
+console.log("-----------------question 01-----------------------");
+
 /**
  * 1. TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -13,6 +16,8 @@ function sayHello(name){
     return "Hello, " + name + "!";
 }
 
+console.log("-----------------question 02-----------------------");
+
 /**
  * 2. TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -25,6 +30,8 @@ var helloMessage = sayHello("CodeUp");
 
 console.log(helloMessage);
 
+console.log("-----------------question 03-----------------------");
+
 /**
  * 3. TODO:
  * Store your name as a string in a variable named 'myName', and pass that
@@ -32,9 +39,15 @@ console.log(helloMessage);
  * console.
  */
 
+let myName = "Jason";
+console.log(sayHello(myName));
+
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
 var random = Math.floor((Math.random() * 3) + 1);
+
+
+console.log("-----------------question 04-----------------------");
 
 /**
  * 4. TODO:
@@ -64,6 +77,9 @@ function isTwo(num) {
 
 console.log(isTwo(random));
 
+
+console.log("-----------------question 05-----------------------");
+
 /**
  * 5. TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -86,6 +102,8 @@ function calculateTip(tipPercent, total){
 // console.log(calculateTip(0.25, 25.50));
 // console.log(calculateTip(0.15,33.42));
 
+console.log("-----------------question 06-----------------------");
+
 /**
  * 6. TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -101,6 +119,7 @@ var tt = calculateTip(tp, t);
 tt = tt.toFixed(2);
 alert("The total tip should be: " + tt);
 
+console.log("-----------------question 07-----------------------");
 
 /**
  * 7. TODO:
