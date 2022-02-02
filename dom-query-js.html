@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
@@ -41,18 +41,28 @@
         subHeader.style.color = "blue";
 
         // 5. TODO: Uncomment the next line and get all list items
-        let listItems = document.getElementsByTagName('li');
+        let listItems = document.querySelectorAll('li');                //   <-- Wow!  This worked.....
 
         // 6. TODO: Set text color on every other list item to grey
-        listItems.style.color = "red";
+        for (let i = 0; i < listItems.length; i++) {
+            if(i % 2 === 0) listItems[i].style.color = "#939393";
+        }
 
-        // 7. TODO: Set text color of li with dbid = 1 to blue
+        // 7. TODO: Set text color of li with dbid = 1 to blue          //   <-- Not really the correct way!
+        for (let i = 0; i < listItems.length; i++) {
+            if(listItems[i].getAttribute("data-dbid") === "1") listItems[i].style.color = "#1b77b9";
+        }
 
         // 8. TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        // var subParagraphs = ;
+        let subParagraphs = document.getElementsByClassName('sub-paragraph');
 
         // 9. TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        for (let i = 0; i <subParagraphs.length; i++) {
+            subParagraphs[i].innerHTML = "Mission Accomplished!"        //   <-- Read up on all these operators!
+        }
     })();
 </script>
 </body>
 </html>
+
+

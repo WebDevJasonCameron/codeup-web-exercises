@@ -1,12 +1,20 @@
 # Intro To Front End
 
 ## 2022 02 02 | Review
-Review JS Functions Ex.  Worked on a peer review of function questions.  Refactored the functions Ex files.  Learning more about DOM access through online research   
+Review JS Functions Ex.  Worked on a peer review of function questions.  Refactored the functions Ex files.  Learning more about DOM access through online research.  Made progress.  However, completing one line of code in one file doesn't seem to reproduce the same results in the Ex file.  For one thing, I was able to grab list item tags (using a class) and change their text color using a ForI loop.  In the ex file, I am supposed to grab the li tag and do the same.  It will not work.  I also tried giving them each a class tag and select them with that.  Nothing!  It is a little frustrating not knowing why.  
+
+### 1400 | Conditionals JS
+Rereading the Conditionals Ls.  Checking the Ex files as well... 
+
+### 1700 | DOM JS
+Completed the first DOM Ex.  During class, we completed the Conditionals Ex along with some extra Ex.  Found out that you must realize that a string length will return 0 which is different from ```""```.  Now that I say this, I realize that it is obvious.  Still, being tired I easily missed this.  I could have simply wrote ```string === ""```. 
+
+
 
 ---
 
 
-## 2022 02 01 | Functions
+## 2022 02 01 | Functions JS
 We have notes!  These are now in my Notion DB along with the Titan Slack channel.  First, intro to the day had us listing instructions to create a PBJ. Our team's instructions are placed in the notion notes.  I am still trying to figure out how to grab DOM stuff.  Finally, we completed a mini ex with functions.  I placed this in sandbox_02 for now.  The code is also in the notion notes
 
 ### 1500 | File Restructure
