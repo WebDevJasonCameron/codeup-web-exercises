@@ -17,6 +17,7 @@ console.log(" ")
 function sayHello(name){
     return "Hello, " + name + "!";
 }
+sayHello("CodeUp")
 
 console.log("-----------------question 02-----------------------");
 console.log("-----------------sayHello--------------------------");
@@ -104,7 +105,7 @@ console.log(" ")
 
 function calculateTip(tipPercent, total){
 
-    return total *tipPercent;
+    return total * tipPercent;
 }
 
 // TESTING FUNCTION

@@ -1,7 +1,7 @@
 # Intro To Front End
 
 ## 2022 02 02 | Review
-Review JS Functions Ex.  Worked on a peer review of function questions.     
+Review JS Functions Ex.  Worked on a peer review of function questions.  Refactored the functions Ex files.  Learning more about DOM access through online research   
 
 ---
 

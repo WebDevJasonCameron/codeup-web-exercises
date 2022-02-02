@@ -28,6 +28,21 @@ button {
     border-radius: 25px;
 }
 
+form {
+    padding: 20px 40px;
+    margin-left: 20px;
+}
+
+input {
+    padding: 20px 40px;
+    margin-left: 20px;
+}
+
+#submitBtn {
+    padding: 20px 40px;
+    margin: 20px 100px;
+}
+
 
 
 
