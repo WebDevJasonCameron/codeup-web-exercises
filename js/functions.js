@@ -2,6 +2,8 @@
 
 
 console.log("-----------------question 01-----------------------");
+console.log("-----------------sayHello--------------------------");
+console.log(" ")
 
 /**
  * 1. TODO:
@@ -17,6 +19,8 @@ function sayHello(name){
 }
 
 console.log("-----------------question 02-----------------------");
+console.log("-----------------sayHello--------------------------");
+console.log(" ")
 
 /**
  * 2. TODO:
@@ -31,6 +35,8 @@ var helloMessage = sayHello("CodeUp");
 console.log(helloMessage);
 
 console.log("-----------------question 03-----------------------");
+console.log("-----------------myName----------------------------");
+console.log(" ")
 
 /**
  * 3. TODO:
@@ -48,6 +54,8 @@ var random = Math.floor((Math.random() * 3) + 1);
 
 
 console.log("-----------------question 04-----------------------");
+console.log("-----------------isTwo-----------------------");
+console.log(" ")
 
 /**
  * 4. TODO:
@@ -79,6 +87,8 @@ console.log(isTwo(random));
 
 
 console.log("-----------------question 05-----------------------");
+console.log("-----------------calculateTip----------------------");
+console.log(" ")
 
 /**
  * 5. TODO:
@@ -103,6 +113,8 @@ function calculateTip(tipPercent, total){
 // console.log(calculateTip(0.15,33.42));
 
 console.log("-----------------question 06-----------------------");
+console.log("-----------------prompts---------------------------");
+console.log(" ")
 
 /**
  * 6. TODO:
@@ -120,6 +132,8 @@ tt = tt.toFixed(2);
 alert("The total tip should be: " + tt);
 
 console.log("-----------------question 07-----------------------");
+console.log("-----------------applyDiscount---------------------");
+console.log(" ");
 
 /**
  * 7. TODO:

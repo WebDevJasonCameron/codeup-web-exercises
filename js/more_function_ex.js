@@ -153,7 +153,43 @@ function isMultipleOfThreeAndFive(input){
 }
 console.log("9. It is " + isMultipleOfThreeAndFive(`15`) + " that your input is a multiple of three and five");
 
-// 10. Make a function named isMultipleOfThreeAndFive(input)
+// 10. Make a function named isMultipleOf(target, n) which checks if target is evenly divisible by n
+function isMultipleOf(t, n){
+    return t % n === 0;
+}
+console.log("10. It is " + isMultipleOf(100, 5) + " that the your input is a multiple of the number you provided");
+
+// 11. Make a function named isTrue(boolean)
+function isTrue(bool){
+    return bool === true;
+}
+console.log("11. Your input returned " + isTrue(true) + " as a result!");
+
+// 12. Make a function named isFalse(boolean)
+function isFalse(bool){
+    return bool === false;
+}
+console.log("12. Your input returned " + isFalse(false) + " as a result!");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
