@@ -57,7 +57,7 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 
 function analyzeColor(color){
-    switch (color.toLowerCase()){
+    switch (color.toLowerCase().trim()){
         case "blue":
             return "Blue is the color of the sky";
         case "red":
@@ -139,7 +139,7 @@ function calculateTotal(num, currentTotal){
 // let luckyNumber = Math.floor(Math.random() * 6);
 //
 // let billTotal = prompt("What was the total of your bill?");
-// alert("Your final bill is: " + calculateTotal(luckyNumber, billTotal).toFixed(2));
+// alert("Your final bill is: #" + calculateTotal(luckyNumber, billTotal).toFixed(2));
 
 
 /**
@@ -175,7 +175,7 @@ function plusHundred(num){
 }
 
 function negOrPositive(num){
-    if(num >= 1){
+    if(num >= 0){
         return "The number " + num + " is positive.";
     } else {
         return "The number " + num + " is negative.";
@@ -193,10 +193,11 @@ function handleResponse(response){
     }
 }
 
+// Quest: # y/n                                                                     //   Prob could be its own fun
 let answer = confirm("Would you like to enter a number?")
 
-if(answer === true){
-    let response = prompt("What number would you like to analyze?");
+if(answer === true){                                                                //   Runs after question
+    let response = prompt("What number would you like to analyze?");        //   Get Number (response)
     handleResponse(response);
 } else {
     alert("You decided not to play.  Thant is ok.  We aren't sad about it.  ")

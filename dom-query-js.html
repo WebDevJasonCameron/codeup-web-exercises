@@ -32,13 +32,6 @@
     <button id="btn3">Change Odd # List Item Text Color</button>
     <button id="btn4">Change Final Paragraph</button>
 
-<h2>Buttons to remove changes</h2>
-
-    <button id="btnR1">Remove H1 Change</button>
-    <button id="btnR2">Remove H2 Change</button>
-    <button id="btnR3">Remove Odd # List Item Color Change</button>
-    <button id="btnR4">Remove Final Paragraph Change</button>
-
 <!--FIRST PART OF THE DOM EX--> <!--
 <script>
     (function() {
@@ -102,11 +95,6 @@
         }
     }
 
-    // Remove Events (Personal challenge)
-    let btn1_remover = function (event){
-        btn1.removeEventListener('click', btn1_event);
-    }
-
 
     // Add Event Listeners
     let btn1 = document.getElementById('btn1');
@@ -123,14 +111,9 @@
 
     // Event Listeners for Remove Change Buttons
     let btnR1 = document.getElementById('btnR1')
-    btn2.addEventListener('click', btn1_remover)
-
-
+    btnR1.addEventListener('click', btn1_remover)
 
 </script>
-
-
-
 
 </body>
 </html>

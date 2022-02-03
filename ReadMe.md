@@ -3,6 +3,9 @@
 ## 2022 02 03 | Conditionals JS
 Reviewing Conditionals Ex within the class.  I'm working with the DOM Ls2 and Ex2. || Completed 2nd DOM Ls and Ex.  Adding more buttons to practice removing changes from the change buttons.  Not completed yet.
 
+### 1330 | Conditional Walk-through
+Some research showed me that the ```.removeEventListener()``` is not good for removing the changes we performed during our Ex.  It does work for something that is ongoing, like an alert.  If I want to make toggling changes, I would need to use conditional statements (such as if/else).
+
 
 ---
 
