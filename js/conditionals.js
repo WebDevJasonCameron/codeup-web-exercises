@@ -78,8 +78,8 @@ function analyzeColor(color){
  * function to show it to the user.
  */
 
-let userColor = prompt("please provide a color for analyzing... ");
-alert(analyzeColor(userColor));
+// let userColor = prompt("please provide a color for analyzing... ");
+// alert(analyzeColor(userColor));
 
 /* ########################################################################## */
 
@@ -136,10 +136,10 @@ function calculateTotal(num, currentTotal){
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-let luckyNumber = Math.floor(Math.random() * 6);
-
-let billTotal = prompt("What was the total of your bill?");
-alert("Your final bill is: " + calculateTotal(luckyNumber, billTotal).toFixed(2));
+// let luckyNumber = Math.floor(Math.random() * 6);
+//
+// let billTotal = prompt("What was the total of your bill?");
+// alert("Your final bill is: " + calculateTotal(luckyNumber, billTotal).toFixed(2));
 
 
 /**
@@ -201,3 +201,23 @@ if(answer === true){
 } else {
     alert("You decided not to play.  Thant is ok.  We aren't sad about it.  ")
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

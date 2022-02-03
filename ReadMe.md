@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 02 03 | Conditionals JS
+Reviewing Conditionals Ex within the class.  I'm working with the DOM Ls2 and Ex2. || Completed 2nd DOM Ls and Ex.  Adding more buttons to practice removing changes from the change buttons.  Not completed yet.
+
+
+---
+
 ## 2022 02 02 | Review
 Review JS Functions Ex.  Worked on a peer review of function questions.  Refactored the functions Ex files.  Learning more about DOM access through online research.  Made progress.  However, completing one line of code in one file doesn't seem to reproduce the same results in the Ex file.  For one thing, I was able to grab list item tags (using a class) and change their text color using a ForI loop.  In the ex file, I am supposed to grab the li tag and do the same.  It will not work.  I also tried giving them each a class tag and select them with that.  Nothing!  It is a little frustrating not knowing why.  
 
