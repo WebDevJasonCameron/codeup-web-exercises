@@ -1,11 +1,19 @@
 # Intro To Front End
 
+## 2022 02 04 | JS Assessment 
+Completed first JS assessment.  Completed seven out of ten.  Most relied on using the ```typeOf``` function.  Things to remember:  1) green often matters more than the test being correct, 2) go for the web as soon as you can't remmeber something specific (practice this by asking yourself questions and looking for the answers), 3) plug in those answers to see if they even work, 4) try using ternary statements if it is one or another answer, 5) don't overcomplicate the problem, 6) the provided test code does NOT match with what the test code is checking (don't waist time console.log those examples), 7) after completing the first question, set up the git add and commit commands.  Every five questions should be committed with a comment explaining where you are in the test.  If there are any other thoughts I will write them down in this readme uncer the title "Assessment Thoughts."
+
+
+---
+
 ## 2022 02 03 | Conditionals JS
 Reviewing Conditionals Ex within the class.  I'm working with the DOM Ls2 and Ex2. || Completed 2nd DOM Ls and Ex.  Adding more buttons to practice removing changes from the change buttons.  Not completed yet.
 
 ### 1330 | Conditional Walk-through
 Some research showed me that the ```.removeEventListener()``` is not good for removing the changes we performed during our Ex.  It does work for something that is ongoing, like an alert.  If I want to make toggling changes, I would need to use conditional statements (such as if/else).
 
+### 1700 | 
+THIS is why I wanted to go through the coding boot camp!  Best practices like wrapping your JS code with an anonymous function.  By using ```(function(){ // Code here })();``` we can ensure that other browser based variables are not overwritten by our code within.  We concluded with the subject of variable scopes within JS.  I am making mistakes based on what we (college) taught us during Python and Java courses.  I need to remember that there are significant differences between the languages.  Concepts remain the same, but syntax and program interactions do tend to be a lot different.  
 
 ---
 
