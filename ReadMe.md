@@ -3,6 +3,9 @@
 ## 2022 02 04 | JS Assessment 
 Completed first JS assessment.  Completed seven out of ten.  Most relied on using the ```typeOf``` function.  Things to remember:  1) green often matters more than the test being correct, 2) go for the web as soon as you can't remmeber something specific (practice this by asking yourself questions and looking for the answers), 3) plug in those answers to see if they even work, 4) try using ternary statements if it is one or another answer, 5) don't overcomplicate the problem, 6) the provided test code does NOT match with what the test code is checking (don't waist time console.log those examples), 7) after completing the first question, set up the git add and commit commands.  Every five questions should be committed with a comment explaining where you are in the test.  If there are any other thoughts I will write them down in this readme uncer the title "Assessment Thoughts."
 
+### 2230 | TDD
+When I think I understand JS keeps pulling some really weird behaviors.  I think I get TDD.  It might be important.  However, right now it seems really tedious.  It would be nice to have some high level view of how this process can really save your code production time.  At the moment, it looks like it's only good if you want to make a coding school that auto grades students on their progress of coding.  The most glaring part about this process is that a flawed test can be devastating to both checking code and teaching code.  During our assessment, I found several problems.  In some scenarios, I could build code that "greened" the test questions while completely failing to meet the assigned objectives.  There has to be a better way.  
+
 
 ---
 
