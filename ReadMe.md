@@ -1,5 +1,25 @@
 # Intro To Front End
 
+## 2022 02 07 | Warmups
+First we started the day completing the TDD.  Learned that things get very odd when we use isNaN.  to complete number 13, I needed to include ```isNaN`` in the logic of the test.  Here are two ways we got the code to work:
+```javascript
+    it('should return NaN when passed 2 and "apples"', function(){
+        expect(add("banana", "split")).toBeNaN();
+```
+It also worked with the following code (however, I'm not sure if this is truely a fix)
+```javascript
+    it('should return NaN if num1 input is "banana" and num2 input is "split"', function () {
+        expect(isNaN(add('banana', 'split')));
+});
+```
+NOTE: I added this to the Journal MD in the actual repo...
+
+### 1100 | Loops
+Working on the Class notes and conditional loops.  
+
+
+---
+
 ## 2022 02 04 | JS Assessment 
 Completed first JS assessment.  Completed seven out of ten.  Most relied on using the ```typeOf``` function.  Things to remember:  1) green often matters more than the test being correct, 2) go for the web as soon as you can't remmeber something specific (practice this by asking yourself questions and looking for the answers), 3) plug in those answers to see if they even work, 4) try using ternary statements if it is one or another answer, 5) don't overcomplicate the problem, 6) the provided test code does NOT match with what the test code is checking (don't waist time console.log those examples), 7) after completing the first question, set up the git add and commit commands.  Every five questions should be committed with a comment explaining where you are in the test.  If there are any other thoughts I will write them down in this readme uncer the title "Assessment Thoughts."
 
