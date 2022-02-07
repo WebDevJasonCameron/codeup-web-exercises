@@ -10,6 +10,7 @@ function showMultiplicationTable(num){
     }
 }
 
+
 // showMultiplicationTable(7);             // <-Testing
 
 /*

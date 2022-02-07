@@ -48,7 +48,6 @@ function sellingIceCream(numOfCones){
 
     } while (numOfCones > 0)                        //   I'm always getting past 0... I need to figure out how to
                                                     // stop this.  I think it could lead to future errors
-    console.log(numOfCones)
 }
 
 // Run Op

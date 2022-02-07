@@ -15,7 +15,10 @@ It also worked with the following code (however, I'm not sure if this is truely 
 NOTE: I added this to the Journal MD in the actual repo...
 
 ### 1100 | Loops
-Working on the Class notes and conditional loops.  
+Working on the Class notes and conditional loops.  Completed the While and Do-while.  It is a lot of fun.  Had a small error in the "Ice cream cone" problem.  I added an extra console.log that showed the final total after the loop was a negative number (at times).  
+
+### 1500 | Creature Feature
+In preparation to the Coffee project we have coming up, I decided to create a similar project that provides cards of monster information based on the same filtering attributes.  Today, I built the HTML and CSS scaffolding to the project.  This will be used to "pin" JS code.  
 
 
 ---
