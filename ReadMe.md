@@ -20,6 +20,9 @@ Working on the Class notes and conditional loops.  Completed the While and Do-wh
 ### 1500 | Creature Feature
 In preparation to the Coffee project we have coming up, I decided to create a similar project that provides cards of monster information based on the same filtering attributes.  Today, I built the HTML and CSS scaffolding to the project.  This will be used to "pin" JS code.  
 
+### 1700 | Class Conclusions
+Continued to work with Creature Feature work.  Built an array of objects.  Trying to figure out how to break each object out into a div tag with a h3 and p tag.  This will be used to build more monster cards within its card container. 
+
 
 ---
 
