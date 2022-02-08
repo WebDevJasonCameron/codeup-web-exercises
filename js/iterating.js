@@ -1,6 +1,7 @@
 (function(){
     "use strict";
 
+    console.log('----------------------------------Question 01');
     /**
      * 1. TODO:
      * Create an array of 4 people's names and store it in a variable called
@@ -9,6 +10,7 @@
 
     let names = ["John", "Jacob", "Jingle-Himer", "Smith"];
 
+    console.log('----------------------------------Question 02');
     /**
      * 2. TODO:
      * Create a log statement that will log the number of elements in the names
@@ -17,6 +19,7 @@
 
     console.log(names.length);              //   Not sure why this shows "4" when we start the count at index "0"
 
+    console.log('----------------------------------Question 04');
     /**
      * 3. TODO:
      * Create log statements that will print each of the names individually by
@@ -25,6 +28,7 @@
 
     console.log(names[0], names[1], names[2], names[3])
 
+    console.log('----------------------------------Question 05');
     /**
      * 4. TODO:
      * Write some code that uses a for loop to log every item in the names
@@ -35,6 +39,7 @@
         console.log(names[i]);
     }
 
+    console.log('----------------------------------Question 06');
     /**
      * 5. TODO:
      * Refactor your above code to use a `forEach` loop
@@ -44,6 +49,8 @@
         console.log(name);
     })
 
+
+    console.log('----------------------------------Question 07');
     /**
      * 6. TODO:
      * Create the following three functions, each will accept an array and

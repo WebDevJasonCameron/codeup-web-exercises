@@ -3,6 +3,22 @@
 ## 2022 02 08 | Warmups
 Warmups focussed on functions and math.  Completed the Loops Ls and Ex.  I worked on Sandbox 3 JS exercise while we worked through the Ex.  All the steps are instructed in the HTML (and comments) portion of the files.  The purpose for the sandbox is to help me figure out how to do the Coffee and Creature Feature project.  I had success in updating the HTML doc with an array of data from the JS file. I am now trying to figure out how to filter some of those items from being displayed on the web page.  Again, this process is found in the page.  
 
+### 1315 | Sandbox 3
+I figured out how to hide an element from the web page.  That might not sound crazy hard, but it was making my brain whirl.  The first problem came when I was trying to grab an array from the JS document and set a CSS style attribute to it (after pushing it to the page).  The problem was that it had nothing to do with the web page until I pushed it to the browser.  Instead, I needed to create another array from web page (now holding the li item elements).  So, this array held element tags that could be given CSS style attributes.  Once this was done, I stumbled on two lines of code that should work... yet only one actually did.  
+Here is the bad code:
+```javascirpt
+    monsterTypeHTMLArray[i].setAttribute('class', 'hide');    
+```
+The following code actually worked:
+```javascirpt
+    monsterTypeHTMLArray[i].style.display = 'none';
+```
+
+### 1330 | Arrays
+Working through the lesson and preparing to do the Ex.  
+
+
+
 
 ---
 

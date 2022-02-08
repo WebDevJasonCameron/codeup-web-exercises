@@ -45,7 +45,7 @@ let monsterTypeID = document.getElementById('monster-type-list');
 monsterTypeID.innerHTML = monsterTypeString;
 
 /**
- * ---------------------------------------------------------> 02-Step
+ * ---------------------------------------------------------> 03-Step
  * Hide items if they meet criteria
  */
 // 1.  Create an array based on class "type-list"                   <-- Necessary because we will need to
@@ -54,19 +54,37 @@ let monsterTypeHTMLArray = document.getElementsByClassName('type-list');
 
 
 // 2.  Create a function that searches each item in Monster List for a criteria
+// function searchMonsterTypeHTMLFunction() {
+//     for (let i = 0; i < monsterTypeHTMLArray.length; i++) {
+//         console.log(monsterTypeHTMLArray[i].textContent);
+//     }
+// }
+
+// 3.  Comment out previous, and recreate function with all items given 'hide' CSS class
 function searchMonsterTypeHTMLFunction(criteria) {
     for (let i = 0; i < monsterTypeHTMLArray.length; i++) {
-        console.log(monsterTypeHTMLArray[i].textContent);
+        if(monsterTypeHTMLArray[i].innerHTML.includes(criteria)) {
+            monsterTypeHTMLArray[i].style.display = 'none';
+        }
     }
 }
-searchMonsterTypeHTMLFunction('C');
 
-// 2.  Comment out previous, and recreate function with all items given 'hide' CSS class
-
-
-for (let i = 0; i < monsterTypeHTMLArray.length; i++) {
-    if (monsterTypeHTMLArray[i].includes(criteria)) console.log(monsterTypeHTMLArray[i]);
+/**
+ * ---------------------------------------------------------> 04-Step
+ * Build HTML form input below h2 Results title
+ */
+// 1.  Create a function to call from input
+function getFilterInput(){
+    console.log(filter.textContent);
+    return filter.textContent;
 }
+
+// 2.  Create a var from the input element
+let filter = document.getElementById('filter-list');
+
+// 4.  Create an event listener
+filter.addEventListener('keypress', getFilterInput);
+
 
 
 
