@@ -23,6 +23,12 @@ In preparation to the Coffee project we have coming up, I decided to create a si
 ### 1700 | Class Conclusions
 Continued to work with Creature Feature work.  Built an array of objects.  Trying to figure out how to break each object out into a div tag with a h3 and p tag.  This will be used to build more monster cards within its card container. 
 
+### 2130 | Creature Feature 
+I feel so close to the answer on how to add cards to the monster card table.  However, it eludes me.  I will probably need to spend some time in some Udemy courses to complete this.  That and lessons found in YouTube will probably help.  Still, one victory is getting the entire string to show HTML tags with the monster obj information.  This has NOT been a waste.  It only means that (although I made what feels a major achievement) I still must take my time in progressing through these things.
+
+### 22300 | FizzBuzz
+I asked during class if the instructors had exercises that we could practice on that would prepare us for technical interviews.  I admit that I was surprised that I was told that I should do a FizzBuzz exercise.  I remember doing something like this in an online Udemy Python course.  I decided to do the project to see how things might be different in JS.  I found that the exercise only took a few minutest.  The reason for this isn't because I am great at coding... rather I have seen the trick behind how this problem needs to be solved.  JS is very much like Python in its "simplicity" or "flexibility" (to a point).  I was surprised to read that this really is an interview question.  I think it would be a great opportunity to break this problem down in a blog at some point.  The purpose is to identify why it actually continues to be a classical interview problem that still trips-up job-seeking programmers.  
+
 
 ---
 

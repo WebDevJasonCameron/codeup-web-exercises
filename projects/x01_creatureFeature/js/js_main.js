@@ -1,49 +1,55 @@
+(function(){
 /**
- * Monsters
+ * Monster
  */
-let monsterList = [
+let monsterList = [                                         //   Array of objects
     {
-        tagIntro: '<div className="card show-toggle">',
         name: 'Phoenix',
         type: 'Fire',
-        tagOutro: '</div>'
     },
     {
-        tagIntro: '<div className="card show-toggle">',
         name: 'Rockilla',
         type: 'Earth',
-        tagOutro: '</div>'
     },
     {
-        tagIntro: '<div className="card show-toggle">',
         name: 'Uriel the Divine',
         type: 'Wind',
-        tagOutro: '</div>'
     },
     {
-        tagIntro: '<div className="card show-toggle">',
         name: 'Musu',
         type: 'Water',
-        tagOutro: '</div>'
     }
 ];
 
-// for (let i = 0; i < monsterList.length; i++) {
-//     monsterList[i].name.map(function (monName){
-//         return '<h3>' + monName + '</h3>';
-//     });
-//     monsterList[i].type.map(function (montype){
-//         return '<p>' + type + '</p>';
-//     })
-// }
+function convertHTMLMonsterCard() {
 
-monsterList.forEach(function (monster){
-    monster.name = '<h3>' + monster.name + '</h3>'
-    monster.type = '<p>' + monster.type + '</p>'
-})
+    monsterList.forEach(function (monster){  //   Add the HTML tags to
+        monster.name = '<h3>' + monster.name + '</h3>'              // the MonsterList
+        monster.type = '<p>' + monster.type + '</p>'
+    });
+
+    let monstersString = monsterList.map(function(monster){    //   Convert into string
+        return '\'<div class="card show-toggle">'                   //   Add .div class "card show-toggle" , for each
+            + monster.name + monster.type + '</div>';               // monster card
+    });
+
+    return monstersString.join("");                    //   Convert all into final string
+}
+
+function addMonster(name, type){
+    let monster = {
+        name: name,
+        type, type
+    }
+    monsterList.push(monster);
+}
+
+    console.log("---------------");
+
+let tableContainer = document.getElementsByClassName('table-container');
 
 
-
+})();
 
 
 
