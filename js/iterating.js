@@ -45,7 +45,7 @@
      * Refactor your above code to use a `forEach` loop
      */
 
-    names.forEach(function (name){
+    names.forEach(function (name){              //   ><-- Anon function
         console.log(name);
     })
 

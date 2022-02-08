@@ -15,7 +15,10 @@ The following code actually worked:
 ```
 
 ### 1330 | Arrays
-Working through the lesson and preparing to do the Ex.  
+Working through the lesson and preparing to do the Ex.  Array Ex continues.
+
+### 1530 | Sandbox 3
+Still trying to figure out how to auto search array while you're typing 
 
 
 

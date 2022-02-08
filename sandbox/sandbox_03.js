@@ -75,16 +75,17 @@ function searchMonsterTypeHTMLFunction(criteria) {
  */
 // 1.  Create a function to call from input
 function getFilterInput(){
-    console.log(filter.textContent);
-    return filter.textContent;
+    let txt = filter.textContent;
+    console.log(txt);
 }
 
 // 2.  Create a var from the input element
 let filter = document.getElementById('filter-list');
 
 // 4.  Create an event listener
-filter.addEventListener('keypress', getFilterInput);
-
+filter.addEventListener('keypress', function (e){
+    console.log(this.nodeValue);
+});
 
 
 
