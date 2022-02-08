@@ -48,7 +48,7 @@ for (let i = 0; i < 10; i++) {
 
 for (let i = 1; i < 10; i++) {          //   Standard For I loop
     let j = i;                          //   Need to set up these vars for the while loop.  If we use the i var from
-    let rs = "";                        // the For I loop, wee will find ourselves in a continuous loop.
+    let rs = "";                        //   The For I loop, wee will find ourselves in a continuous loop.
 
     while (j > 0) {                     //   We use the j var to set up our counter
         rs += i + "";                   //   Each time the loop runs, we add variable i's data (as a string) to the rs

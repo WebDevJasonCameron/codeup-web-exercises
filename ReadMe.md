@@ -1,6 +1,7 @@
 # Intro To Front End
 
-## 2022 02 08 | 
+## 2022 02 08 | Warmups
+Warmups focussed on functions and math.  
 
 
 ---
