@@ -1,7 +1,7 @@
 # Intro To Front End
 
 ## 2022 02 08 | Warmups
-Warmups focussed on functions and math.  
+Warmups focussed on functions and math.  Completed the Loops Ls and Ex.  I worked on Sandbox 3 JS exercise while we worked through the Ex.  All the steps are instructed in the HTML (and comments) portion of the files.  The purpose for the sandbox is to help me figure out how to do the Coffee and Creature Feature project.  I had success in updating the HTML doc with an array of data from the JS file. I am now trying to figure out how to filter some of those items from being displayed on the web page.  Again, this process is found in the page.  
 
 
 ---

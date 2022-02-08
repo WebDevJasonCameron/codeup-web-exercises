@@ -48,7 +48,3 @@ function getValidResponse(){
 // Run Operations
 getValidResponse();
 
-
-/*
-
- */

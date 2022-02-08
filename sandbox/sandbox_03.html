@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../img/MoonConceptSmallPatch01.svg" type="image/x-icon">
+    <link rel="stylesheet" href="sandbox_03.css">
     <title>Sandbox 03</title>
 </head>
 <body>
@@ -20,15 +21,22 @@
       </ol>
       <li>Insert JS String into Page</li>
       <ol>
-          <li>Grab html class tag</li>
-          <li>Check with console log</li>
-
+          <li>Grab html "monster-type-list" id tag <strong>NOTE: must be an ID tag to place HTML inside</strong></li>
+          <li>Check with console log<span><-- Comment Out --></span></li>
+          <li>Set Monster Type String into the HTML of the Tag</li>
+      </ol>
+      <li>Hide items if they meet criteria</li>
+      <ol>
+          <li>Create an array based on class "type-list" </li>
+          <li>Create a function that searches each item in new Monster HTML List for a criteria</li>
+          <li>Create an Array based on the HTML li lists</li>
       </ol>
 
   </ul>
 
   <h2>Results</h2>
-  <div class="monster-type-list"></div>
+  <h3>This is a list of monster types in D&D</h3>
+  <div id="monster-type-list"></div>
 
 
 

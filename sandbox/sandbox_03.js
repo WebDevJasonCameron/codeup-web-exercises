@@ -1,4 +1,5 @@
 /**
+ * ---------------------------------------------------------> 01-Step
  * Array and Tags
  * @type {string[]}
  */
@@ -14,9 +15,9 @@ let monsterTypeArray = ['Aberration', 'Beast',
 //     console.log(monsterTypeArray[i]);
 // }
 
-// 3.  Add li tags to each item
+// 3.  Add li tags to each item                                     <-- Note: adding a class inside the li tag!
 for (let i = 0; i < monsterTypeArray.length; i++) {
-    monsterTypeArray[i] = '<li>' + monsterTypeArray[i] + '</li>'
+    monsterTypeArray[i] = '<li class="type-list">' + monsterTypeArray[i] + '</li>'
 }
 
 //  4.  Console log each
@@ -31,22 +32,41 @@ let monsterTypeString = '<ul>' + monsterTypeArray.join('') + '</ul>'
 // console.log(monsterTypeString);
 
 /**
+ * ---------------------------------------------------------> 02-Step
  * Insert JS String into Page
  */
 // 1.  Grab html class tag
-let monsterType = document.getElementsByClassName('monster-type-list');
+let monsterTypeID = document.getElementById('monster-type-list');
 
 // 2.  Check with console log
-console.log(monsterType);
+// console.log(monsterType);
+
+// 3.  Set Monster Type String into the HTML of the Tag
+monsterTypeID.innerHTML = monsterTypeString;
+
+/**
+ * ---------------------------------------------------------> 02-Step
+ * Hide items if they meet criteria
+ */
+// 1.  Create an array based on class "type-list"                   <-- Necessary because we will need to
+//                                                                      manipulate the style with this list
+let monsterTypeHTMLArray = document.getElementsByClassName('type-list');
 
 
+// 2.  Create a function that searches each item in Monster List for a criteria
+function searchMonsterTypeHTMLFunction(criteria) {
+    for (let i = 0; i < monsterTypeHTMLArray.length; i++) {
+        console.log(monsterTypeHTMLArray[i].textContent);
+    }
+}
+searchMonsterTypeHTMLFunction('C');
+
+// 2.  Comment out previous, and recreate function with all items given 'hide' CSS class
 
 
-
-
-
-
-
+for (let i = 0; i < monsterTypeHTMLArray.length; i++) {
+    if (monsterTypeHTMLArray[i].includes(criteria)) console.log(monsterTypeHTMLArray[i]);
+}
 
 
 

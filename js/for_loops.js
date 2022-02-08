@@ -1,21 +1,23 @@
-                                        /* FOR LOOPS */
+/* FOR LOOPS */
 
 /*
 2. Create a function named showMultiplicationTable that accepts a number and console.logs the multiplication table for that number (just multiply by the numbers 1 through 10)
  */
+console.log('-----------    Question 2');
+
 
 function showMultiplicationTable(num){
     for (let i = 0; i < 10; i++) {
-        console.log(num * (i+1));
+        console.log(num + " * " + i + " = " + (num * (i+1)));
     }
 }
-
 
 // showMultiplicationTable(7);             // <-Testing
 
 /*
 3. Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200 and output to the console whether each number is odd or even. For example:
  */
+console.log('-----------    Question 3');
 
 // Simply taken from StackOverflow
 function randomIntFromInterval(min, max) {                              //    min and max included
@@ -45,6 +47,7 @@ for (let i = 0; i < 10; i++) {
 88888888
 999999999
  */
+console.log('-----------    Question 4');
 
 for (let i = 1; i < 10; i++) {          //   Standard For I loop
     let j = i;                          //   Need to set up these vars for the while loop.  If we use the i var from
@@ -70,6 +73,7 @@ for (let i = 1; i < 10; i++) {          //   Standard For I loop
 ... (continues until) ...
 5
  */
+console.log('-----------    Question 5');
 
 let n = 100;
 while(n > 0){
