@@ -1,5 +1,13 @@
 # Intro To Front End
 
+## 2022 02 09 | Review Arrays
+Agenda set.  See Notion notes.  No warmups.  Continued onto walk through of the array Ls and Ex. Deciding to backtrack on the Sandbox 3 practice.  Will remove current text box and create a dropdown input filter to remove some monster types from the list.  After that is complete, I will continue with the auto filter as you type in a type name.  
+
+## 1100 | Zantanna Speech
+While learning about arrays, we had a challenge to create a function that reproduces the speech of Zantanna.  This was a lot of fun.  It also caused me to use different built-in JS functions.  I needed to cut up a string, putting words into an array.  Then, each item in the array could be reversed letter-by-letter.  That result needed to be pushed into a new array.  Afterwards, the new array was combined into a new string.  Additional peaces to this challenge included removing commas and uppercase letters.  Lastly, I needed to force the first letter of the first word in the sentence to be uppercase.  There might be some more things I could do this function later.  However, I copied the function into the interview problems director.  The HTML talks about how this should be done.  Finally, I want to continue working on the page, so we could put in a new string and have that pushed back to the browser.  
+
+---
+
 ## 2022 02 08 | Warmups
 Warmups focussed on functions and math.  Completed the Loops Ls and Ex.  I worked on Sandbox 3 JS exercise while we worked through the Ex.  All the steps are instructed in the HTML (and comments) portion of the files.  The purpose for the sandbox is to help me figure out how to do the Coffee and Creature Feature project.  I had success in updating the HTML doc with an array of data from the JS file. I am now trying to figure out how to filter some of those items from being displayed on the web page.  Again, this process is found in the page.  
 

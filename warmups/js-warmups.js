@@ -56,33 +56,30 @@ function stringEvenOrOdd(s) {
     else return "Odd";
 }
 
-// Create an array of four family members, friends, or people or pets you know
-let family = ['jason', 'miya', 'mihwa', 'calvin', 'mocha']
+/**
+ * 2022 02 09
+ * @param num
+ * @returns {*}
+ */
 
-// Console.log the first and last item
-console.log(family[0]);
+function zatannaSpeech(zS){
+    zS = zS.split(' ');
+    let newZS;
+    let zSArray = [];
+    for (let i = 0; i <zS.length; i++) {
+        newZS = zS[i].split('').reverse().join('');
+        newZS = newZS.replace(',', '');
+        newZS = newZS.toLowerCase();
+        zSArray.push(newZS);
+    }
+    let fString = zSArray.join(" ");
+    fString = fString.charAt(0).toUpperCase() + fString.slice(1, fString.length);
+    return fString;
 
-// Console.log a string starting your relationship to one of the array elements, for example "nathan is my cousin" or "Sofia is my friend."
-console.log("My daughter's name is " + family[1]);
-
-// Given an array
-let cities = ['San Antonio', 'Austin', 'Dallas', 'Houston'];
-// First, create a for loop that generates the output:
-
-for (let i = 0; i <cities.length; i++) {
-    console.log(cities[i]);
 }
 
-// then elaborate on the loop output to generate output like:
-for (let i = 0; i <cities.length; i++) {
-    console.log('Student number ' + (i+1) +' lives in ' + cities[i]);
-}
-
-
-
-
-
-
+console.log(zatannaSpeech("Hello there World"));
+console.log(zatannaSpeech('I am not saying you cannot be anything you want to be, but the whole superhero thing is much more than just wearing a cape and getting famous'));
 
 
 
