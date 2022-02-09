@@ -82,10 +82,21 @@ function getFilterInput(){
 // 2.  Create a var from the input element
 let filter = document.getElementById('filter-list');
 
+/**
+ *  MONSTER TYPES
+ *
+ *  1. Common
+ *  2. Uncommon
+ *  3. Rare
+ */
+
 // 4.  Create an event listener
 filter.addEventListener('keypress', function (e){
     console.log(this.nodeValue);
 });
+
+
+
 
 
 
