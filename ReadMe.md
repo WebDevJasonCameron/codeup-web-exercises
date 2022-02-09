@@ -6,6 +6,9 @@ Agenda set.  See Notion notes.  No warmups.  Continued onto walk through of the 
 ## 1100 | Zantanna Speech
 While learning about arrays, we had a challenge to create a function that reproduces the speech of Zantanna.  This was a lot of fun.  It also caused me to use different built-in JS functions.  I needed to cut up a string, putting words into an array.  Then, each item in the array could be reversed letter-by-letter.  That result needed to be pushed into a new array.  Afterwards, the new array was combined into a new string.  Additional peaces to this challenge included removing commas and uppercase letters.  Lastly, I needed to force the first letter of the first word in the sentence to be uppercase.  There might be some more things I could do this function later.  However, I copied the function into the interview problems director.  The HTML talks about how this should be done.  Finally, I want to continue working on the page, so we could put in a new string and have that pushed back to the browser.  
 
+### 1700 | Practices
+Most of the afternoon work is found in the additional repos provided to us.  They were meant to prepare us for tomorrow's assessment.  The were very helpful in seeing things in an assessment point of view.  I also completed the ZS interview project.  Finally, I made some amazing advancements with the Creature Feature project.  
+
 ---
 
 ## 2022 02 08 | Warmups

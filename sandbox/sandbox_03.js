@@ -73,30 +73,25 @@ function searchMonsterTypeHTMLFunction(criteria) {
  * ---------------------------------------------------------> 04-Step
  * Build HTML form input below h2 Results title
  */
-// 1.  Create a function to call from input
+// 1.  Create a function to call from input that combines above functions to send info to browser
 function getFilterInput(){
-    let txt = filter.textContent;
-    console.log(txt);
+    let filterCriteria = filter.value;
+    searchMonsterTypeHTMLFunction(filterCriteria)
+    console.log(filterCriteria);
 }
 
 // 2.  Create a var from the input element
 let filter = document.getElementById('filter-list');
 
-/**
- *  MONSTER TYPES
- *
- *  1. Common
- *  2. Uncommon
- *  3. Rare
- */
 
 // 4.  Create an event listener
-filter.addEventListener('keypress', function (e){
-    console.log(this.nodeValue);
-});
+filter.addEventListener('keyup', getFilterInput);
 
-
-
+/**
+ * ---------------------------------------------------------> 05-Step
+ * Create Function to check hidden or not
+ */
+// 1. Function to check hide
 
 
 

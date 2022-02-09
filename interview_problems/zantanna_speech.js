@@ -13,6 +13,11 @@ function zatannaSpeech(zS){
                                                                 // letters and then joins letters back into a 'word'
         newZS = newZS.replace(',', '');  //   Takes out any commas in the index (if there is a
                                                                 // comma)
+        newZS = newZS.replace('.', '');
+        newZS = newZS.replace('!', '');
+        newZS = newZS.replace('?', '');
+
+
         newZS = newZS.toLowerCase();                            //   Removes all upper case letters
         zSArray.push(newZS);                                    //   MUST push new 'word' into a new array
     }
@@ -48,19 +53,21 @@ zsExample.innerHTML = zatannaSpeech('I am not saying you cannot ' +
 let zsTryIt = document.getElementById('zs-tryIt');                  //   <-- Text input
 let zsSubmit = document.getElementById('zs-submit');                //   <-- Submit input (not button)
 let zsUserString = document.getElementById('zs-user-string');       //   <-- Blockquote tag
+let zsUserOriginalString = document.getElementById('zs-user-original-string')
 
 // FUN
 function grabAndTranslate(){
-    let x = zsTryIt.innerHTML;                                               //   <-- Place input text in var
+    let x = zsTryIt.value;                                               //   <-- Place input text in var
     zsUserString.innerHTML = zatannaSpeech(x);                               //   <-- Send translated input to browser
+    zsUserOriginalString.innerHTML = x;
     console.log(zsUserString.innerHTML = zatannaSpeech(x));                  //   <-- Looking to see what is going on
 }
 
 // EVENT LISTENER
-zsSubmit.addEventListener('click', grabAndTranslate)
+zsSubmit.addEventListener('click', grabAndTranslate);
 
 // PREPPED STATEMENT
-zsUserString.innerHTML = '"Your Translated Text Here..."'
+zsUserString.innerHTML = '"Your Translated Text Here..."';
 
 
 
