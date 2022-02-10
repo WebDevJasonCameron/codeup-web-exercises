@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../../img/MoonConceptSmallPatch01.svg" type="image/x-icon">
+    <title>Mirror Problem</title>
+</head>
+<body>
+
+<h1>Mirror Problem</h1>
+
+<script>
+
+    "use strict";
+
+    /*
+
+        Write a function, mirror, that takes in a string and returns the string with its characters in reverse order.
+        If the input is not a string, the function should return false. The case of each character should
+        remain unchanged.
+
+        mirror('cat') // returns 'tac'
+        mirror('asdf') // returns 'fdsa'
+        mirror('Codeup') // returns 'puedoC'
+        mirror('123') // returns '321'
+        mirror('At') // returns 'tA'
+        mirror(null) // returns false
+        mirror([1,3,4]) // returns false
+        mirror(123) // returns false
+
+     */
+
+    function mirror(str){
+        if(typeof str !== 'string') return false;
+        return str.split('').reverse().join('');
+    }
+
+    console.log(mirror('cat'));
+    console.log(mirror('asdf'));
+    console.log(mirror('Codeup'));
+    console.log(mirror('123'));
+    console.log(mirror('At'));
+    console.log(mirror(null));
+    console.log(mirror([1, 3, 4]));
+    console.log(mirror(123));
+
+</script>
+
+</body>
+</html>

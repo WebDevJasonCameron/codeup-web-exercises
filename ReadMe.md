@@ -9,6 +9,9 @@ While learning about arrays, we had a challenge to create a function that reprod
 ### 1700 | Practices
 Most of the afternoon work is found in the additional repos provided to us.  They were meant to prepare us for tomorrow's assessment.  The were very helpful in seeing things in an assessment point of view.  I also completed the ZS interview project.  Finally, I made some amazing advancements with the Creature Feature project.  
 
+### 2200 | Late Night Practice
+Just reviewing code.  Refactor some parts.  Noticed that single if/else blocks might be able to simply be converted into a return true/false conclusion.  Otherwise, each if statement will require an else to get the converse bool.  Other than that, most of the code remained the same.  I did notice that someone used a ```toString``` method that I'm not familiar with in JS.  It cut their code down by several lines.  Also, one test provided instructions that an argument should be treated in a specific manner if it was of a certain data-type.  However, by using the ```Number``` type-set, it made the concern moot.  These assessments really test how well you can beat the test and not how well you can write code to meet the instructional expectations.
+
 ---
 
 ## 2022 02 08 | Warmups
