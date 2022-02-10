@@ -1,5 +1,12 @@
 # Intro To Front End
 
+## 2022 02 10 | Assessment Morning
+Starting the day with assessment prep and test. Completed test (all green!) and performed a walk through.  Some lessons learned.  
+
+
+
+---
+
 ## 2022 02 09 | Review Arrays
 Agenda set.  See Notion notes.  No warmups.  Continued onto walk through of the array Ls and Ex. Deciding to backtrack on the Sandbox 3 practice.  Will remove current text box and create a dropdown input filter to remove some monster types from the list.  After that is complete, I will continue with the auto filter as you type in a type name.  
 
@@ -44,6 +51,7 @@ First we started the day completing the TDD.  Learned that things get very odd w
 ```javascript
     it('should return NaN when passed 2 and "apples"', function(){
         expect(add("banana", "split")).toBeNaN();
+});
 ```
 It also worked with the following code (however, I'm not sure if this is truely a fix)
 ```javascript
