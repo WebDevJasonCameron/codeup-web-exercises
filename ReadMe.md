@@ -1,8 +1,20 @@
 # Intro To Front End
 
 ## 2022 02 10 | Assessment Morning
-Starting the day with assessment prep and test. Completed test (all green!) and performed a walk through.  Some lessons learned.  
+Starting the day with assessment prep and test. Completed test (all green!) and performed a walk through.  Some lessons learned.  Here is what I found out during the assessment... The ```isNaN``` function can help with determining whether a string is a string consisting of numbers.  
 
+```javascript
+    return isNaN('1234')            // returns false... is not NaN
+```
+However, booleans and null get through this validation check.  As such, you must parse the string into an integer.  NOTE: using the ```Number.``` function doesn't work! By parsing the variable within the isNaN function, we ensure that only numbers or strings with numbers are returning false to the isNaN function.  Here is an example:
+
+```javascript
+    return isNaN(parseInt(false));  // returns false... is not NaN
+    return isNaN(parseInt(true));  // returns false
+    return isNaN(parseInt(null));  // returns false
+
+```
+I really don't remember the instructors explaining this.  I think it really messed a lot of students up on the exam.  Final thoughts... I need to read the MDN docs.  I cannot trust the instructors to teach everything we will need on the assessments.  Even if we are allowed to Google possible answers, time constraints makes this very difficult if you haven't already familiarize yourself with the different parts of JS.
 
 
 ---
