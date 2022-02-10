@@ -16,6 +16,9 @@ However, booleans and null get through this validation check.  As such, you must
 ```
 I really don't remember the instructors explaining this.  I think it really messed a lot of students up on the exam.  Final thoughts... I need to read the MDN docs.  I cannot trust the instructors to teach everything we will need on the assessments.  Even if we are allowed to Google possible answers, time constraints makes this very difficult if you haven't already familiarize yourself with the different parts of JS.
 
+### 1530 | Test Review Cont
+Interestingly, if you figure out the verification factors, you can often reuse them throughout the whole assessment.  Thus, this test could be extremely easy for those you get that actual key.  Again, the TDD based assessments are really a poor substitute to actually following the assignment's instructions.  
+
 
 ---
 
