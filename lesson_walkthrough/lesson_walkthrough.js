@@ -4,34 +4,34 @@
  */
 
 
-// Create an array of four family members, friends, or people or pets you know
-let family = ['jason', 'miya', 'mihwa', 'calvin', 'mocha']
-
-// Console.log the first and last item
-console.log(family[0]);
-
-// Console.log a string starting your relationship to one of the array elements, for example "nathan is my cousin" or "Sofia is my friend."
-console.log("My daughter's name is " + family[1]);
-
-// Given an array
-let cities = ['San Antonio', 'Austin', 'Dallas', 'Houston'];
-// First, create a for loop that generates the output:
-
-for (let i = 0; i <cities.length; i++) {
-    console.log(cities[i]);
-}
-
-// then elaborate on the loop output to generate output like:
-for (let i = 0; i <cities.length; i++) {
-    console.log('Student number ' + (i+1) +' lives in ' + cities[i]);
-}
+// // Create an array of four family members, friends, or people or pets you know
+// let family = ['jason', 'miya', 'mihwa', 'calvin', 'mocha']
+//
+// // Console.log the first and last item
+// console.log(family[0]);
+//
+// // Console.log a string starting your relationship to one of the array elements, for example "nathan is my cousin" or "Sofia is my friend."
+// console.log("My daughter's name is " + family[1]);
+//
+// // Given an array
+// let cities = ['San Antonio', 'Austin', 'Dallas', 'Houston'];
+// // First, create a for loop that generates the output:
+//
+// for (let i = 0; i <cities.length; i++) {
+//     console.log(cities[i]);
+// }
+//
+// // then elaborate on the loop output to generate output like:
+// for (let i = 0; i <cities.length; i++) {
+//     console.log('Student number ' + (i+1) +' lives in ' + cities[i]);
+// }
 
 /**
  *Test Arrays
  */
-
-let mA = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-console.log(mA.slice(0, ((mA.length / 2) + 1)));
+//
+// let mA = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+// console.log(mA.slice(0, ((mA.length / 2) + 1)));
 
 
 /**
@@ -211,4 +211,111 @@ console.log(mA.slice(0, ((mA.length / 2) + 1)));
 
 
 // !! MINI EXERCISE 3 !!
+/**
+ * Object Mini Ex
+ * @type {[{givenName}]}
+ */
+let users = [
+    {
+        givenName: 'Sam',
+        age: 21
+    },
+    {
+        givenName: 'Cathy',
+        age: 34
+    },
+    {
+        givenName: 'Karen',
+        age: 43
+    }
+];
 
+// 1. Log the names of all users in a single console log separated by spaces. // output = “Sam
+//    Cathy Karen”
+function logUsers(array){
+    let theList = '';                                   //   Create var to catch data from the loop
+    array.forEach(function (user){
+        theList = theList + ' ' + user.givenName;       //   Each time
+    });
+    return theList
+}
+
+console.log(logUsers(users));
+
+// 2. Change the names of all users to “John Doe”
+function updateName(array){
+    array.forEach(function (user){
+        user.givenName = 'John Doe';
+    });
+}
+// updateName(users)
+console.log(logUsers(users));
+
+// 3. Increase the current age of all users by 1
+function updateAge(array){
+    array.forEach(function (user){
+        user.age = user.age + 1;
+    });
+}
+
+// updateAge(users);
+
+function showNewAge(array){
+    let theList = '';
+    array.forEach(function (user){
+        theList = theList + ' ' + user.age;
+    });
+    return theList
+}
+
+console.log(showNewAge(users));
+
+// 4. Get the total of all ages
+function addAges(array){
+    let ans = 0;
+    array.forEach(function (user){
+        ans = ans + Number(user.age);
+    })
+    return ans;
+}
+
+console.log(addAges(users));
+
+// 5. Find average of all ages
+function averageAge(array){
+    let count = 0;
+    array.forEach(function (user){
+        count = count + 1;
+    })
+    return addAges(array)/ count;
+
+}
+
+console.log(averageAge(users));
+
+
+// 6. Log all the user information in the following format...
+
+    /*
+        user: Sam | age: 21
+        user: Cathy | age: 34
+        user: Karen | age: 43
+     */
+
+function showData(array){
+    array.forEach(function (user){
+        console.log('user: ' + user.givenName + ' | age: ' + user.age);
+    });
+}
+showData(users);
+
+// 7. Log the name of the longest given name of a user
+function getLargestName(array){
+    let result = '';
+    array.forEach(function (user){
+        if(user.givenName.length > result.length) result = user.givenName;
+    });
+    return result;
+}
+
+console.log(getLargestName(users));
