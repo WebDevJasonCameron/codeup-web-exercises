@@ -3,7 +3,11 @@
 ## 2022 02 11 | Warm Up
 We did a JS array warm up called remove b's. The lesson I learned from this is that when you are manipulating the array with ```replace()```, ```toLowercase()```, and other functions... this MUST be put in an Output Array, so it can be returned.  Otherwise, nothing will change.  Also, if you get an undefined when you are trying to CL a function's return make sure you are actually returning something out of the function!
 
-### 
+### 1400 | Note on Obj
+I have been trying to create an empty array that would store objects later... Of course, that is what we were doing in our Ex.  I just hadn't realized that this was exactly what I was attempting to do.  LL.  
+
+### 1600 | Fibonacci Numbers
+Spent a couple of hours on this problem.  I needed to put it aside.  I will tackle it over the weekend. I probably will need to look up some JS help on this. 
 
 
 ---

@@ -235,9 +235,9 @@ let users = [
 function logUsers(array){
     let theList = '';                                   //   Create var to catch data from the loop
     array.forEach(function (user){
-        theList = theList + ' ' + user.givenName;       //   Each time
+        theList = theList + ' ' + user.givenName;       //   Adds name with a space at the end
     });
-    return theList
+    return theList.trim();
 }
 
 console.log(logUsers(users));
@@ -265,31 +265,32 @@ function showNewAge(array){
     array.forEach(function (user){
         theList = theList + ' ' + user.age;
     });
-    return theList
+    return theList.trim();
 }
 
 console.log(showNewAge(users));
 
-// 4. Get the total of all ages
-function addAges(array){
-    let ans = 0;
-    array.forEach(function (user){
-        ans = ans + Number(user.age);
-    })
-    return ans;
-}
 
+
+// 4. Get the total of all ages
+function addAges(array){                                    //   We'll use this function in the average function later
+    let ans = 0;                                            //   Set up a var to catch the sum each time we run through
+                                                            // the forEach loop
+    array.forEach(function (user){
+        ans = ans + Number(user.age);                       //   Adding the age to our ans var.  Each time we move
+    })                                                      // through the 'loop' the ans increase by the user's age
+                                                            // (i.e. Sam's age: 21, Cathy's age: 34, and Karen's
+                                                            // age: 43)
+    return ans;                                             //   Function returns the final total in ans var
+}
 console.log(addAges(users));
+
+
 
 // 5. Find average of all ages
 function averageAge(array){
-    let count = 0;
-    array.forEach(function (user){
-        count = count + 1;
-    })
-    return addAges(array)/ count;
-
-}
+    return addAges(array)/ (array.length);                  //   Getting the result from addAges function and
+}                                                           // dividing by the total objects within the array
 
 console.log(averageAge(users));
 
@@ -302,19 +303,24 @@ console.log(averageAge(users));
         user: Karen | age: 43
      */
 
-function showData(array){
+function showData(array){                                   //   This is similar to the logUser function (showing
+                                                            // the name of each obj in the array without the need
+                                                            // for it to be on the same line)
     array.forEach(function (user){
-        console.log('user: ' + user.givenName + ' | age: ' + user.age);
+        console.log('user: ' + user.givenName               //   String concat the name and age with the format
+            + ' | age: ' + user.age);                       // according to the problem's instructions
     });
 }
 showData(users);
 
 // 7. Log the name of the longest given name of a user
 function getLargestName(array){
-    let result = '';
+    let result = '';                                        //   Catch a name for comparisons within...
     array.forEach(function (user){
-        if(user.givenName.length > result.length) result = user.givenName;
-    });
+        if(user.givenName.length > result.length) {         //   If the current name we have iterated to is greater
+            result = user.givenName;                        // than the name stored in our result's var, store (replace)
+        }                                                   // the 'result' variable's current data with the larger
+    });                                                     // name
     return result;
 }
 
