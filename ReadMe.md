@@ -1,5 +1,13 @@
 # Intro To Front End
 
+## 2022 02 11 | Warm Up
+We did a JS array warm up called remove b's. The lesson I learned from this is that when you are manipulating the array with ```replace()```, ```toLowercase()```, and other functions... this MUST be put in an Output Array, so it can be returned.  Otherwise, nothing will change.  Also, if you get an undefined when you are trying to CL a function's return make sure you are actually returning something out of the function!
+
+### 
+
+
+---
+
 ## 2022 02 10 | Assessment Morning
 Starting the day with assessment prep and test. Completed test (all green!) and performed a walk through.  Some lessons learned.  Here is what I found out during the assessment... The ```isNaN``` function can help with determining whether a string is a string consisting of numbers.  
 
