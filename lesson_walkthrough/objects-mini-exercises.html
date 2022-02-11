@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects Mini Ex</title>
+</head>
+<body>
+    <h1>Objects Mini Ex</h1>
+    <p>Hey, do you like to belch for twenty minutes non-stop? Try <span>Smash Cola</span> and <span>Radical cola</span>!  See the following information about the newest, bestest, colas around:</p>
+    <ul>
+        <li><div id="cola-information-1"></div></li>
+        <li><div id="cola-information-2"></div></li>
+        <li><div id="cola-information-3"></div></li>
+    </ul>
+    <div id="can-i-get-the-array"></div>
+
+    <script>
+    let beverage1 = {
+        brandName: 'Smash Cola',
+        type: 'Fizzy',
+        volumeInLiters: 50,
+        priceInCents: .50,
+        expirationDate: 'Feb 01 2082',
+        dateOfPreviousSip: ['Feb 02 2022',
+            'Feb 05 2022','Feb 07 2022',
+            'Feb 8 2022','Feb 11 2022', ],
+        isOpen: true
+    };
+
+    let beverage2 = {};
+        beverage2.brandName = 'Radical Cola';
+        beverage2.type = 'Flat';
+        beverage2.volumeInLiters = 50;
+        beverage2.priceInCents = .70;
+        beverage2.expirationDate = 'Jan 01 2082';
+        beverage2.dateOfPreviousSip = ['Jan 02 2022',
+            'Jan 05 2022','Jan 07 2022',
+            'Jan 8 2022','Jan 11 2022', ];
+        beverage2.isOpen = true;
+
+    let beverage3 = {
+        brandName: ['X cola', ' Y cola', ' Z cola'],
+        type: 'Fizzy',
+        volumeInLiters: 50,
+        priceInCents: .50,
+        expirationDate: 'Dec 01 2082',
+        dateOfPreviousSip: ['Dec 02 2022',
+            'Dec 05 2022','Dec 07 2022',
+            'Dec 8 2022','Dec 11 2022', ],
+        isOpen: true
+    };
+
+    let drinks =[beverage1, beverage2, beverage3];
+    console.log(drinks);
+
+    document.getElementById('cola-information-1').innerHTML =
+        beverage1.brandName;
+
+    document.getElementById('cola-information-2').innerHTML =
+        beverage2.brandName;
+
+    document.getElementById('cola-information-3').innerHTML =
+        beverage3.brandName;
+
+    document.getElementById('can-i-get-the-array').innerHTML = drinks[2].brandName[1];
+</script>
+
+</body>
+</html>

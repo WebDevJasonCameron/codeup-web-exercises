@@ -2,55 +2,97 @@
  * Building empty classes
  */
 
-let pet = {};
-pet.givenName = undefined;
-pet.ageInYears = undefined;
-pet.species = undefined;
-pet.hasOffspring = undefined;
-pet.valueInDollars = undefined;
-pet.toy = {};
-pet.treat = {};
-
-let petToy = {};
-petToy = undefined;
-petToyCost = undefined;
-petToyColor = undefined;
-
-let petTreat = {};
-petTreat.name = undefined;
-petTreat.calorie = undefined;
-petTreat.cost = undefined;
+// let pet = {};
+// pet.givenName = undefined;
+// pet.ageInYears = undefined;
+// pet.species = undefined;
+// pet.hasOffspring = undefined;
+// pet.valueInDollars = undefined;
+// pet.toy = {};
+// pet.treat = {};
+//
+// let petToy = {};
+// petToy = undefined;
+// petToyCost = undefined;
+// petToyColor = undefined;
+//
+// let petTreat = {};
+// petTreat.name = undefined;
+// petTreat.calorie = undefined;
+// petTreat.cost = undefined;
 
 /**
  * Building Pets array (an array of obj)
  */
-let pets = [];
+// let pets = [];
 
 /**
  * Data Entry of pet obj
  */
 
-pets.push(
-    pet.givenName = 'Calvin',
-    pet.ageInYears = 7,
-    pet.species = 'Bull-labrador',
-    pet.hasOffspring = false,
-    pet.valueInDollars = Infinity
-)
+// let pet1 = [
+//     givenName = 'Calvin',
+//     ageInYears = 7,
+//     species = 'Bull-labrador',
+//     hasOffspring = false,
+//     valueInDollars = Infinity,
+//     toy = ['bone', 'pig ear']
+// ];
 
-pets.push(
-    pet.givenName = 'Mocha',
-    pet.ageInYears = 7,
-    pet.species = 'Bull-labrador',
-    pet.hasOffspring = false,
-    pet.valueInDollars = Infinity
-)
-
+// let pet2 = [
+//     'Mocha',
+//     7,
+//     'Bull-labrador',
+//     false,
+//     Infinity
+// ];
+//
+// pets.push(pet1, pet2)
+//
 // console.log(pets);
-// console.log(pets[0]);
-pets.forEach(function (pet){console.log(pet.givenName)});
 
-pets.forEach(function (pet){console.log(pet)})
+let pets = [];
 
-console.log(pet.givenName);
-console.log(pets[])
+pet1 = {
+    givenName: 'Calvin',
+    ageInYears: 7,
+    species: 'Bull-labrador',
+    hasOffspring: 0,
+    valueInDollars: Infinity,
+    toy: {
+        toyName: 'rope',
+        toyCost: 20.00
+    },
+    treat: {
+        treatName: 'bully-stick',
+        treatCost: 32.02
+    }
+};
+
+pet2 = {
+    givenName: 'Calvin',
+    ageInYears: 7,
+    species: 'Bull-labrador',
+    hasOffspring: 0,
+    valueInDollars: Infinity,
+    toy: {
+        toyName: 'rope',
+        toyCost: 20.00
+    },
+    treat: {
+        treatName: 'bully-stick',
+        treatCost: 32.02
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
