@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 02 12 | Sandbox 5
+Reworking much of the work done in Sandbox 3.  This time I'm wanting to use objects of monster data.  This should help me create cards that can be filtered by the additional categories. It also gives me the ability to practice creating a better connection to the HTML doc.   
+
+
+---
+
 ## 2022 02 11 | Warm Up
 We did a JS array warm up called remove b's. The lesson I learned from this is that when you are manipulating the array with ```replace()```, ```toLowercase()```, and other functions... this MUST be put in an Output Array, so it can be returned.  Otherwise, nothing will change.  Also, if you get an undefined when you are trying to CL a function's return make sure you are actually returning something out of the function!
 

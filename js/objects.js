@@ -55,7 +55,7 @@
         {name: 'George', amount: 320}
     ];
 
-    shoppers.forEach(function (shopper){
+    shoppers.forEach(function (shopper){                //   GO BACK TO THIS
         console.log(shopper.name, shopper.amount);
     });
 
