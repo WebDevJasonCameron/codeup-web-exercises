@@ -1,7 +1,12 @@
+/**
+ *          Laying the Ground Work
+ *
+ */
+
 // 1. Create monsters array
 let monstersList = [];
 
-// 2. Create addMonsterObj function
+// 2. Create addMonsterObj function to push new Monster objects into the array
 function addMonsterObj(mName, mType, mSize, alignment, legendary){
 
     let monster = {
@@ -26,7 +31,6 @@ function addMonsterObj(mName, mType, mSize, alignment, legendary){
             return cardTags;
         }
     }
-
     monstersList.push(monster);
 }
 
@@ -57,10 +61,11 @@ function sortMonsterList(){
     });
 }
 
+// 4.1 Implement the sort function
 sortMonsterList();
 
 
-// 5. Function to grab card information
+// 5. Function to grab card information using the method to provide a string of HTML data with array info
 function getMonsterCardListData() {
     let output = '';
     monstersList.forEach(function (monster) {
@@ -70,7 +75,27 @@ function getMonsterCardListData() {
 }
 
 
-// console.log(getMonsterCardListData());
-
-// Cards
+// 6. Placing data into the HTML document using 'monster-card-stage' id tag
 document.getElementById('monster-card-stage').innerHTML = getMonsterCardListData();
+
+
+// 7.  Create CSS to make the page look a little cleaner
+
+
+/**
+ *          Creating Filtering Functions
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

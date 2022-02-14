@@ -1,5 +1,15 @@
 # Intro To Front End
 
+## 2022 02 14 | Obj Ex
+First, we completed a warmup ex.  To recap, this called for an obj to be created.  Then, we were asked to create a function that gives an either/or response based on what the obj data.  I got it to work with caveats.  I used the ```.this``` key word with a function outside th obj.  However, this breaks when I tried to use the ```argument.objElement```.  I really don't know as to why at the moment. !!! FIXED !!!
+
+Second, we walked through the Obj Ex during the morning.  I had not completed problem 3 (failed to read the whole problem).  That can be a running theme in my work.  As such, I completed the problem by creating an obj array, a function that gives me a statement based on a criteria, and then forEach function to loop through the obj array.  
+
+Third, I also worked on SB05.  First I decided to clean up the JS format.  Second, I added more CSS.  Third, I update the HTML bullet points.
+
+
+---
+
 ## 2022 02 13 | Sort Array of OBJ
 Small victories.  Today I was able to check that I could manipulate the CSS of the data being placed in the web page with JS.  I also found out how to sort an array of objects by selecting a specific element.  As such, I can include more objects in the array and then call the sort function to ensure they all stay alphabetized.  Interestingly, this is not as obvious to do as simply sorting an array of elements.  It can be even more complicated when you're trying to sort strings from an object's attributes.  For example, I'm building an array of "monster cards" that have the name of the monster (along with several attributes).  To sort the array, I need to:
 ```javascript

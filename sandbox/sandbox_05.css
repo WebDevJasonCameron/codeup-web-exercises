@@ -1,3 +1,7 @@
+/*
+    PAGE PROP
+*/
+
 * {
     padding: 0px;
     margin: 0px;
@@ -16,20 +20,64 @@ body {
 }
 
 /*
+    ELEMENT PROP
+*/
+h1 {
+    font-size: 3.2rem;
+    font-width: 700;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-width: 700;
+    line-height: 1.5rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    font-width: 500;
+    line-height: 1.5rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+p {
+
+}
+
+ol {
+
+}
+
+li {
+    margin-left: 3rem;
+    line-height: 1.5rem;
+}
+
+/*
     CONTAINERS
 */
 
 .container {
-    max-width: 120rem;
+    max-width: 140rem;
     margin: 0 auto;
     padding: 3.2rem;
 }
 
 .lesson-container {
 
+
 }
 
 .results-container {
+    background-color: #999999;
+    max-width: 80rem;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
@@ -41,7 +89,12 @@ body {
  */
 
 .monster-card {
+    background-color: lightblue;
+    max-width: 15rem;
+}
 
+.monster-card h3 {
+    margin-left: 1rem;
 }
 
 .monster-name {
@@ -55,8 +108,15 @@ body {
 
 .monster-card table th {
     color: indianred;
+    text-align: left;
+    padding-left: 0.5rem;
+    line-height: 1.3rem;
 }
 
+.monster-card table td {
+    padding-left: 0.5rem;
+    line-height: 1.3rem;
+}
 
 
 

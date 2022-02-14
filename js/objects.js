@@ -1,6 +1,6 @@
 (function() {
     "use strict";
-
+console.log('-------------------------------------- Q 01')
     /**
      * 1. TODO:
      * Create an object with firstName and lastName properties that are strings
@@ -19,6 +19,8 @@
     console.log(person.firstName);
     console.log(person.lastName);
 
+    console.log('-------------------------------------- Q 02')
+
     /**
      * 2. TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -34,6 +36,9 @@
     }
 
     person.sayHello();
+
+
+    console.log('-------------------------------------- Q 03')
 
     /** 3. TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -55,9 +60,23 @@
         {name: 'George', amount: 320}
     ];
 
-    shoppers.forEach(function (shopper){                //   GO BACK TO THIS
-        console.log(shopper.name, shopper.amount);
+    function checkForDiscount(currentTotal, name) {
+        if(currentTotal > 200) return name
+            + ' will get a 12% discount.  His total was $'
+            + (currentTotal.toFixed(2)) + '.  His total now is $'
+            + ((currentTotal - (currentTotal * 0.12)).toFixed(2));
+        else return name
+            + ' will not get a discount.  His total remains $'
+            + (currentTotal.toFixed(2));
+    }
+
+    shoppers.forEach(function (shopper){
+        console.log(checkForDiscount(shopper.amount, shopper.name))
     });
+
+
+
+    console.log('-------------------------------------- Q 04')
 
     /** 4. TODO:
      * Create an array of objects that represent books and store it in a
@@ -132,6 +151,8 @@
     console.log(books[4].author.firstName)
     console.log(books[4].author.lastName)
 
+    console.log('-------------------------------------- Q 05')
+
     /**
      * 5. TODO:
      * Loop through the books array and output the following information about
@@ -163,6 +184,8 @@
         console.log("Author: " + book.author.firstName + " " + book.author.lastName);
         console.log("---")
     })
+
+    console.log('-------------------------------------- BONUS')
 
     /**
      * Bonus:
