@@ -51,13 +51,19 @@ p {
 
 }
 
-ol {
+ul {
+    margin-left: 3rem;
+    line-height: 2.5rem;
+}
 
+
+ol {
+    margin-left: 4.5rem;
+    line-height: 2.5rem;
 }
 
 li {
-    margin-left: 3rem;
-    line-height: 1.5rem;
+
 }
 
 /*
@@ -82,6 +88,14 @@ li {
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
 }
+
+/*
+    MANIPULATION
+ */
+.hide {
+    display: none;
+}
+
 
 
 /*

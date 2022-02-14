@@ -178,11 +178,20 @@ console.log('-------------------------------------- Q 01')
      *      ...
      */
 
-    books.forEach(function (book){
-        console.log("Book # " + books.indexOf(book));           //   <- This took some time to figure out!!!
-        console.log("Title: " + book.title);
-        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
-        console.log("---")
+    // books.forEach(function (book){                     //   NOTE, console.log could us '\n' to break lines
+    //     console.log("Book # " + books.indexOf(book));  //   <- This took some time to figure out!!!
+    //     console.log("Title: " + book.title);
+    //     console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    //     console.log("---")
+    // })
+
+    books.forEach(function(book){
+        console.log(
+            "Book # " + (books.indexOf(book) + 1) + '\n' +
+            "Title: " + book.title + '\n' +
+            "Author: " + book.author.firstName + " " + book.author.lastName + '\n' +
+            "---"
+        )
     })
 
     console.log('-------------------------------------- BONUS')
