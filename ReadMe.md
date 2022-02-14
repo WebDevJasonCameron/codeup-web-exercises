@@ -7,6 +7,12 @@ Second, we walked through the Obj Ex during the morning.  I had not completed pr
 
 Third, I also worked on SB05.  First I decided to clean up the JS format.  Second, I added more CSS.  Third, I update the HTML bullet points.
 
+## 1550 | HTML
+Working through the intro to HTML Ls.  Completed both parts of Ex.  However, I am not sure if the second part was done correctly.  It sounds like they want to use a table.  I used div tags inside a main element.  The look is correct.  The semantics are not the same. 
+
+## 1700 | HTML Forms
+
+
 
 ---
 
