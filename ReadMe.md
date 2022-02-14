@@ -1,5 +1,20 @@
 # Intro To Front End
 
+## 2022 02 13 | Sort Array of OBJ
+Small victories.  Today I was able to check that I could manipulate the CSS of the data being placed in the web page with JS.  I also found out how to sort an array of objects by selecting a specific element.  As such, I can include more objects in the array and then call the sort function to ensure they all stay alphabetized.  Interestingly, this is not as obvious to do as simply sorting an array of elements.  It can be even more complicated when you're trying to sort strings from an object's attributes.  For example, I'm building an array of "monster cards" that have the name of the monster (along with several attributes).  To sort the array, I need to:
+```javascript
+    function sortMonsterList(){
+        monstersList.sort(function(a, b){
+            if(a.mName.toLowerCase() < b.mName.toLowerCase()) return -1;
+            if(a.mName.toLowerCase() > b.mName.toLowerCase()) return 1;
+            return 0;
+        });
+    }
+
+```
+
+---
+
 ## 2022 02 12 | Sandbox 5
 Reworking much of the work done in Sandbox 3.  This time I'm wanting to use objects of monster data.  This should help me create cards that can be filtered by the additional categories. It also gives me the ability to practice creating a better connection to the HTML doc.   
 

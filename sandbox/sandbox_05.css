@@ -1,0 +1,73 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #555;
+    line-height: 1;
+    font-width: 400;
+}
+
+/*
+    CONTAINERS
+*/
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3.2rem;
+}
+
+.lesson-container {
+
+}
+
+.results-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/*
+    MONSTER CARDS (MC)
+ */
+
+.monster-card {
+
+}
+
+.monster-name {
+
+}
+
+/* MC Table*/
+.monster-card table{
+    background-color: pink;
+}
+
+.monster-card table th {
+    color: indianred;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
