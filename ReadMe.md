@@ -3,6 +3,8 @@
 ## 2022 02 15 | Form and CSS
 Completed the Forms Ex, second part.  Also completed the Forms Ls.  Some things to remember: need to have a name in the input element. It can be sent out only if it has a name.  I also went through the CSS Ls and added terms to the study flash cards (quizlet).  Afterwards, I completed the first part of the CSS Ex.
 
+## 1430 | Forms and CSS cont
+The class is continuing with the form Ex.  Learned that keeping labels tied to radio and checkbox input elements gives people with difficulty selecting small areas on their screen a wider hit area.  
 
 ---
 
