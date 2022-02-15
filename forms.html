@@ -9,25 +9,70 @@
     <h1>Register With Us</h1>
     <form method="POST" action="https://request-inspector.glitch.me/">
         <section id="first">
-            <label for="email">Email</label><br>
-            <input type="email" id="email"><br>
+            <label for="email">Email</label><br>                                <!--Must have a name, or it will not-->
+            <input  name="email" type="email" id="email"><br>                   <!--be sent-->
 
             <label for="password">Password</label><br>
-            <input type="password" id="password"><br>
+            <input name="password" type="password" id="password"><br>
 
             <label for="bio">Please Provide Your Bio</label><br>
             <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
         </section>
-        <section id="second">
-            <label for="from-where">How did you hear about us?</label><br>
-            <input type="radio" name="from-where" id="from-where" value=""><br>
+        <hr>
+        <section id="radio-selection">
+            <p>How did you hear about us?</p>
+
+            <input type="radio" name="from-where" id="billboard" value="billboard">
+            <label for="billboard">billboard</label><br>
+
+            <input type="radio" name="from-where" id="radio-advertisement"  value="radio-advertisement">
+            <label for="radio-advertisement">Radio Advertisement</label><br>
+
+
+            <input type="radio" name="from-where" id="internet-advertisement" value="internet-advertisement">
+            <label for="internet-advertisement">Internet Advertisement</label><br>
+
+
+            <input type="radio" name="from-where" id="other" value="other">
+            <label for="other">other</label><br>
+        </section>
+        <br>
+        <hr>
+        <section id="check-selection">
+            <p>How did you hear about us?</p>
+
+            <input type="checkbox" name="from-where" id="billboard-1" value="billboard">
+            <label for="billboard-1">billboard</label><br>
+
+            <input type="checkbox" name="from-where" id="radio-advertisement-1"  value="radio-advertisement">
+            <label for="radio-advertisement-1">Radio Advertisement</label><br>
+
+
+            <input type="checkbox" name="from-where" id="internet-advertisement-1" value="internet-advertisement">
+            <label for="internet-advertisement-1">Internet Advertisement</label><br>
+
+
+            <input type="checkbox" name="from-where" id="other-1" value="other">
+            <label for="other-1">other</label><br>
 
         </section>
+        <br>
+        <hr>
+        <section id="selects-selection">
+            <label for="users-browser">What browser do you use?</label>
+            <select name="users-browser" id="users-browser">
+                <option value="safari">Safari</option>
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+                <option value="edge">Edge</option>
+            </select>
+        </section>
+        <br>
+        <hr>
+        <button type="submit">Submit</button>
     </form>
-    <section>
 
-
-
-    </section>
+<!--    BONUS:  Link is broken... and I'm not sure about signing up for an email service (I get enough spam as it
+        is (>.<)*  -->
 </body>
 </html>
