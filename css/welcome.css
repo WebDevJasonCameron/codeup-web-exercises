@@ -1,0 +1,79 @@
+/* 2. Center the main heading.*/
+h1 {
+    text-align: center;
+}
+
+/* 3. Add a style to change the color of the headers on your page and make them underlined*/
+h1, h2, h3 {
+    color: #032c08;
+    text-decoration: underline;
+}
+
+/* 4. Add a style to change the background color of the page.*/
+body {
+    background-color: #f5e5d0;
+}
+
+
+/* 5. Add a style to add a background image to your background.
+      Search how to manipulate the position, sizing of this background
+      image*/
+main {
+    background-image: url("../img/welcome_img_01.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 5px;
+}
+
+/* 6. Add a style to change the list-style to something other than the
+      default bullet.*/
+li {
+    list-style: circle;
+}
+
+/* 7. Add a style to change the font for the entire page. Use google
+      fonts if you would like.*/
+html {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* 8. Add a style to change the table, table cells td and rows tr
+      padding and font sizes.*/
+table {
+    padding: 50px;
+}
+table th {
+    font-size: 25px;
+    font-width: 700;
+}
+table tr {
+    padding: 40px;
+}
+table tr:nth-child(even) {
+    background-color: #999999;
+    color: #eeeeee;
+}
+
+/* 9. Add a style to alter the anchor tags and its different states.
+      (e.g. link, visited, hover and active).*/
+
+a:link, a:active, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* 10. Continue experimenting with styles to increase the visual
+       appeal of the page.*/
+
+
+
+img {
+    border-radius: 20px;
+}
+
