@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/MoonConceptSmallPatch01.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Forms Lecture</title>
+</head>
+<body>
+    <h1>Forms Lecture</h1>
+    <form action="https://request-inspector.glitch.me" method="get">
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required placeholder="hello">
+        <br>
+        <br>
+        <label for="streetAddress">Street Address:</label>
+        <input type="text" name="streetAddress" id="streetAddress">
+        <br>
+        <br>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+        <br>
+        <br>
+
+
+        h4>Choose your extras:</h4>
+        <input type="checkbox" name="extras" value="Provolone"><label>Provolone</label><br>
+        <input type="checkbox" name="extras" value="Cheddar"><label>Cheddar</label><br>
+        <input type="checkbox" name="extras" value="American Cheese"><label>American Cheese</label><br>
+        <input type="checkbox" name="extras" value="Swiss"><label>Swiss Cheese</label><br>
+        <input type="checkbox" name="extras" value="Pepper Jack"><label>Pepper Jack</label><br>
+        <input type="checkbox" name="extras" value="Jalapenos"><label>Sliced Jalapenos</label><br>
+        <input type="checkbox" name="extras" value="Mushrooms"><label>Sauteed Mushrooms</label><br>
+        <input type="checkbox" name="extras" value="Onions"><label>Grilled Onions</label><br>
+        <input type="checkbox" name="extras" value="Bacon"><label>Extra Bacon</label><br>
+        <input type="checkbox" name="extras" value="Guacamole"><label>Guacamole</label><br>
+        11:42
+        <h4>Choose your destination:</h4>
+        <select name="destination">
+            <option value="Hawaii">Hawaii</option>
+            <option value="Yucatan">Yucatan</option>
+            <option value="Greece">Greece</option>
+            <option value="Florida">Florida</option>
+            <option value="California">California</option>
+        </select>
+
+        <h4>Please Leave Your Comments:</h4>
+        <textarea name="comments" id="comments" cols="48" rows="10"></textarea><br>
+
+        <h4>Please Leave Your Comments:</h4>
+        <textarea name="comments" id="comments1" cols="48" rows="10"></textarea><br>
+        <h4>Assorted inputs</h4>
+        <input type="date" name="date"><br>
+        <!-- date can take min and max attributes -->
+        <input type="color" name="pickColor"><br>
+        <input type="range" name="evaluation"><br>
+        <!-- range can take min, max, and step attributes -->
+        <input type="number" name="number"><br>
+        <!-- number can take min, max, and step attributes -->
+        <!-- email, tel, and url inputs are predominantly mobile-oriented -->
+
+    <button type="submit">submit</button>
+    </form>
+
+
+</body>
+</html>
