@@ -41,18 +41,22 @@ If jbomb were not an admin, the message should display...
 ‘User jbomb is not an admin and can be reached at john@email.com’
 */
 
-let user = {
-
-    uName: 'Calvin',
-    uEmail: 'Calvin@hobbes.com',
-    uAdmin: false,
-
-    createUserMsg: function (){
-        if(!this.uAdmin)return 'User ' + this.uName + ' is not an admin and can be reached at ' + this.uEmail;
-        return 'User ' + this.uName + ' is an admin and can be reached at ' + this.uEmail;
-    }
-}
-
-
-
-console.log(user.createUserMsg());
+// let user = {
+//
+//     uName: 'Calvin',
+//     uEmail: 'Calvin@hobbes.com',
+//     uAdmin: false,
+//
+//     createUserMsg: function (){
+//         if(!this.uAdmin)return 'User ' + this.uName + ' is not an admin and can be reached at ' + this.uEmail;
+//         return 'User ' + this.uName + ' is an admin and can be reached at ' + this.uEmail;
+//     }
+// }
+//
+//
+//
+// console.log(user.createUserMsg());
+/**
+ * 2022 02 15
+ * email
+ */

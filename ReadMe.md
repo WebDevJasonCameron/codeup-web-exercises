@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 02 15 | Warm Up
+
+
+
+---
+
 ## 2022 02 14 | Obj Ex
 First, we completed a warmup ex.  To recap, this called for an obj to be created.  Then, we were asked to create a function that gives an either/or response based on what the obj data.  I got it to work with caveats.  I used the ```.this``` key word with a function outside th obj.  However, this breaks when I tried to use the ```argument.objElement```.  I really don't know as to why at the moment. !!! FIXED !!!
 
@@ -11,7 +17,7 @@ Third, I also worked on SB05.  First I decided to clean up the JS format.  Secon
 Working through the intro to HTML Ls.  Completed both parts of Ex.  However, I am not sure if the second part was done correctly.  It sounds like they want to use a table.  I used div tags inside a main element.  The look is correct.  The semantics are not the same. 
 
 ## 1700 | HTML Forms
-
+I started working on the forms Ls and Ex.  I will need to place a lot of info in the card deck for future study.  The words seem simple, but I think I could do a pretty good job at still getting them confused.  There is a lot to forms that should help in work.  It might be dry and a little unintuitive, but it is critical to fully grasp its implementation.  
 
 
 ---
