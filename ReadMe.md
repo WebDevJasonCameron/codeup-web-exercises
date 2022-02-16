@@ -6,6 +6,9 @@ Completed the Forms Ex, second part.  Also completed the Forms Ls.  Some things 
 ## 1430 | Forms and CSS cont
 The class is continuing with the form Ex.  Learned that keeping labels tied to radio and checkbox input elements gives people with difficulty selecting small areas on their screen a wider hit area.  
 
+## 2215 | Fixed Login
+Fixed the login CSS Ex.  It was a little difficult.  Using the ```calc(100% - 5px)``` allowed me to reduce the size by 5 px.  This accounts for the two pixel border.  Two on one side and two on the other.  At total of four... but somehow five makes it look just right.
+
 ---
 
 ## 2022 02 14 | Obj Ex
