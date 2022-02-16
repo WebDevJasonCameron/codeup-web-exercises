@@ -22,6 +22,7 @@ main {
     background-image: url("../img/welcome_img_01.png");
     background-size: 100%;
     background-repeat: no-repeat;
+    /*background-attachment: fixed;*/       /* parallax */
     background-position: left;
     padding: 5px;
 }
