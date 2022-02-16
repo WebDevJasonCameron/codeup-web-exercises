@@ -6,6 +6,9 @@ Starting the CSS Intro in class.  Also, working on the SB05.  Fixing the filter.
 ## 1140 | CSS Float
 Started the CSS Floats and Positioning Ls and Ex.  This one is hard.  I think it is harder because we need to work with the code that is supplied.  This is a lot different because you need to read someone else's code and make decisions based on someone else's organization.  This is great (hard, but great) because we will be working with others.  It is a challenge I highly appreciate.  
 
+## 1330 | CSS F&P Ex
+Completed the CSS F&P Ex.  This was challenging.  This is partially because I had problems understanding what was being asked in the instructions.  I might have also worked the code to fit the way I understand how CSS float works.  I was able to include absolute and relative portioning.  We also used the ```calc(percentage - pixels)``` to ensure the floats would work.  Best practice for this (I think) is to through a color in the background.  When you see actual box that is being manipulated, you can open up inspect window and select the element.  Inside the CSS (Style) window, you can increase/decrease the number of pixels to see what should fit the best.  
+
 
 ---
 

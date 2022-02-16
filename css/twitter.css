@@ -29,10 +29,12 @@ a {
     background: var(--light-bg);
     padding: 1.5em;
     width: 100%;
+    position: fixed;
+    z-index: 1000;              /* <--4 */
 }
-/* 1. Each nav-item should display inline block and have a padding of 1.5em. Use
-      the class top-nav to make the navigation fixed, it also needs to use 100%
-      of the width.*/
+/* 1. Each nav-item should display inline block and have a padding of 1.5em.
+      - Use the class top-nav to make the navigation fixed, it also needs to
+        use 100% of the width.*/
 .nav-item {
     display: inline-block;
     padding: 1.5em;
@@ -52,16 +54,61 @@ a {
 }
 .profile {
     background: var(--light-bg);
-    position: relative;                 /* <--2 */
+    height: 80px;
+    position: relative;                 /* <--also 2 */
 }
 /* 2. Use absolute positioning to center the avatar, you'll need to adjust the top value.
       Use the class profile-image for this purpose.
 
 */
-profile-image{
+.profile-image {
     position: absolute;
-    top: 10000px;
+    top: -35px;
+    left: 5px;
 }
+/* 3. Give a height of 80px to the profile class.
+      - To which side should we float the .profile-form?
+      - One way to center text vertically is by changing its line-height. If it matches the height
+        of the container the text will be centered vertically. Center the button inside the
+        .profile-form element*/
+.profile-form {
+    float: right;
+    line-height: 80px;
+}
+
+/* 5. profile-details, timeline, and who-to-follow should be floating elements.
+      - They should use 25%, 50% and 25% of the width respectively.
+      - These elements should have a margin of .5em to both sides (0 for top and bottom).
+      - Since we have a margin you will need to use calc to subtract the margin to the
+        percents of the width property.*/
+
+.profile-details, .timeline, .who-to-follow {
+    margin: 0 .5em;
+    float: left;
+}
+
+.profile-details {
+    width: calc(25% - 16px);
+}
+
+/* 10. Finally, remove the bullets and the padding from profile-items.
+      - Add a margin of .5em to the profile-entry class.*/
+.profile-items {
+    list-style: none;
+    padding: 0;
+}
+.profile-entry {
+    margin: 0.5em;
+}
+
+.timeline {
+    width: calc(50% - 16px);
+}
+
+.who-to-follow {
+    width: calc(25% - 16px);
+}
+
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);
@@ -69,6 +116,7 @@ profile-image{
     font-weight: bold;
     padding: 8px;
     border-radius: 5px;
+    margin-top: 15px;                                       /* <--CHEATER!!!!!!!!!!! 😅*/
 }
 .btn-large {
     font-size: 1.3em;
@@ -84,3 +132,40 @@ profile-image{
 .text-muted {
     color: var(--main-link-color);
 }
+
+/* 6. Use the container to add some space between the avatar and the new 3 columns (2em).*/
+.container {
+    padding: 2em;
+}
+
+/* 7. The media selector should use 100% of the width of its container.
+      - Its background color should be light-bg.
+      - It should have a border at the bottom of 1px with color --separator-color.
+      - It must have a padding of .5em.
+      - Use the property overflow since it will contain only floating elements.*/
+.media {
+    background-color: var(--light-bg);
+    width: 100%;
+    border-bottom: solid 1px var(--separator-color);
+    padding: .5em;
+    overflow: hidden;
+}
+
+/* 8. The media-image maximum width should be 50px ...
+      - ...and it should float.
+      - It must have a margin top of 1.33em.*/
+.media-image {
+    max-width: 50px;
+    float: left;
+    margin-top: 1.33em;;
+}
+
+/* 9. The media-body should float too.
+      - Its width will be 100%.
+      - We need to use calc to subtract the width of the image.*/
+.media-body {
+    float: right;
+    width: calc(100% - 55px);
+}
+
+
