@@ -3,6 +3,9 @@
 ## 2022 02 16 | Intro to CSS
 Starting the CSS Intro in class.  Also, working on the SB05.  Fixing the filter.  I need to set up a check flag feature that will help me keep from adding additional cards that I did not want.  [UPDATE] As it goes, I both fixed and broke the main filter.  Everything will filter as long we select a type.  However, if I select size, align, or legend, it all breaks (>.<).  I will continue working on this after class.
 
+## 1140 | CSS Float
+Started the CSS Floats and Positioning Ls and Ex.  This one is hard.  I think it is harder because we need to work with the code that is supplied.  This is a lot different because you need to read someone else's code and make decisions based on someone else's organization.  This is great (hard, but great) because we will be working with others.  It is a challenge I highly appreciate.  
+
 
 ---
 
