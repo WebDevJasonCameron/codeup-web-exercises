@@ -68,8 +68,8 @@ sortMonsterList();
 // 5. Function to grab card information using the method to provide a string of HTML data with array info
 function getMonsterCardListData() {
     let output = '';
-    monstersList.forEach(function (monster) {
-        output = output + monster.makeCard();
+    monstersList.forEach(function (monster) {                           //   <--!!! This will be replaced with
+        output = output + monster.makeCard();                           // filterMonsterList
     });
     return output;
 }
@@ -87,10 +87,12 @@ updateCards();
 /**
  *          Creating Filtering Functions
  */
+// 0. Create function to check the flag a monster
+
 // 1. Create a filter by type function that finds objects with a specific type criteria
 function filterByType(crit){
                                                                 //   NOTE: I removed the hide all feature in all filters
-    monstersList.forEach(function (monster){
+    monstersList.forEach(function (monster){                    //   <--!!
         if(monster.mType === crit) console.log(monster.mName);
         if(monster.mType === crit) monster.flag = 'show'
     })
@@ -137,11 +139,13 @@ function filterByLegendary(crit){
 // 5. Set up Temp vars to represent the inputs from a form
 let mTypeSelection = 'humanoid';
 let mSizeSelection = 'all';
-let mAlignmentSelection = 'chaotic evil';
+let mAlignmentSelection = 'neutral good';
 let mLegendarySelection = 'all';
 
 // 6. Refactor previous filter functions and combine into one function with a series of filters
 function filterCards(type, size, align, legend){
+    let tempFilter
+
     if(type !== 'all' || size !== 'all'                         //   Must hide all flags is one filter is being
         || align !== 'all' || legend !== 'all') {               // called
         monstersList.forEach(function (monster){
@@ -158,14 +162,14 @@ function filterCards(type, size, align, legend){
         filterByType(type);
     }
     if (size !== 'all') {
-        filterBySize(size);
+            filterBySize(size);
         console.log('made it to size');
     }
     if (align !== 'all') {
-        filterByAlignment(align);
+            filterByAlignment(align);
         console.log('made it to align');
     }
-    if (legend !== 'all') {
+    if (size !== 'all') {
         filterByLegendary(legend);
         console.log('made it to legend');
     }

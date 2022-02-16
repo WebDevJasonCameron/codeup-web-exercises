@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 02 16 | Intro to CSS
+Starting the CSS Intro in class.  Also, working on the SB05.  Fixing the filter.  I need to set up a check flag feature that will help me keep from adding additional cards that I did not want.
+
+
+---
+
 ## 2022 02 15 | Form and CSS
 Completed the Forms Ex, second part.  Also completed the Forms Ls.  Some things to remember: need to have a name in the input element. It can be sent out only if it has a name.  I also went through the CSS Ls and added terms to the study flash cards (quizlet).  Afterwards, I completed the first part of the CSS Ex.
 

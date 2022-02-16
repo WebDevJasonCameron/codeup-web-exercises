@@ -57,6 +57,33 @@ If jbomb were not an admin, the message should display...
 //
 // console.log(user.createUserMsg());
 /**
- * 2022 02 15
+ * 2022 02 16
  * email
  */
+// You are given the length and width of a 40sided polygon.  The polygon can either be a rectangle square or a square.  If it is a square, return its area.  if it is a rectangle, return its parameter
+function squareOrRect(l, w){
+    if(isNaN((parseInt(l))) || isNaN(parseInt(w))) return false;
+    if(l === w) return l * w;
+    return (l*2) + (w*2);
+}
+
+console.log('the square\'s area is ' + squareOrRect(4, 4));
+console.log('the rectangle\'s parameter is ' +squareOrRect(6, 4));
+console.log(squareOrRect(1, "l"));
+console.log(squareOrRect(1, "true"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
