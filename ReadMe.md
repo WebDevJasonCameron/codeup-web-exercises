@@ -1,7 +1,7 @@
 # Intro To Front End
 
 ## 2022 02 16 | Intro to CSS
-Starting the CSS Intro in class.  Also, working on the SB05.  Fixing the filter.  I need to set up a check flag feature that will help me keep from adding additional cards that I did not want.
+Starting the CSS Intro in class.  Also, working on the SB05.  Fixing the filter.  I need to set up a check flag feature that will help me keep from adding additional cards that I did not want.  [UPDATE] As it goes, I both fixed and broke the main filter.  Everything will filter as long we select a type.  However, if I select size, align, or legend, it all breaks (>.<).  I will continue working on this after class.
 
 
 ---

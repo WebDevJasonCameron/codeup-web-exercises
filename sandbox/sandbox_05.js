@@ -88,11 +88,16 @@ updateCards();
  *          Creating Filtering Functions
  */
 // 0. Create function to check the flag a monster
+function checkDisplayFlag(currentMonster){
+    console.log('current monster show\'s ' + currentMonster);
+    return currentMonster === 'show'
+
+}
 
 // 1. Create a filter by type function that finds objects with a specific type criteria
 function filterByType(crit){
                                                                 //   NOTE: I removed the hide all feature in all filters
-    monstersList.forEach(function (monster){                    //   <--!!
+    monstersList.forEach(function (monster){
         if(monster.mType === crit) console.log(monster.mName);
         if(monster.mType === crit) monster.flag = 'show'
     })
@@ -104,8 +109,10 @@ function filterByType(crit){
 function filterBySize(crit){
 
     monstersList.forEach(function (monster){
-        if(monster.mSize === crit) console.log(monster.mSize);
-        if(monster.mSize === crit) monster.flag = 'show'
+        if(checkDisplayFlag(!monster.flag)) {
+            if (monster.mSize === crit) console.log(monster.mSize);
+            if (monster.mSize === crit) monster.flag = 'show'
+        }
     })
 
     updateCards();
@@ -115,8 +122,10 @@ function filterBySize(crit){
 function filterByAlignment(crit){
 
     monstersList.forEach(function (monster){
-        if(monster.alignment === crit) console.log(monster.alignment);
-        if(monster.alignment === crit) monster.flag = 'show'
+        if(checkDisplayFlag(!monster.flag)) {
+            if (monster.alignment === crit) console.log(monster.alignment);
+            if (monster.alignment === crit) monster.flag = 'show'
+        }
     })
 
     updateCards();
@@ -127,19 +136,19 @@ function filterByAlignment(crit){
 function filterByLegendary(crit){
 
     monstersList.forEach(function (monster){
-        if(monster.legendary === crit) console.log(monster.legendary);
-        if(monster.legendary === crit) monster.flag = 'show'
+        if(checkDisplayFlag(!monster.flag)) {
+            if (monster.legendary === crit) console.log(monster.legendary);
+            if (monster.legendary === crit) monster.flag = 'show'
+        }
     })
 
     updateCards();
 }
 
-// filterByLegendary(true);
-
 // 5. Set up Temp vars to represent the inputs from a form
-let mTypeSelection = 'humanoid';
+let mTypeSelection = 'all';
 let mSizeSelection = 'all';
-let mAlignmentSelection = 'neutral good';
+let mAlignmentSelection = 'all';
 let mLegendarySelection = 'all';
 
 // 6. Refactor previous filter functions and combine into one function with a series of filters
@@ -177,6 +186,9 @@ function filterCards(type, size, align, legend){
 
 }
 
-filterCards(mTypeSelection,mSizeSelection,mAlignmentSelection,mLegendarySelection);
+filterCards(mTypeSelection,                                 //   !!! Actually filters and displays my cards!!! LOL
+    mSizeSelection,                                         // 😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀
+    mAlignmentSelection,
+    mLegendarySelection);
 
 
