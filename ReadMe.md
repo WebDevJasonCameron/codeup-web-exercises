@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 02 17 | CSS
+
+
+
+--- 
+
 ## 2022 02 16 | Intro to CSS
 Starting the CSS Intro in class.  Also, working on the SB05.  Fixing the filter.  I need to set up a check flag feature that will help me keep from adding additional cards that I did not want.  [UPDATE] As it goes, I both fixed and broke the main filter.  Everything will filter as long we select a type.  However, if I select size, align, or legend, it all breaks (>.<).  I will continue working on this after class.
 
@@ -8,6 +14,9 @@ Started the CSS Floats and Positioning Ls and Ex.  This one is hard.  I think it
 
 ## 1330 | CSS F&P Ex
 Completed the CSS F&P Ex.  This was challenging.  This is partially because I had problems understanding what was being asked in the instructions.  I might have also worked the code to fit the way I understand how CSS float works.  I was able to include absolute and relative portioning.  We also used the ```calc(percentage - pixels)``` to ensure the floats would work.  Best practice for this (I think) is to through a color in the background.  When you see actual box that is being manipulated, you can open up inspect window and select the element.  Inside the CSS (Style) window, you can increase/decrease the number of pixels to see what should fit the best.  
+
+## 2150 | CSS FB Ex
+Alright, this Ex is really hard.  This Ex requires completing a series of CSS FB requirements.  It is unlike any website you wat to have.  However, it looks like a blueprint of a website construction.  It also works like riddle. 
 
 
 ---
