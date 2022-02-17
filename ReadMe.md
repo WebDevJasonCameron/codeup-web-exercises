@@ -7,6 +7,9 @@ Additionally: I worked on SB05.  I added the form elements to help change the pa
 ### 1430 | CSS Bonus
 We have bonus material for CSS.  This can be found in an additional repo.  I will set up a readme.md file in that repo to discus what I've learned.  Unfortunately, I'll need to wait until I've completed the assignments in this part of the lesson plan.  Afterwards, I'll take on this sweet challenge (^^).
 
+### 1630 | CSS Flexbox Practice Ex
+I 'completed' two of the three flexbox practice ex.  I do not know if they made a difference.  I am definitely going to need to pay attention to the lecture when it comes.
+
 
 --- 
 
