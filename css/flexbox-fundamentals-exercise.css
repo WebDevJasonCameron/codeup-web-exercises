@@ -37,10 +37,13 @@ h2, h3 {
     /* enter needed declarations here */
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 section {
     /* enter needed declarations here */
+    display: flex;
+    justify-content: flex-end;
 }
 
 section:nth-of-type(1) {
@@ -95,11 +98,6 @@ section:nth-of-type(3) h3 {
     align-self: center;
 }
 
-section:nth-of-type(3) .orange-circle {                             /* <-- Added the whole thing*/
-    display: flex;
-    align-self: end;
-}
-
 .orange-circle {
     background: orange;
     width: 2em;
@@ -143,7 +141,7 @@ section:nth-of-type(6) {
     height: 14em;
     /* enter needed declarations here */
     display: flex;
-    flex-width: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
