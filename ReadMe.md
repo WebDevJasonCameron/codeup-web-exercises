@@ -1,7 +1,11 @@
 # Intro To Front End
 
 ## 2022 02 17 | CSS
+Completed warm up.  I should probably check to see if it can be mod.  Class is discussing Box Modelling for CSS.  I completed the Flexbox Ex.  It was really difficult.  Apparently, you cannot ```justify-self``` they way I would expect you to be able to do.  Instead, ```flex-grow``` helped finish aligning the ```h3``` header text the way I needed it to be done.  
+Additionally: I worked on SB05.  I added the form elements to help change the page.  This should let me test the filter without needing to type in different critieria.  It really looks like it is nearly complete (without glossy work).  
 
+### 1430 | CSS Bonus
+We have bonus material for CSS.  This can be found in an additional repo.  I will set up a readme.md file in that repo to discus what I've learned.  Unfortunately, I'll need to wait until I've completed the assignments in this part of the lesson plan.  Afterwards, I'll take on this sweet challenge (^^).
 
 
 --- 
