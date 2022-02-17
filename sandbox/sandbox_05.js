@@ -29,6 +29,11 @@ function addMonsterObj(mName, mType, mSize, alignment, legendary){
                 '</table>' +
                 '</div>';
             return cardTags;
+        },
+
+        checkFlag: function (){
+            if(this.flag === 'show') return true;
+            else return false;
         }
     }
     monstersList.push(monster);
@@ -87,48 +92,37 @@ updateCards();
 /**
  *          Creating Filtering Functions
  */
-// 0. Create function to check the flag a monster
-function checkDisplayFlag(currentMonster){
-    console.log('current monster show\'s ' + currentMonster);
-    return currentMonster === 'show'
-
-}
-
 // 1. Create a filter by type function that finds objects with a specific type criteria
 function filterByType(crit){
-                                                                //   NOTE: I removed the hide all feature in all filters
-    monstersList.forEach(function (monster){
-        if(monster.mType === crit) console.log(monster.mName);
-        if(monster.mType === crit) monster.flag = 'show'
-    })
 
-    updateCards();
+    monstersList.forEach(function (monster){
+        if(!monster.checkFlag()){
+            if(monster.mType === crit) console.log(monster.mName);
+            if(monster.mType === crit) monster.flag = 'show'
+        }
+    })
 }
 
 // 2. Create filter by size function that finds objects with a specific size criteria
 function filterBySize(crit){
 
     monstersList.forEach(function (monster){
-        if(checkDisplayFlag(!monster.flag)) {
+        if(monster.checkFlag()) {
             if (monster.mSize === crit) console.log(monster.mSize);
             if (monster.mSize === crit) monster.flag = 'show'
         }
     })
-
-    updateCards();
 }
 
 // 3.  Create filter by alignment function that finds objects with an alignment size criteria
 function filterByAlignment(crit){
 
     monstersList.forEach(function (monster){
-        if(checkDisplayFlag(!monster.flag)) {
+        if(monster.checkFlag()) {
             if (monster.alignment === crit) console.log(monster.alignment);
             if (monster.alignment === crit) monster.flag = 'show'
         }
     })
-
-    updateCards();
 }
 
 
@@ -136,24 +130,21 @@ function filterByAlignment(crit){
 function filterByLegendary(crit){
 
     monstersList.forEach(function (monster){
-        if(checkDisplayFlag(!monster.flag)) {
+        if(monster.checkFlag()) {
             if (monster.legendary === crit) console.log(monster.legendary);
             if (monster.legendary === crit) monster.flag = 'show'
         }
     })
-
-    updateCards();
 }
 
 // 5. Set up Temp vars to represent the inputs from a form
-let mTypeSelection = 'all';
-let mSizeSelection = 'all';
-let mAlignmentSelection = 'all';
-let mLegendarySelection = 'all';
+let mTypeSelection = document.getElementById('mType-input').value.toString();
+let mSizeSelection = document.getElementById('mSize-input').value.toString();
+let mAlignmentSelection = document.getElementById('mAlign-input').value.toString();
+let mLegendarySelection = document.getElementById('mLegend-input').value.toString();
 
 // 6. Refactor previous filter functions and combine into one function with a series of filters
 function filterCards(type, size, align, legend){
-    let tempFilter
 
     if(type !== 'all' || size !== 'all'                         //   Must hide all flags is one filter is being
         || align !== 'all' || legend !== 'all') {               // called
@@ -183,12 +174,59 @@ function filterCards(type, size, align, legend){
         console.log('made it to legend');
     }
 
+    updateCards();
+}
+
+filterCards(mTypeSelection,
+    mSizeSelection,
+    mAlignmentSelection,
+    mLegendarySelection);
+
+/**
+ * Set up Form to keep checking
+ */
+// Done
+
+
+/**
+ * Connect JS with HTML
+ */
+// 1. Set up functions to catch selections from input
+function setMTypeSelection(){
+    mTypeSelection = document.getElementById('mType-input').value.toString();
+    filterCards(mTypeSelection, mSizeSelection, mAlignmentSelection, mLegendarySelection);
+}
+function setMSizeSelection(){
+    mSizeSelection = document.getElementById('mSize-input').value.toString();
+    filterCards(mTypeSelection, mSizeSelection, mAlignmentSelection, mLegendarySelection);
+
+}
+function setMAlignmentSelection(){
+    mAlignmentSelection = document.getElementById('mAlign-input').value.toString();
+    filterCards(mTypeSelection, mSizeSelection, mAlignmentSelection, mLegendarySelection);
+
+}
+function setMLegendarySelection(){
+    mLegendarySelection = document.getElementById('mLegend-input').value.toString();
+    filterCards(mTypeSelection, mSizeSelection, mAlignmentSelection, mLegendarySelection);
 
 }
 
-filterCards(mTypeSelection,                                 //   !!! Actually filters and displays my cards!!! LOL
-    mSizeSelection,                                         // 😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀
-    mAlignmentSelection,
-    mLegendarySelection);
+console.log(setMTypeSelection());
+console.log(setMSizeSelection());
+console.log(setMAlignmentSelection());
+console.log(setMLegendarySelection());
+
+// 2. Set up Vars to related to the input elements
+let mTypeInput = document.getElementById('mType-input');
+let mSizeInput = document.getElementById('mSize-input');
+let mAlignInput = document.getElementById('mAlign-input');
+let mLegendInput = document.getElementById('mLegend-input');
+
+// 3. Set up Event listeners
+mTypeInput.addEventListener('change', setMTypeSelection);
+mSizeInput.addEventListener('change', setMSizeSelection);
+mAlignInput.addEventListener('change', setMAlignmentSelection);
+mLegendInput.addEventListener('change', setMAlignmentSelection);
 
 

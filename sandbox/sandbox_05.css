@@ -9,14 +9,14 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 10px;
 }
 
 body {
     font-family: 'Rubik', sans-serif;
     color: #555;
     line-height: 1;
-    font-width: 400;
+    font-weight: 400;
 }
 
 /*
@@ -24,7 +24,7 @@ body {
 */
 h1 {
     font-size: 3.2rem;
-    font-width: 700;
+    font-weight: 700;
     line-height: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -32,7 +32,7 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
-    font-width: 700;
+    font-weight: 700;
     line-height: 1.5rem;
     padding-top: .8rem;
     padding-bottom: .8rem;
@@ -41,7 +41,7 @@ h2 {
 h3 {
     font-size: 1.2rem;
     letter-spacing: .2rem;
-    font-width: 500;
+    font-weight: 500;
     line-height: 1.5rem;
     padding-top: .6rem;
     padding-bottom: .6rem;
@@ -71,19 +71,18 @@ li {
 */
 
 .container {
-    max-width: 140rem;
-    margin: 0 auto;
-    padding: 3.2rem;
+    max-width: 100rem;
+    /*margin: 0 auto;*/
 }
 
 .lesson-container {
-
+    max-width: 100%;
 
 }
 
 .results-container {
     background-color: #999999;
-    max-width: 80rem;
+    max-width: 100%;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
@@ -132,7 +131,21 @@ li {
     line-height: 1.3rem;
 }
 
+/*
+    FORM
+ */
+#fake-form {
+    display: flex;
+    justify-content: center;
+}
 
+label {
+    padding: 25px;
+}
+
+select {
+    margin-left: 25px;
+}
 
 
 

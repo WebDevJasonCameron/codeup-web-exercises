@@ -43,7 +43,6 @@ h2, h3 {
 section {
     /* enter needed declarations here */
     display: flex;
-    justify-content: flex-end;
 }
 
 section:nth-of-type(1) {
@@ -65,7 +64,6 @@ section:nth-of-type(2) {
     /* enter needed declarations here */
     display: flex;
     align-items: center;
-    background-color: yellow;
 }
 .purple-box {
     background: fuchsia;
@@ -92,14 +90,14 @@ section:nth-of-type(2) {
 section:nth-of-type(3) {
     /* enter needed declarations here */
     display: flex;
+    justify-content: flex-end;
 }
 
 
-section:nth-of-type(3) h3 {
+section:nth-of-type(3) h3 {                                /* <-- I have NO IDEA! */
     /* enter needed declarations here */
-    background-color: yellow;
     align-self: center;
-    justify-content: flex-end;                                  /* <-- I have NO IDEA! */
+    flex-grow: 1;
 }
 
 .orange-circle {

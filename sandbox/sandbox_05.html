@@ -35,9 +35,73 @@
                 <li>Creating Filtering Functions</li>
             </ul>
         </article>
-
+        <hr>
         <section >
             <h2>Results Below</h2>
+            <section id="fake-form">
+                <div class="mType-form">
+                    <label for="mType-input">Type</label><br>
+                    <select name="mType-input" id="mType-input">
+                        <option value="all">All</option>
+                        <option value="humanoid">Humanoid</option>
+                        <option value="aberration">Aberration</option>
+                        <option value="beast">beast</option>
+                        <option value="celestial">Celestial</option>
+                        <option value="construct">Construct</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="elemental">Elemental</option>
+                        <option value="fey">Fey</option>
+                        <option value="fiend">Fiend</option>
+                        <option value="giant">Giant</option>
+                        <option value="monstrosity">Monstrosity</option>
+                        <option value="ooze">Ooze</option>
+                        <option value="plant">Plant</option>
+                        <option value="undead">Undead</option>
+                    </select>
+                </div>
+                <div class="mSize-form">
+                    <label for="mSize-input">Size</label><br>
+                    <select name="mSize-input" id="mSize-input">
+                        <option value="all">All</option>
+                        <option value="tiny">Tiny</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="huge">Huge</option>
+                        <option value="gargantuan">Gargantuan</option>
+                    </select>
+                </div>
+                <div class="mAlign-form">
+                    <label for="mAlign-input">Alignment</label><br>
+                    <select name="mAlign-input" id="mAlign-input">
+                        <option value="all">All</option>
+                        <option value="any alignment">Any Alignment</option>
+                        <option value="any chaotic alignment">Any, Chaotic</option>
+                        <option value="any evil alignment">Any, Evil</option>
+                        <option value="any non-good alignment">Any, Non-good</option>
+                        <option value="any non-lawful alignment	">Any, Non-lawful</option>
+                        <option value="chaotic evil">Chaotic Evil</option>
+                        <option value="chaotic good">Chaotic Good</option>
+                        <option value="chaotic neutral">Chaotic Neutral</option>
+                        <option value="lawful evil">Lawful Evil</option>
+                        <option value="lawful good">Lawful Good</option>
+                        <option value="lawful neutral">Lawful Neutral</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="neutral evil">Neutral Evil</option>
+                        <option value="neutral good">Neutral Good</option>
+                        <option value="unaligned">Unaligned</option>
+                    </select>
+                </div>
+                <div class="mLegend">
+                    <label for="mLegend-input">Legend</label><br>
+                    <select name="mLegend-input" id="mLegend-input">
+                        <option value="all">All</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                </div>
+            </section>
+            <br>
+            <hr>
             <div id="monster-card-stage" class="results-container"></div>
         </section>
     </div>
