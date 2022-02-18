@@ -11,12 +11,16 @@ section {
     display: flex;
 }
 
+.border {
+    border: 2px solid #000000;
+}
+
 h1 {
     text-align: center;
 }
 .card {
     background-color: #eeeeee;
-    width: 600px;
+    width: 400px;
     height: 800px;
     padding: 1em;
     margin: 0 auto;
@@ -40,25 +44,85 @@ section:nth-of-type(1) {
     width: 2em;
 }
 .dark-green-boxes:nth-child(4){
-    align-self: start;
+    align-self: flex-start;
 }
 /*Section 2*/
 section:nth-of-type(2){
     height: 3em;
     align-items: center;
 }
-.hot-pink-boxes {
+.purple-boxes {
     background: fuchsia;
     height: 1em;
     width: 3em;
 }
-.hot-pink-bar:nth-of-type(1){
+.purple-boxes:nth-of-type(1){
     flex-grow: 2;
 }
 
-.hot-pink-bar:nth-of-type(2){
+.purple-boxes:nth-of-type(2){
     flex-grow: 1;
 }
+/*Section 3*/
+.blue-box {
+    background-color: blue;
+    height: 10em;
+    width: 100%;
+}
+/*Section 4*/
+section:nth-of-type(4){
+    align-items: center;
+}
+.orange-circles{
+    background-color: orange;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    margin: 0.5em;
+}
+h3 {
+    flex-grow: 1;
+}
+/*Section 05*/
+.brown-boxes {
+    background-color: brown;
+    height: 5em;
+    width: 5em;
+
+    flex-grow: 1;
+}
+.brown-boxes:nth-of-type(2){
+    margin: 0 1em;
+}
+/*Section 06*/
+section:nth-of-type(6){
+    justify-content: space-around;
+}
+.yellow-boxes{
+    background-color: yellow;
+    height: 2em;
+    width: 2em;
+}
+/*Section 07*/
+section:nth-of-type(7){
+    background-color: coral;
+    height: 14em;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gray-boxes {
+    background-color: gray;
+    height: 3em;
+    width: 3em;
+}
+
+.gray-boxes:nth-of-type(odd) {
+    height: 4em;
+}
+
+
 
 
 
