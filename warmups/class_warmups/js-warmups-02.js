@@ -78,21 +78,41 @@ If jbomb were not an admin, the message should display...
  */
 // Create a functions that take 2 integers in form of a string as an input, and outputs the sum (also as a string)
 // Part 1
-function sumTheStrings(n1, n2) {                                    //   <- Come Back
-    if(n1 === '') n1 = '0';
-    if(n1 === '') n2 = '0';
+// function sumTheStrings(n1, n2) {                                    //   <- Come Back
+//     if(n1 === '') n1 = '0';
+//     if(n1 === '') n2 = '0';
+//
+//     if(typeof n1 !== 'string' || typeof n2 !== 'string' ||
+//         isNaN(parseInt(n1)) || isNaN(parseInt(n1))) return false;
+//     return (parseInt(n1) + parseInt(n2)) + '' ;
+// }
+//
+// console.log((typeof sumTheStrings('1', '2')) + ' of: ' + sumTheStrings('1', '2'));
+//
 
-    if(typeof n1 !== 'string' || typeof n2 !== 'string' ||
-        isNaN(parseInt(n1)) || isNaN(parseInt(n1))) return false;
-    return (parseInt(n1) + parseInt(n2)) + '' ;
+/**
+ * 2022 02 18
+ * email
+ */
+// Take a big object and return a small object with lowerCase data
+let bigObj = {
+    firstName: 'Calvin',
+    lastName: 'Watterson',
+    email: 'calvin@hobbesmail.com',
+    username: 'calvinIsCool',
+    password: 'hobbesDrools'
 }
 
-console.log((typeof sumTheStrings('1', '2')) + ' of: ' + sumTheStrings('1', '2'));
+function getSimpleUser(bigObj){
 
+    return {                                            //   <- Nice!
+        firstName: bigObj.firstName.toLowerCase(),
+        lastName: bigObj.lastName.toLowerCase(),
+    }
 
+}
 
-
-
+console.log(getSimpleUser(bigObj));
 
 
 
