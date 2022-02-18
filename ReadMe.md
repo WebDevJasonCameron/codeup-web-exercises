@@ -6,6 +6,9 @@ Completed the third assignment in the "practice flexbox" Ex.  We were asked to c
 ## 1330 | Flexbox
 We did a lot in the flexbox Ls.  Brain is fuzzy.  It is a lot like thinking spatially.
 
+## 1530 | Cont Flexbox
+This Ex is challenging.  Completed this prior to the class.  My challenge is to create the same thing without prior code.  I need to check the previous code, so I can get the same color and sizes.  This also helps solidify some words I hadn't recognized.  One of those things is the ```:nth-of-type(#)```.  I was aware of the child and parent hooks.  This lets me have several "sections" without the need to give them a class or ID!  
+
 
 ---
 

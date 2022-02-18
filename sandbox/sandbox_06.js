@@ -56,5 +56,4 @@ function onlyOddNumbers2(arr) {
 
 let myArray = [1, 2, 3, 4, 5, 6]
 
-console.log(onlyOddNumbers2(myArray));
-
+// console.log(onlyOddNumbers2(myArray));
