@@ -3,8 +3,8 @@
 ## 2022 02 18 | Morning work
 Completed the third assignment in the "practice flexbox" Ex.  We were asked to create a footer using flexbox properties and a set of instructions.  It's not the prettiest footer, but it was completed prior to class.  I think we will be discussing the positioning of items in CSS.
 
-## 
-
+## 1330 | Flexbox
+We did a lot in the flexbox Ls.  Brain is fuzzy.  It is a lot like thinking spatially.
 
 
 ---
