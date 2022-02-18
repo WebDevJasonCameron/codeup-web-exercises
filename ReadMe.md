@@ -10,6 +10,9 @@ We have bonus material for CSS.  This can be found in an additional repo.  I wil
 ### 1630 | CSS Flexbox Practice Ex
 I 'completed' two of the three flexbox practice ex.  I do not know if they made a difference.  I am definitely going to need to pay attention to the lecture when it comes.
 
+### 2230 | CSS Position Ex
+Completed the impromptu Ex on positioning elements within CSS.  I really feel like there should be a straight forward understanding how the structured language should work.  It makes very little since.  Much is guess work, trial and error, and luck.  Still, it is something that rewards experimentation.  I learned that you can make a box (element) fixed.  Afterwards, you can make lower elements absolute (or relative) to that element.  There is no need for making the ```position: absolute``` and ```position: relative``` at the same time!  
+
 
 --- 
 
