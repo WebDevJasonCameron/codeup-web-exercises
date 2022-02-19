@@ -9,6 +9,9 @@ We did a lot in the flexbox Ls.  Brain is fuzzy.  It is a lot like thinking spat
 ## 1530 | Cont Flexbox
 This Ex is challenging.  Completed this prior to the class.  My challenge is to create the same thing without prior code.  I need to check the previous code, so I can get the same color and sizes.  This also helps solidify some words I hadn't recognized.  One of those things is the ```:nth-of-type(#)```.  I was aware of the child and parent hooks.  This lets me have several "sections" without the need to give them a class or ID!  
 
+## 0007 | Pat Due
+I Know I should push anything after midnight.  However, I completed the 'warm up JS challenge' that was given to us at the end of the day (Friday).  I organized the final code into several screenshots.  They were sent to Discord. with the hope that others might see their own way to complete the Ex.  Despite that, I feel the code could be refactored to something more refined.  I, however, am not known to be very refined!  Capt Smash for a good reason.  
+
 
 ---
 
