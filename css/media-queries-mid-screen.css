@@ -1,0 +1,8 @@
+@media screen and (min-width: 401px) and  (max-width: 900px) {
+    h1 {
+        color: blue;
+    }
+    body {
+        background-color: red;
+    }
+}

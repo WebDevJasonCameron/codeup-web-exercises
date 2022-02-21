@@ -1,0 +1,61 @@
+/* Page Properties */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+}
+
+h1 {
+    font-width: 300;
+    font-size: 5em;
+    line-height: 1.2em;
+    float: left;
+}
+
+h2 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    padding: 1.5em 0;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+img {
+    margin-top: 2em;
+
+}
+
+.hidden-on-desktop {
+    display: none;
+}
+
+a {
+    font-size: 1.5em;
+    padding: 2em;
+}
+
+li {
+    list-style: none;
+    padding: 3em 0;
+}
+
+footer p {
+    font-size: 1.4em;
+}
+
+/*Section Properties*/
+nav ul {
+
+}
+
+.header-img {
+
+}
+
