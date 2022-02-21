@@ -3,6 +3,9 @@
 ## 2022 02 20 | MQ Frustrations
 I am working on the media quires Ex.  It is really frustrating.  The concept of changing the type of style according to the size of screen (or type of media) is not.  However, I need to structure a page according to the HTML that is given to me.  That is something that I find very hard to do!  The specific task is to use the CSS tips and tricks to make a page look as it does in a jpg.  However, It fails to provide the upfront structure (building blocks) that would make the task sensible!  While I do expect it can provide instructional insight to additional ways to use CSS, it is also so very aggravating to be given a rubik's cube and told to figure it out... WITHOUT pulling the stickers off!  I like building things... riddles (while similar) are not the same. Riddles expect you to provide a specific answer.  Building complex things expects that a product will be produced regardless of the how.  
 
+## 2200 | Completed?
+I think I completed most of the Ex.  However, I will be paying close attention on how the instructor does this Ex.  There are a lot of things that I feel like I could have done a much better job on. 
+
 
 
 ---

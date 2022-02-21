@@ -8,6 +8,14 @@
 html {
     font-family: 'Rubik', sans-serif;
     font-size: 10px;
+    background-color: black;
+}
+
+body {
+    max-width: 94em;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2em;
 }
 
 h1 {
@@ -37,8 +45,8 @@ img {
 }
 
 a {
-    font-size: 1.5em;
-    padding: 2em;
+    font-size: 1.6em;
+    padding-left: 2em;
 }
 
 li {
@@ -51,11 +59,45 @@ footer p {
 }
 
 /*Section Properties*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 nav ul {
-
+    display: flex;
 }
 
-.header-img {
-
+.main {
+    float: left;
+    max-width: 55%;
+    margin-right: 6em;
+    display: flex;
+    flex-direction: column;
 }
 
+.sub-section {
+    max-width: 44%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 15em;
+    margin-bottom: 5em;
+}
+
+footer p {
+    float: left;
+}
+
+footer #social-media-links ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer #social-media-links ul li {
+    padding-left: 5em;
+    margin-right: 1em;
+}
