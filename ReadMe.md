@@ -1,25 +1,28 @@
 # Intro To Front End
 
+## 2022 02 21 | Reformat Readme
+I do not have a lot of time for study.  It is President's Day and I need to spend time with family.  However, I noticed this readme file had mistakes in the time hashtags' markdown structures.  I corrected that.  I am also using what time I do have to work on the CSS Bonus Repo.  Check that readme for further information.
+
+---
+
 ## 2022 02 20 | MQ Frustrations
 I am working on the media quires Ex.  It is really frustrating.  The concept of changing the type of style according to the size of screen (or type of media) is not.  However, I need to structure a page according to the HTML that is given to me.  That is something that I find very hard to do!  The specific task is to use the CSS tips and tricks to make a page look as it does in a jpg.  However, It fails to provide the upfront structure (building blocks) that would make the task sensible!  While I do expect it can provide instructional insight to additional ways to use CSS, it is also so very aggravating to be given a rubik's cube and told to figure it out... WITHOUT pulling the stickers off!  I like building things... riddles (while similar) are not the same. Riddles expect you to provide a specific answer.  Building complex things expects that a product will be produced regardless of the how.  
 
-## 2200 | Completed?
-I think I completed most of the Ex.  However, I will be paying close attention on how the instructor does this Ex.  There are a lot of things that I feel like I could have done a much better job on. 
-
-
+### 2200 | Completed?
+I think I completed most of the Ex.  However, I will be paying close attention on how the instructor does this Ex.  There are a lot of things that I feel like I could have done a much better job on.
 
 ---
 
 ## 2022 02 18 | Morning work
 Completed the third assignment in the "practice flexbox" Ex.  We were asked to create a footer using flexbox properties and a set of instructions.  It's not the prettiest footer, but it was completed prior to class.  I think we will be discussing the positioning of items in CSS.
 
-## 1330 | Flexbox
+### 1330 | Flexbox
 We did a lot in the flexbox Ls.  Brain is fuzzy.  It is a lot like thinking spatially.
 
-## 1530 | Cont Flexbox
+### 1530 | Cont Flexbox
 This Ex is challenging.  Completed this prior to the class.  My challenge is to create the same thing without prior code.  I need to check the previous code, so I can get the same color and sizes.  This also helps solidify some words I hadn't recognized.  One of those things is the ```:nth-of-type(#)```.  I was aware of the child and parent hooks.  This lets me have several "sections" without the need to give them a class or ID!  
 
-## 0007 | Pat Due
+### 0007 | Pat Due
 I Know I should push anything after midnight.  However, I completed the 'warm up JS challenge' that was given to us at the end of the day (Friday).  I organized the final code into several screenshots.  They were sent to Discord. with the hope that others might see their own way to complete the Ex.  Despite that, I feel the code could be refactored to something more refined.  I, however, am not known to be very refined!  Capt Smash for a good reason.  
 
 
@@ -44,13 +47,13 @@ Completed the impromptu Ex on positioning elements within CSS.  I really feel li
 ## 2022 02 16 | Intro to CSS
 Starting the CSS Intro in class.  Also, working on the SB05.  Fixing the filter.  I need to set up a check flag feature that will help me keep from adding additional cards that I did not want.  [UPDATE] As it goes, I both fixed and broke the main filter.  Everything will filter as long we select a type.  However, if I select size, align, or legend, it all breaks (>.<).  I will continue working on this after class.
 
-## 1140 | CSS Float
+### 1140 | CSS Float
 Started the CSS Floats and Positioning Ls and Ex.  This one is hard.  I think it is harder because we need to work with the code that is supplied.  This is a lot different because you need to read someone else's code and make decisions based on someone else's organization.  This is great (hard, but great) because we will be working with others.  It is a challenge I highly appreciate.  
 
-## 1330 | CSS F&P Ex
+### 1330 | CSS F&P Ex
 Completed the CSS F&P Ex.  This was challenging.  This is partially because I had problems understanding what was being asked in the instructions.  I might have also worked the code to fit the way I understand how CSS float works.  I was able to include absolute and relative portioning.  We also used the ```calc(percentage - pixels)``` to ensure the floats would work.  Best practice for this (I think) is to through a color in the background.  When you see actual box that is being manipulated, you can open up inspect window and select the element.  Inside the CSS (Style) window, you can increase/decrease the number of pixels to see what should fit the best.  
 
-## 2150 | CSS FB Ex
+### 2150 | CSS FB Ex
 Alright, this Ex is really hard.  This Ex requires completing a series of CSS FB requirements.  It is unlike any website you wat to have.  However, it looks like a blueprint of a website construction.  It also works like riddle. 
 
 
@@ -59,10 +62,10 @@ Alright, this Ex is really hard.  This Ex requires completing a series of CSS FB
 ## 2022 02 15 | Form and CSS
 Completed the Forms Ex, second part.  Also completed the Forms Ls.  Some things to remember: need to have a name in the input element. It can be sent out only if it has a name.  I also went through the CSS Ls and added terms to the study flash cards (quizlet).  Afterwards, I completed the first part of the CSS Ex.
 
-## 1430 | Forms and CSS cont
+### 1430 | Forms and CSS cont
 The class is continuing with the form Ex.  Learned that keeping labels tied to radio and checkbox input elements gives people with difficulty selecting small areas on their screen a wider hit area.  
 
-## 2215 | Fixed Login
+### 2215 | Fixed Login
 Fixed the login CSS Ex.  It was a little difficult.  Using the ```calc(100% - 5px)``` allowed me to reduce the size by 5 px.  This accounts for the two pixel border.  Two on one side and two on the other.  At total of four... but somehow five makes it look just right.
 
 ---
@@ -74,10 +77,10 @@ Second, we walked through the Obj Ex during the morning.  I had not completed pr
 
 Third, I also worked on SB05.  First I decided to clean up the JS format.  Second, I added more CSS.  Third, I update the HTML bullet points.
 
-## 1550 | HTML
+### 1550 | HTML
 Working through the intro to HTML Ls.  Completed both parts of Ex.  However, I am not sure if the second part was done correctly.  It sounds like they want to use a table.  I used div tags inside a main element.  The look is correct.  The semantics are not the same. 
 
-## 1700 | HTML Forms
+### 1700 | HTML Forms
 I started working on the forms Ls and Ex.  I will need to place a lot of info in the card deck for future study.  The words seem simple, but I think I could do a pretty good job at still getting them confused.  There is a lot to forms that should help in work.  It might be dry and a little unintuitive, but it is critical to fully grasp its implementation.  
 
 
@@ -141,7 +144,7 @@ Interestingly, if you figure out the verification factors, you can often reuse t
 ## 2022 02 09 | Review Arrays
 Agenda set.  See Notion notes.  No warmups.  Continued onto walk through of the array Ls and Ex. Deciding to backtrack on the Sandbox 3 practice.  Will remove current text box and create a dropdown input filter to remove some monster types from the list.  After that is complete, I will continue with the auto filter as you type in a type name.  
 
-## 1100 | Zantanna Speech
+### 1100 | Zantanna Speech
 While learning about arrays, we had a challenge to create a function that reproduces the speech of Zantanna.  This was a lot of fun.  It also caused me to use different built-in JS functions.  I needed to cut up a string, putting words into an array.  Then, each item in the array could be reversed letter-by-letter.  That result needed to be pushed into a new array.  Afterwards, the new array was combined into a new string.  Additional peaces to this challenge included removing commas and uppercase letters.  Lastly, I needed to force the first letter of the first word in the sentence to be uppercase.  There might be some more things I could do this function later.  However, I copied the function into the interview problems director.  The HTML talks about how this should be done.  Finally, I want to continue working on the page, so we could put in a new string and have that pushed back to the browser.  
 
 ### 1700 | Practices

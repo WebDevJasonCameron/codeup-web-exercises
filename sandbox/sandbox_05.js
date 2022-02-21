@@ -160,7 +160,7 @@ function filterCards(type, size, align, legend){
     if (type !== 'all') {                                       //   Starting with the filter type... However, other
         console.log('made it to type');                         // filters will be ignored
         filterByType(type);
-    }
+    } // set up a function to serve in this else part (to reset all cards to show)
     if (size !== 'all') {
             filterBySize(size);
         console.log('made it to size');
@@ -230,3 +230,4 @@ mAlignInput.addEventListener('change', setMAlignmentSelection);
 mLegendInput.addEventListener('change', setMAlignmentSelection);
 
 
+// Here is where I think we are at.  If I delete the large filter and have each filter take out any element that does not meet the crit, we should be able to filter out each time a selection is made. If all things are set to "all" then the cards need to be reset to show.
