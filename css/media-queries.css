@@ -36,10 +36,14 @@ p {
 }
 
 img {
-    margin-top: 2em;
+    margin: 2em;
+    max-width: calc(100vw - 40px);
 
 }
-
+.header-img {
+    display: flex;
+    justify-content: center;
+}
 .hidden-on-desktop {
     display: none;
 }
@@ -85,11 +89,11 @@ nav ul {
 
 footer {
     margin-top: 15em;
-    margin-bottom: 5em;
-}
+    height: 1em;
 
-footer p {
-    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer #social-media-links ul {

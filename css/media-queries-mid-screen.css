@@ -24,7 +24,7 @@
     h1 {
         display: flex;
         justify-content: center;
-        margin-bottom: 1em;
+        margin: .2em 0 1em 0;
     }
 
     nav {
@@ -48,18 +48,12 @@
         justify-content: center;
     }
 
-.header-img {               /* <-- Fix this.... */
-    width: 800px;
-}
+    .main {
+        max-width: 100%;
+    }
 
-.main {
-    max-width: 100%;
-}
-
-.sub-section {
-    max-width: 100%;
-}
-
-
+    .sub-section {
+        max-width: 100%;
+    }
 
 }
