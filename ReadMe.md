@@ -3,6 +3,9 @@
 ## 2022 02 22 | Warm UP
 Completed a function that created an object with the data found in two different arrays.  LL, you can push an obj to an array of obj without needing to name that obj.  Also, if you have your obj outside the for loop (or loops in general), that obj will not be 'refreshed' if you are trying to push it to an array (as it combines data from the other arrays). NOTE: Question... What do you use flex box?  Answer... One dimensional layouts of a components.  
 
+### 1530 | More work in CSS Bonus
+See the CSS B repo
+
 
 --- 
 
