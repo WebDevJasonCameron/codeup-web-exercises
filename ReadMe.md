@@ -3,6 +3,12 @@
 ## 2022 02 21 | Reformat Readme
 I do not have a lot of time for study.  It is President's Day and I need to spend time with family.  However, I noticed this readme file had mistakes in the time hashtags' markdown structures.  I corrected that.  I am also using what time I do have to work on the CSS Bonus Repo.  Check that readme for further information.
 
+### 1130 | Coming Soon Proj Completed
+Completed the first CSS Bonus challenge called "Coming Soon."  All my LL are found in the CSS Bonus Repo's ReadMe file.  I will set up the next project prior to leaving for the day. 
+
+### 2230 | 2nd Challenger Work
+I have a scaffold of the second challenge has been completed.  I need to work on some details, JS for the quotes, and button transformations.  (...Ok... this is a comment because nothing is updating in the GH)
+
 ---
 
 ## 2022 02 20 | MQ Frustrations
