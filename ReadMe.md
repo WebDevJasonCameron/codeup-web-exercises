@@ -6,6 +6,9 @@ Completed a function that created an object with the data found in two different
 ### 1530 | More work in CSS Bonus
 See the CSS B repo
 
+### 2200 | Long Day, Dif Repo
+It has been a long day in the CSS B repo.  While I'm at the 97% completion (estimated), it is always the last three percent that caused the headaches.  Why doesn't something meet the exact pixel dimensions?  How do I check for attributes and push changes on those elements that should change under certain circumstances.  These are just a few questions I try to figure out.  Later...
+
 
 --- 
 
