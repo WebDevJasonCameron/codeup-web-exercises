@@ -66,27 +66,27 @@
 
 // HINT: A SOLUTION MAY INVOLVE USING A FOR LOOP TO ITERATE OVER THE LENGTH OF ONE ARRAY TO PUSH EACH NAME OBJ ONTO AN ARRAY OF NAME OBJ THAT WILL BE RETURNED FROM THE FUNCTION
 
-let firstName = ['CJ', 'Max', 'Claude', 'Meowmeow' ];
-let lastName = ['Cat', 'Feline', 'Kitten', 'Calico'];
+// let firstName = ['CJ', 'Max', 'Claude', 'Meowmeow' ];
+// let lastName = ['Cat', 'Feline', 'Kitten', 'Calico'];
 
-function createNames(a1, a2){
-    let fullNameArray = [];
-
-    for (let i = 0; i < a1.length; i++) {
-
-        let namedObj = {                                        //   <-- Remember that this needs to be inside!
-            fName: '',                                          // Otherwise, it will never 'be fresh' for pushing
-            lName: ''                                           // to the final array
-        }
-
-        namedObj.fName = a1[i];
-        namedObj.lName = a2[i];
-        fullNameArray.push(namedObj);
-    }
-    return fullNameArray;
-}
-
-console.log(createNames(firstName, lastName));
+// function createNames(a1, a2){
+//     let fullNameArray = [];
+//
+//     for (let i = 0; i < a1.length; i++) {
+//
+//         let namedObj = {                                        //   <-- Remember that this needs to be inside!
+//             fName: '',                                          // Otherwise, it will never 'be fresh' for pushing
+//             lName: ''                                           // to the final array
+//         }
+//
+//         namedObj.fName = a1[i];
+//         namedObj.lName = a2[i];
+//         fullNameArray.push(namedObj);
+//     }
+//     return fullNameArray;
+// }
+//
+// console.log(createNames(firstName, lastName));
 
 
 // function createNames (a1, a2) {
@@ -103,9 +103,44 @@ console.log(createNames(firstName, lastName));
 // console.log(createNames(firstName, lastName));
 
 
+/**
+ * 2022 02 24
+ * Additional Challenges
+ */
+// Write a function that accepts two int and returns the remainder
+// of dividing the larger value by the smaller value.
+// Division by zero return NaN
+function largeToSmall(n1, n2){
+    if(n1 === 0 || n2 === 0) return NaN
+    if(n1 > n2) return n1 % n2;
+    return n2 % n1;
+}
+
+// console.log(largeToSmall(15, 2));
+// console.log(largeToSmall(2, 15));
+// console.log(largeToSmall(0, 3));
 
 
+// In a factory a printer prints labels for boxes.  For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
 
+// the colors used by the printer are recorded in a control string.  for example, a "good" control string would be aaabbbbhaijjm, meaning that the printer used three times color a, four times color b, one time color h then one time color a...
+
+// Sometimes there are problems: lack of colors, technical malfunction and a "bad" control string is produced e.g. aaaxbbbyyhwawiwjjjwm with letters not from a to m.
+
+// you have to write a function printer_error which given a string will return the error rate of the printer as a string representing a rational whose numerator is the number of errors and the denominator the length of the control string.  Don't reduce this fraction to a simpler expression.
+
+// The string has a length greater or equal to one and contains only letters from a to z.
+
+// NOT ENOUGH TIME  !!!!!!!
+function printerError(x){
+    let output = 0;
+    for (let i = 0; i < x.length; i++) {
+        if(x[i] > 'm') {output++}
+    }
+    return '' + output + '/' + x.length
+}
+let response = 'aabbccccddmttxmdde'
+console.log(printerError(response));
 
 
 

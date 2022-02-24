@@ -1,5 +1,25 @@
 # Intro To Front End
 
+## 2022 02 24 | Morning
+Always start early in the class with updates and standard preparations.  This morning is no different.  My focus will be in inspecting the LS and Ex planned for the day.  I have not worked with Bootstrap.  Part of me feels like it is a cheat that employers might think is inferior to what we could do with 'fresh' code.  However, I think I can understand why we might want to use the tech stack.  (There is a Blog article in that: "What exactly is a 'tech stack'").  If we want to focus on building backend applications, using a front end template might be a better use of our time.  
+
+### 930 | Warmup
+Working slow this morning.  Didn't have enough time to complete the larger challenge.  Still, I feel like I could have if I was given just a little more time.  LL in this Ex:  One, you can check if a letter is less than or greater to another letter.  Second, you can loop through a string without having to make it an array.
+
+
+---
+
+## 2022 02 23 | Pre School
+Woke up thinking I could figure out the problem of my burger menu.  Only made the problem worse.  I am in new territory here... It is both awesome and frustrating in equal measures.
+
+### 0915 | Pair Programming Intro
+Working in team two.  My team consists of Jose Mendoza and I.  Jose is virtual.  Agile in practice: Pair Programing youtuber video was used to show how to complete the day's assignment.  
+
+### 1530 | Competed Pari Programming Intro
+The Ex was Media Queries.  By doing this a second time with the focus on mobile prior to desktop, I found the code to change quite a lot.  The CSS could be better if we were able to structure the HTML in a way that made sense.  Still, the Ex did challenge me to use both flex and float.  I can imagine that much of what was done could have been better executed if we were also to use grid.  I place a lot of comments and notes within the CSS to remember some very important LL.   
+
+---
+
 ## 2022 02 22 | Warm UP
 Completed a function that created an object with the data found in two different arrays.  LL, you can push an obj to an array of obj without needing to name that obj.  Also, if you have your obj outside the for loop (or loops in general), that obj will not be 'refreshed' if you are trying to push it to an array (as it combines data from the other arrays). NOTE: Question... What do you use flex box?  Answer... One dimensional layouts of a components.  
 
