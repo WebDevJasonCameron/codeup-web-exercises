@@ -6,11 +6,16 @@
     <link rel="shortcut icon" href="img/MoonConceptSmallPatch01.svg" type="image/x-icon">
     <!--BOOTSTRAP LINK-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/intro-to-bootstrap-additional.css">
     <title>Intro to Bootstrap</title>
 </head>
 <body>
-
+<!-- Title    -->
+    <h1>Intro to Bootstrap</h1>
     <!-- Nav Bar   -->
+
+<br><br><br><br>
+    <h2>Nav Bar</h2>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">LOGO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,10 +52,11 @@
         </div>
     </nav>
 
-    <!-- Title    -->
-    <h1>Intro to Bootstrap</h1>
-
+<br><br><br><br>
     <!-- Nav tabs -->
+    <h2>Nav and Tabs</h2>
+
+
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#freeze" role="tab" aria-controls="home" aria-selected="true">Freeze</a>
@@ -66,10 +72,12 @@
         </li>
     </ul>
 
+<br><br><br><br>
     <!-- Tab panes -->
     <div class="tab-content">
         <div class="tab-pane active" id="freeze" role="tabpanel" aria-labelledby="home-tab">
             Call me, Mr. Freeze
+            <div class="--section-01"></div>
         </div>
         <div class="tab-pane" id="riddler" role="tabpanel" aria-labelledby="profile-tab">
             Riddle me this...
@@ -83,6 +91,22 @@
     </div>
 
 
+<br><br><br><br>
+    <!--Hamburger-->
+    <h2>Hamburger</h2>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h4 class="text-white">Collapsed content</h4>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
 
 
 
