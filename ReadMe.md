@@ -6,6 +6,9 @@ Always start early in the class with updates and standard preparations.  This mo
 ### 930 | Warmup
 Working slow this morning.  Didn't have enough time to complete the larger challenge.  Still, I feel like I could have if I was given just a little more time.  LL in this Ex:  One, you can check if a letter is less than or greater to another letter.  Second, you can loop through a string without having to make it an array.
 
+### 1030 | Bootstrap Ls
+Working through the Bootstrap Ls.  Side NOTE: I asked whether we would ever be put is a position to only have the capability to change CSS and not the HTML.  It turns out that this might be the normal flow for companies.  HTML might be approved by legal and HR departments, and we might be on teams that can only change the "look" and "feel" of a web page.  I also asked if Bootstrap is a skill set that employers are wanting.  While Bootstrap is not exactly what other companies will use... it does show that you can take existing tools (which companies will often have their own) and use them to create the products required for their customers.  
+
 
 ---
 
