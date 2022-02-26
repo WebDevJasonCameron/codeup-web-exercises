@@ -10,83 +10,220 @@
 </head>
 <body>
 <!--1. NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a href="#" class="navbar-brand text-secondary">Pizza World</a>
-    <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-            <a class="nav-link bg-dark bg-opacity-10 rounded-1" href="#"> Order Online </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
-        </li>
-        <li class="nav-item">
-            <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
-        </li>
-        <li class="nav-item">
-            <button class="form-control mr-sm-2 text-nowrap" type="search" >Search stores near you!</button>
-        </li>
-    </ul>
-    <form class="form-check-inline my-2-my lg-0 mr-auto">
-        <button class="btn btn-outline-secondary my-2 my-lg-0" type="submit"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Sign Up</button>
-    </form>
-</nav>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="#" class="navbar-brand text-secondary">Pizza World</a>
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link bg-dark bg-opacity-10 rounded-1" href="#"> Order Online </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+                <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
+            </li>
+            <li class="nav-item">
+                <button class="form-control mr-sm-2 text-nowrap" type="search" >Search stores near you!</button>
+            </li>
+        </ul>
+        <form class="form-check-inline my-2-my lg-0 mr-auto">
+            <button class="btn btn-outline-secondary my-2 my-lg-0" type="submit"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Sign Up</button>
+        </form>
+    </nav>
+</div>
 
 <!--CONTAINER-->
-
 <div class="fluid-container px-0 py-5 my-4 bg-light-text-center" style="background-image: url('img/pizza.png')">
     <h2 class="h1 text-center bg-light bg-opacity-50">Welcome to Pizza World</h2>
 </div>
 
-<!--FORM-->
+<!--FORM        ---     CRUST       -->
 <div class="container-fluid">
     <h2>Build Your Own Pizza!</h2>
     <div class="card">
-        <div class="card-header bg-primary text-white">
-            Choose size and crust
-        </div>
+        <header class="card-header bg-primary text-white">
+            Choose Size and Crust
+        </header>
         <div class="card">
-            <div class="card-header bg-light">
-                Hand Tossed
-            </div>
-            <div class="card">
-                <input class="form-check-input" type="radio" name="size-crust" id="small-crust">
-                label.form-check-label
+            <div class="card-body py-3 m-auto" style="min-width: 98vw;">
+                <!--Hand Tossed Card-->
+                <section class="card">
+                    <div class="card-header bg-light p-3">
+                        Hand Tossed
+                    </div>
+                    <div class="car-header p-xl-3">
+                        Garlic seasoned crust with a rich, buttery taste.
+                    </div>
+                    <div class="card d-inline p-3">
+                        <input class="form-check-input" type="radio" name="size-crust" id="small-crust">
+                        <label for="small-crust" class="form-check-label px-1">Small (10")</label>
+                    </div>
+                    <div class="card d-inline p-3">
+                        <input class="form-check-input" type="radio" name="size-crust" id="mid-crust">
+                        <label for="small-crust" class="form-check-label px-1">Medium (12")</label>
+                    </div>
+                </section>
+
+                <!--Crispy Thin Card-->
+                <section class="card mt-3">
+                    <div class="card-header bg-light p-3">
+                        Crispy Thin
+                    </div>
+                    <div class="car-header p-xl-3">
+                        Thin enough for optimum crispy to crunchy ratio
+                    </div>
+
+                    <div class="card d-inline p-3">
+                        <input class="form-check-input" type="radio" name="size-crust" id="crispy-mid-crust">
+                        <label for="mid-crust" class="form-check-label px-1">Medium (12")</label>
+                    </div>
+                    <div class="card d-inline p-3">
+                        <input class="form-check-input" type="radio" name="size-crust" id="large-mid-crust">
+                        <label for="large-mid-crust" class="form-check-label px-1">Large (14")</label>
+                    </div>
+                </section>
+
+                <!--Card Footer-->
+                <footer class="card w-auto mt-3">
+                    <div class="card-header bg-light p-3">
+                        <button class="btn btn-primary float-end" type="submit">Next Step <i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </footer>
             </div>
         </div>
-
     </div>
 </div>
 
 
-
-
-
-
-<!--TRASH TRASH TRASH-->
-<div class="container-fluid">
+<!--FORM        ---     CHEESE       -->
+<div class="container-fluid mt-5">
     <h2>Build Your Own Pizza!</h2>
     <div class="card">
-        <div class="card-header bg-primary text-white">
-            Choose size and crust
-        </div>
-        <div class="card-body">
-            <div class="card">
-                <div class="car-header">
-                    Cheese
-                </div>
-                <div class="card-body">
-                    form goes here
-                </div>
+        <header class="card-header bg-primary text-white">
+            Choose Cheese and Sauce
+        </header>
+        <div class="card">
+            <div class="card-body py-3 m-auto" style="min-width: 98vw;">
+                <!--Cheese Size Card-->
+                <section class="card">
+                    <div class="card-header bg-light p-3">
+                        Cheese
+                    </div>
+                    <div class="car-header p-3">
+                        How Much?
+                    </div>
+                    <select name="cheese-quantity" id="cheese-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
+                        <option selected>Regular</option>
+                        <option value="large">Large</option>
+                        <option value="x-large">Extra Large</option>
+                    </select>
+
+                </section>
+
+                <!--Sauce Card-->
+                <section class="card mt-3">
+                    <div class="card-header bg-light p-3">
+                        Sauce
+                    </div>
+                    <!--Cheese-->
+                    <div class="car-header p-3">
+                        What Type?
+                    </div>
+                    <select name="cheese-quantity" id="sauce-type" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
+                        <option selected>Robust Inspired Tomato Sauce</option>
+                        <option value="pesto">Pesto</option>
+                        <option value="white-garlic">White Garlic Sauce</option>
+                        <option value="garlic-ranch">Garlic Ranch Sauce</option>
+                        <option value="humus">Hummus</option>
+                        <option value="buffalo">Buffalo Sauce</option>
+                        <option value="marinara">Marinara Sauce</option>
+                    </select>
+                    <div class="car-header p-3">
+                        What Type?
+                    </div>
+                    <!--Sauce-->
+                    <select name="cheese-quantity" id="sauce-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
+                        <option selected>Regular</option>
+                        <option value="light-sauce">Light Sauce</option>
+                        <option value="extra-sauce">Extra Sauce</option>
+                    </select>
+
+                </section>
+
+                <!--Card Footer-->
+                <footer class="card w-auto mt-3">
+                    <div class="card-header bg-light p-3">
+                        <button class="btn btn-primary float-end rounded-0 rounded-right" type="submit">Next Step <i class="fa-solid fa-angle-right"></i></button>
+                        <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit"><i class="fa-solid fa-angle-left"></i>Previous Step</button>
+                    </div>
+                </footer>
             </div>
         </div>
-        <div class="card-body">
-            <div class="card">
-                <div class="car-header">
-                    Crispy Thin
-                </div>
-                <div class="card-body">
-                    form goes here
-                </div>
+    </div>
+</div>
+
+
+
+
+<!--FORM        ---     TOPPINGS       -->
+<div class="container-fluid mt-5">
+    <h2>Build Your Own Pizza!</h2>
+    <div class="card">
+        <header class="card-header bg-primary text-white">
+            Choose Toppings
+        </header>
+        <div class="card">
+            <div class="card-body py-3 m-auto" style="min-width: 98vw;">
+                <!--Cheese Size Card-->
+                <section class="card">
+                    <div class="card-header bg-light p-3">
+                        Choose Meats
+                    </div>
+                    <div class="car-header p-3">
+                        How Much?
+                    </div>
+
+
+                </section>
+
+                <!--Sauce Card-->
+                <section class="card mt-3">
+                    <div class="card-header bg-light p-3">
+                        Sauce
+                    </div>
+                    <!--Cheese-->
+                    <div class="car-header p-3">
+                        What Type?
+                    </div>
+                    <select name="cheese-quantity" id="sauce-type" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
+                        <option selected>Robust Inspired Tomato Sauce</option>
+                        <option value="pesto">Pesto</option>
+                        <option value="white-garlic">White Garlic Sauce</option>
+                        <option value="garlic-ranch">Garlic Ranch Sauce</option>
+                        <option value="humus">Hummus</option>
+                        <option value="buffalo">Buffalo Sauce</option>
+                        <option value="marinara">Marinara Sauce</option>
+                    </select>
+                    <div class="car-header p-3">
+                        What Type?
+                    </div>
+                    <!--Sauce-->
+                    <select name="cheese-quantity" id="sauce-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
+                        <option selected>Regular</option>
+                        <option value="light-sauce">Light Sauce</option>
+                        <option value="extra-sauce">Extra Sauce</option>
+                    </select>
+
+                </section>
+
+                <!--Card Footer-->
+                <footer class="card w-auto mt-3">
+                    <div class="card-header bg-light p-3">
+                        <button class="btn btn-primary float-end rounded-0 rounded-right" type="submit">Next Step <i class="fa-solid fa-angle-right"></i></button>
+                        <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit"><i class="fa-solid fa-angle-left"></i>Previous Step</button>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
@@ -123,9 +260,7 @@
 
 
 
-
-
-    <!--Font Awesome-->
+<!--Font Awesome-->
     <script src="https://kit.fontawesome.com/f2796ec852.js" crossorigin="anonymous"></script>
 
     <!--Bootstrap JS-->
