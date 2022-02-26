@@ -38,217 +38,481 @@
     <h2 class="h1 text-center bg-light bg-opacity-50">Welcome to Pizza World</h2>
 </div>
 
-<!--FORM        ---     CRUST       -->
-<div class="container-fluid">
-    <h2>Build Your Own Pizza!</h2>
-    <div class="card">
-        <header class="card-header bg-primary text-white">
-            Choose Size and Crust
-        </header>
-        <div class="card">
-            <div class="card-body py-3 m-auto" style="min-width: 98vw;">
-                <!--Hand Tossed Card-->
-                <section class="card">
-                    <div class="card-header bg-light p-3">
-                        Hand Tossed
-                    </div>
-                    <div class="car-header p-xl-3">
-                        Garlic seasoned crust with a rich, buttery taste.
-                    </div>
-                    <div class="card d-inline p-3">
-                        <input class="form-check-input" type="radio" name="size-crust" id="small-crust">
-                        <label for="small-crust" class="form-check-label px-1">Small (10")</label>
-                    </div>
-                    <div class="card d-inline p-3">
-                        <input class="form-check-input" type="radio" name="size-crust" id="mid-crust">
-                        <label for="small-crust" class="form-check-label px-1">Medium (12")</label>
-                    </div>
-                </section>
+<!--TABS-->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#sizeAndCrust" role="tab" aria-controls="home" aria-selected="true">Size and Crust</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#cheeseAndSauce" role="tab" aria-controls="profile" aria-selected="false">Cheese and Sauce</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="messages-tab" data-toggle="tab" href="#toppings" role="tab" aria-controls="messages" aria-selected="false">Toppings</a>
+    </li>
+</ul>
 
-                <!--Crispy Thin Card-->
-                <section class="card mt-3">
-                    <div class="card-header bg-light p-3">
-                        Crispy Thin
-                    </div>
-                    <div class="car-header p-xl-3">
-                        Thin enough for optimum crispy to crunchy ratio
-                    </div>
+<!--TAB PANES-->
+<div class="tab-content">
+    <!--TAB 1-->
+    <div class="tab-pane active" id="sizeAndCrust" role="tabpanel" aria-labelledby="home-tab">
+        <div class="container-fluid">
+            <h2>Build Your Own Pizza!</h2>
+            <div class="card">
+                <header class="card-header bg-primary text-white">
+                    Choose Size and Crust
+                </header>
+                <div class="card">
+                    <div class="card-body py-3 m-auto" style="min-width: 98vw;">
+                        <!--Hand Tossed Card-->
+                        <section class="card">
+                            <div class="card-header bg-light p-3">
+                                Hand Tossed
+                            </div>
+                            <div class="car-header p-xl-3">
+                                Garlic seasoned crust with a rich, buttery taste.
+                            </div>
+                            <div class="card d-inline p-3">
+                                <input class="form-check-input" type="radio" name="size-crust" id="small-crust">
+                                <label for="small-crust" class="form-check-label px-1">Small (10")</label>
+                            </div>
+                            <div class="card d-inline p-3">
+                                <input class="form-check-input" type="radio" name="size-crust" id="mid-crust">
+                                <label for="small-crust" class="form-check-label px-1">Medium (12")</label>
+                            </div>
+                        </section>
 
-                    <div class="card d-inline p-3">
-                        <input class="form-check-input" type="radio" name="size-crust" id="crispy-mid-crust">
-                        <label for="mid-crust" class="form-check-label px-1">Medium (12")</label>
-                    </div>
-                    <div class="card d-inline p-3">
-                        <input class="form-check-input" type="radio" name="size-crust" id="large-mid-crust">
-                        <label for="large-mid-crust" class="form-check-label px-1">Large (14")</label>
-                    </div>
-                </section>
+                        <!--Crispy Thin Card-->
+                        <section class="card mt-3">
+                            <div class="card-header bg-light p-3">
+                                Crispy Thin
+                            </div>
+                            <div class="car-header p-xl-3">
+                                Thin enough for optimum crispy to crunchy ratio
+                            </div>
 
-                <!--Card Footer-->
-                <footer class="card w-auto mt-3">
-                    <div class="card-header bg-light p-3">
-                        <button class="btn btn-primary float-end" type="submit">Next Step&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
+                            <div class="card d-inline p-3">
+                                <input class="form-check-input" type="radio" name="size-crust" id="crispy-mid-crust">
+                                <label for="mid-crust" class="form-check-label px-1">Medium (12")</label>
+                            </div>
+                            <div class="card d-inline p-3">
+                                <input class="form-check-input" type="radio" name="size-crust" id="large-mid-crust">
+                                <label for="large-mid-crust" class="form-check-label px-1">Large (14")</label>
+                            </div>
+                        </section>
+
+                        <!--Card Footer-->
+                        <footer class="card w-auto mt-3">
+                            <div class="card-header bg-light p-3">
+                                <button class="btn btn-primary float-end" type="submit">Next Step&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </footer>
                     </div>
-                </footer>
+                </div>
+            </div>
+        </div>
+        <div class="--section-01"></div>
+    </div>
+
+    <!--TAB 2-->
+    <div class="tab-pane" id="cheeseAndSauce" role="tabpanel" aria-labelledby="profile-tab">
+        <!--FORM        ---     CHEESE       -->
+        <div class="container-fluid">
+            <h2>Build Your Own Pizza!</h2>
+            <div class="card">
+                <header class="card-header bg-primary text-white">
+                    Choose Cheese and Sauce
+                </header>
+                <div class="card">
+                    <div class="card-body py-3 m-auto" style="min-width: 98vw;">
+                        <!--Cheese Size Card-->
+                        <section class="card">
+                            <div class="card-header bg-light p-3">
+                                Cheese
+                            </div>
+                            <div class="car-header p-3">
+                                How Much?
+                            </div>
+                            <select name="cheese-quantity" id="cheese-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
+                                <option selected>Regular</option>
+                                <option value="large">Large</option>
+                                <option value="x-large">Extra Large</option>
+                            </select>
+
+                        </section>
+
+                        <!--Sauce Card-->
+                        <section class="card mt-3">
+                            <div class="card-header bg-light p-3">
+                                Sauce
+                            </div>
+                            <!--Cheese-->
+                            <div class="car-header p-3">
+                                What Type?
+                            </div>
+                            <select name="cheese-quantity" id="sauce-type" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
+                                <option selected>Robust Inspired Tomato Sauce</option>
+                                <option value="pesto">Pesto</option>
+                                <option value="white-garlic">White Garlic Sauce</option>
+                                <option value="garlic-ranch">Garlic Ranch Sauce</option>
+                                <option value="humus">Hummus</option>
+                                <option value="buffalo">Buffalo Sauce</option>
+                                <option value="marinara">Marinara Sauce</option>
+                            </select>
+                            <div class="car-header p-3">
+                                What Type?
+                            </div>
+                            <!--Sauce-->
+                            <select name="cheese-quantity" id="sauce-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
+                                <option selected>Regular</option>
+                                <option value="light-sauce">Light Sauce</option>
+                                <option value="extra-sauce">Extra Sauce</option>
+                            </select>
+
+                        </section>
+
+                        <!--Card Footer-->
+                        <footer class="card w-auto mt-3">
+                            <div class="card-header bg-light p-3">
+                                <button class="btn btn-primary float-end rounded-0 rounded-right" type="submit">Next Step&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
+                                <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit"><i class="fa-solid fa-angle-left"></i>&nbsp;&nbsp;Previous Step</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--TAB 3-->
+    <div class="tab-pane" id="toppings" role="tabpanel" aria-labelledby="messages-tab">
+        <!--FORM        ---     TOPPINGS       -->
+        <div class="container-fluid">
+            <h2>Build Your Own Pizza!</h2>
+            <div class="card">
+                <header class="card-header bg-primary text-white">
+                    Choose Toppings
+                </header>
+                <div class="card">
+                    <div class="card-body py-3 m-auto" style="min-width: 98vw;">
+                        <!--Meat Card-->
+                        <section class="card">
+                            <div class="card-header bg-light p-3">
+                                Choose Meats
+                            </div>
+                            <div class="card p-3">
+                                <div class="form-check mx-0" >
+                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-beef">
+                                    <label class="form-check-inline" for="topping-meat-beef" >Beef</label>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <div class="form-check mx-0" >
+                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-ham">
+                                    <label class="form-check-inline" for="topping-meat-ham" >Ham</label>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <div class="form-check mx-0" >
+                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-philly">
+                                    <label class="form-check-inline" for="topping-meat-philly" >Philly Steak</label>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <div class="form-check mx-0" >
+                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-bacon">
+                                    <label class="form-check-inline" for="topping-meat-bacon" >Bacon</label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!--Non-Meat Card-->
+                        <section class="card mt-3">
+                            <div class="card-header bg-light p-3">
+                                Choose Non-Meets
+                            </div>
+                            <div class="card p-3">
+                                <div class="form-check mx-0" >
+                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-green-peppers">
+                                    <label class="form-check-inline" for="topping-non-meat-green-peppers" >Green Peppers</label>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <div class="form-check mx-0" >
+                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-mushrooms">
+                                    <label class="form-check-inline" for="topping-non-meat-mushrooms" >Mushrooms</label>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <div class="form-check mx-0" >
+                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-onions">
+                                    <label class="form-check-inline" for="topping-non-meat-onions" >Philly Onions</label>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <div class="form-check mx-0" >
+                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-j-peppers">
+                                    <label class="form-check-inline" for="topping-non-meat-j-peppers" >Jalapeño Peppers</label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!--Card Footer-->
+                        <footer class="card w-auto mt-3">
+                            <div class="card-header bg-light p-3">
+                                <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit">
+                                    Check out&nbsp;&nbsp;<i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<!--FORM        ---     CHEESE       -->
-<div class="container-fluid mt-5">
-    <h2>Build Your Own Pizza!</h2>
-    <div class="card">
-        <header class="card-header bg-primary text-white">
-            Choose Cheese and Sauce
-        </header>
-        <div class="card">
-            <div class="card-body py-3 m-auto" style="min-width: 98vw;">
-                <!--Cheese Size Card-->
-                <section class="card">
-                    <div class="card-header bg-light p-3">
-                        Cheese
-                    </div>
-                    <div class="car-header p-3">
-                        How Much?
-                    </div>
-                    <select name="cheese-quantity" id="cheese-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
-                        <option selected>Regular</option>
-                        <option value="large">Large</option>
-                        <option value="x-large">Extra Large</option>
-                    </select>
+<!--&lt;!&ndash;TABS&ndash;&gt;-->
+<!--<ul class="nav nav-tabs">-->
+<!--    <li class="nav-item">-->
+<!--        <a class="nav-link" href="#size-and-crust" role="tab" aria-controls="size-and-crust" aria-selected="true">Size and Crust</a>-->
+<!--    </li>-->
+<!--    <li class="nav-item">-->
+<!--        <a class="nav-link" href="#cheese-and-sauce" role="tab" aria-controls="cheese-and-sauce" aria-selected="false">Cheese and Sauce</a>-->
+<!--    </li>-->
+<!--    <li class="nav-item">-->
+<!--        <a class="nav-link" href="#toppings" role="tab" aria-controls="toppings" aria-selected="flase">Toppings</a>-->
+<!--    </li>-->
+<!--</ul>-->
 
-                </section>
+<!--&lt;!&ndash;TAB CONTENT&ndash;&gt;-->
+<!--<div class="tab-content">-->
 
-                <!--Sauce Card-->
-                <section class="card mt-3">
-                    <div class="card-header bg-light p-3">
-                        Sauce
-                    </div>
-                    <!--Cheese-->
-                    <div class="car-header p-3">
-                        What Type?
-                    </div>
-                    <select name="cheese-quantity" id="sauce-type" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
-                        <option selected>Robust Inspired Tomato Sauce</option>
-                        <option value="pesto">Pesto</option>
-                        <option value="white-garlic">White Garlic Sauce</option>
-                        <option value="garlic-ranch">Garlic Ranch Sauce</option>
-                        <option value="humus">Hummus</option>
-                        <option value="buffalo">Buffalo Sauce</option>
-                        <option value="marinara">Marinara Sauce</option>
-                    </select>
-                    <div class="car-header p-3">
-                        What Type?
-                    </div>
-                    <!--Sauce-->
-                    <select name="cheese-quantity" id="sauce-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
-                        <option selected>Regular</option>
-                        <option value="light-sauce">Light Sauce</option>
-                        <option value="extra-sauce">Extra Sauce</option>
-                    </select>
+<!--    &lt;!&ndash;TAB 1&ndash;&gt;-->
+<!--    <div class="tab-pane active" id="size-and-crust" role="tabpanel" aria-controls="size-and-crust-tab">-->
+<!--        &lt;!&ndash;FORM        -&#45;&#45;     CRUST       &ndash;&gt;-->
+<!--        <div class="container-fluid">-->
+<!--            <h2>Build Your Own Pizza!</h2>-->
+<!--            <div class="card">-->
+<!--                <header class="card-header bg-primary text-white">-->
+<!--                    Choose Size and Crust-->
+<!--                </header>-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body py-3 m-auto" style="min-width: 98vw;">-->
+<!--                        &lt;!&ndash;Hand Tossed Card&ndash;&gt;-->
+<!--                        <section class="card">-->
+<!--                            <div class="card-header bg-light p-3">-->
+<!--                                Hand Tossed-->
+<!--                            </div>-->
+<!--                            <div class="car-header p-xl-3">-->
+<!--                                Garlic seasoned crust with a rich, buttery taste.-->
+<!--                            </div>-->
+<!--                            <div class="card d-inline p-3">-->
+<!--                                <input class="form-check-input" type="radio" name="size-crust" id="small-crust">-->
+<!--                                <label for="small-crust" class="form-check-label px-1">Small (10")</label>-->
+<!--                            </div>-->
+<!--                            <div class="card d-inline p-3">-->
+<!--                                <input class="form-check-input" type="radio" name="size-crust" id="mid-crust">-->
+<!--                                <label for="small-crust" class="form-check-label px-1">Medium (12")</label>-->
+<!--                            </div>-->
+<!--                        </section>-->
 
-                </section>
+<!--                        &lt;!&ndash;Crispy Thin Card&ndash;&gt;-->
+<!--                        <section class="card mt-3">-->
+<!--                            <div class="card-header bg-light p-3">-->
+<!--                                Crispy Thin-->
+<!--                            </div>-->
+<!--                            <div class="car-header p-xl-3">-->
+<!--                                Thin enough for optimum crispy to crunchy ratio-->
+<!--                            </div>-->
 
-                <!--Card Footer-->
-                <footer class="card w-auto mt-3">
-                    <div class="card-header bg-light p-3">
-                        <button class="btn btn-primary float-end rounded-0 rounded-right" type="submit">Next Step&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-                        <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit"><i class="fa-solid fa-angle-left"></i>&nbsp;&nbsp;Previous Step</button>
-                    </div>
-                </footer>
-            </div>
-        </div>
-    </div>
+<!--                            <div class="card d-inline p-3">-->
+<!--                                <input class="form-check-input" type="radio" name="size-crust" id="crispy-mid-crust">-->
+<!--                                <label for="mid-crust" class="form-check-label px-1">Medium (12")</label>-->
+<!--                            </div>-->
+<!--                            <div class="card d-inline p-3">-->
+<!--                                <input class="form-check-input" type="radio" name="size-crust" id="large-mid-crust">-->
+<!--                                <label for="large-mid-crust" class="form-check-label px-1">Large (14")</label>-->
+<!--                            </div>-->
+<!--                        </section>-->
+
+<!--                        &lt;!&ndash;Card Footer&ndash;&gt;-->
+<!--                        <footer class="card w-auto mt-3">-->
+<!--                            <div class="card-header bg-light p-3">-->
+<!--                                <button class="btn btn-primary float-end" type="submit">Next Step&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>-->
+<!--                            </div>-->
+<!--                        </footer>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash;TAB 2    &ndash;&gt;-->
+<!--    <div class="tab-pane" id="cheese-and-sauce" role="tabpanel" aria-controls="cheese-and-sauce-tab">-->
+<!--        &lt;!&ndash;FORM        -&#45;&#45;     CHEESE       &ndash;&gt;-->
+<!--        <div class="container-fluid mt-5">-->
+<!--            <h2>Build Your Own Pizza!</h2>-->
+<!--            <div class="card">-->
+<!--                <header class="card-header bg-primary text-white">-->
+<!--                    Choose Cheese and Sauce-->
+<!--                </header>-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body py-3 m-auto" style="min-width: 98vw;">-->
+<!--                        &lt;!&ndash;Cheese Size Card&ndash;&gt;-->
+<!--                        <section class="card">-->
+<!--                            <div class="card-header bg-light p-3">-->
+<!--                                Cheese-->
+<!--                            </div>-->
+<!--                            <div class="car-header p-3">-->
+<!--                                How Much?-->
+<!--                            </div>-->
+<!--                            <select name="cheese-quantity" id="cheese-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">-->
+<!--                                <option selected>Regular</option>-->
+<!--                                <option value="large">Large</option>-->
+<!--                                <option value="x-large">Extra Large</option>-->
+<!--                            </select>-->
+
+<!--                        </section>-->
+
+<!--                        &lt;!&ndash;Sauce Card&ndash;&gt;-->
+<!--                        <section class="card mt-3">-->
+<!--                            <div class="card-header bg-light p-3">-->
+<!--                                Sauce-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash;Cheese&ndash;&gt;-->
+<!--                            <div class="car-header p-3">-->
+<!--                                What Type?-->
+<!--                            </div>-->
+<!--                            <select name="cheese-quantity" id="sauce-type" class="form-select card py-3 mx-auto mb-3" style="width: 98%">-->
+<!--                                <option selected>Robust Inspired Tomato Sauce</option>-->
+<!--                                <option value="pesto">Pesto</option>-->
+<!--                                <option value="white-garlic">White Garlic Sauce</option>-->
+<!--                                <option value="garlic-ranch">Garlic Ranch Sauce</option>-->
+<!--                                <option value="humus">Hummus</option>-->
+<!--                                <option value="buffalo">Buffalo Sauce</option>-->
+<!--                                <option value="marinara">Marinara Sauce</option>-->
+<!--                            </select>-->
+<!--                            <div class="car-header p-3">-->
+<!--                                What Type?-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash;Sauce&ndash;&gt;-->
+<!--                            <select name="cheese-quantity" id="sauce-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">-->
+<!--                                <option selected>Regular</option>-->
+<!--                                <option value="light-sauce">Light Sauce</option>-->
+<!--                                <option value="extra-sauce">Extra Sauce</option>-->
+<!--                            </select>-->
+
+<!--                        </section>-->
+
+<!--                        &lt;!&ndash;Card Footer&ndash;&gt;-->
+<!--                        <footer class="card w-auto mt-3">-->
+<!--                            <div class="card-header bg-light p-3">-->
+<!--                                <button class="btn btn-primary float-end rounded-0 rounded-right" type="submit">Next Step&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>-->
+<!--                                <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit"><i class="fa-solid fa-angle-left"></i>&nbsp;&nbsp;Previous Step</button>-->
+<!--                            </div>-->
+<!--                        </footer>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash;TAB 3&ndash;&gt;-->
+<!--    <div class="tab-pane" id="toppings" role="tabpanel" aria-controls="toppings-tab">-->
+<!--        &lt;!&ndash;FORM        -&#45;&#45;     TOPPINGS       &ndash;&gt;-->
+<!--        <div class="container-fluid mt-5">-->
+<!--            <h2>Build Your Own Pizza!</h2>-->
+<!--            <div class="card">-->
+<!--                <header class="card-header bg-primary text-white">-->
+<!--                    Choose Toppings-->
+<!--                </header>-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body py-3 m-auto" style="min-width: 98vw;">-->
+<!--                        &lt;!&ndash;Meat Card&ndash;&gt;-->
+<!--                        <section class="card">-->
+<!--                            <div class="card-header bg-light p-3">-->
+<!--                                Choose Meats-->
+<!--                            </div>-->
+<!--                            <div class="card p-3">-->
+<!--                                <div class="form-check mx-0" >-->
+<!--                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-beef">-->
+<!--                                    <label class="form-check-inline" for="topping-meat-beef" >Beef</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card p-3">-->
+<!--                                <div class="form-check mx-0" >-->
+<!--                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-ham">-->
+<!--                                    <label class="form-check-inline" for="topping-meat-ham" >Ham</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card p-3">-->
+<!--                                <div class="form-check mx-0" >-->
+<!--                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-philly">-->
+<!--                                    <label class="form-check-inline" for="topping-meat-philly" >Philly Steak</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card p-3">-->
+<!--                                <div class="form-check mx-0" >-->
+<!--                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-bacon">-->
+<!--                                    <label class="form-check-inline" for="topping-meat-bacon" >Bacon</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </section>-->
+
+<!--                        &lt;!&ndash;Non-Meat Card&ndash;&gt;-->
+<!--                        <section class="card mt-3">-->
+<!--                            <div class="card-header bg-light p-3">-->
+<!--                                Choose Non-Meets-->
+<!--                            </div>-->
+<!--                            <div class="card p-3">-->
+<!--                                <div class="form-check mx-0" >-->
+<!--                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-green-peppers">-->
+<!--                                    <label class="form-check-inline" for="topping-non-meat-green-peppers" >Green Peppers</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card p-3">-->
+<!--                                <div class="form-check mx-0" >-->
+<!--                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-mushrooms">-->
+<!--                                    <label class="form-check-inline" for="topping-non-meat-mushrooms" >Mushrooms</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card p-3">-->
+<!--                                <div class="form-check mx-0" >-->
+<!--                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-onions">-->
+<!--                                    <label class="form-check-inline" for="topping-non-meat-onions" >Philly Onions</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card p-3">-->
+<!--                                <div class="form-check mx-0" >-->
+<!--                                    <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-j-peppers">-->
+<!--                                    <label class="form-check-inline" for="topping-non-meat-j-peppers" >Jalapeño Peppers</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </section>-->
+
+<!--                        &lt;!&ndash;Card Footer&ndash;&gt;-->
+<!--                        <footer class="card w-auto mt-3">-->
+<!--                            <div class="card-header bg-light p-3">-->
+<!--                                <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit">-->
+<!--                                    Check out&nbsp;&nbsp;<i class="fa-solid fa-cart-shopping"></i>-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                        </footer>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
 
 
 
 
-<!--FORM        ---     TOPPINGS       -->
-<div class="container-fluid mt-5">
-    <h2>Build Your Own Pizza!</h2>
-    <div class="card">
-        <header class="card-header bg-primary text-white">
-            Choose Toppings
-        </header>
-        <div class="card">
-            <div class="card-body py-3 m-auto" style="min-width: 98vw;">
-                <!--Meat Card-->
-                <section class="card">
-                    <div class="card-header bg-light p-3">
-                        Choose Meats
-                    </div>
-                    <div class="card p-3">
-                        <div class="form-check mx-0" >
-                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-beef">
-                            <label class="form-check-inline" for="topping-meat-beef" >Beef</label>
-                        </div>
-                    </div>
-                    <div class="card p-3">
-                        <div class="form-check mx-0" >
-                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-ham">
-                            <label class="form-check-inline" for="topping-meat-ham" >Ham</label>
-                        </div>
-                    </div>
-                    <div class="card p-3">
-                        <div class="form-check mx-0" >
-                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-philly">
-                            <label class="form-check-inline" for="topping-meat-philly" >Philly Steak</label>
-                        </div>
-                    </div>
-                    <div class="card p-3">
-                        <div class="form-check mx-0" >
-                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-bacon">
-                            <label class="form-check-inline" for="topping-meat-bacon" >Bacon</label>
-                        </div>
-                    </div>
-                </section>
 
-                <!--Non-Meat Card-->
-                <section class="card mt-3">
-                    <div class="card-header bg-light p-3">
-                        Choose Non-Meets
-                    </div>
-                    <div class="card p-3">
-                        <div class="form-check mx-0" >
-                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-green-peppers">
-                            <label class="form-check-inline" for="topping-non-meat-green-peppers" >Green Peppers</label>
-                        </div>
-                    </div>
-                    <div class="card p-3">
-                        <div class="form-check mx-0" >
-                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-mushrooms">
-                            <label class="form-check-inline" for="topping-non-meat-mushrooms" >Mushrooms</label>
-                        </div>
-                    </div>
-                    <div class="card p-3">
-                        <div class="form-check mx-0" >
-                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-onions">
-                            <label class="form-check-inline" for="topping-non-meat-onions" >Philly Onions</label>
-                        </div>
-                    </div>
-                    <div class="card p-3">
-                        <div class="form-check mx-0" >
-                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-j-peppers">
-                            <label class="form-check-inline" for="topping-non-meat-j-peppers" >Jalapeño Peppers</label>
-                        </div>
-                    </div>
-                </section>
 
-                <!--Card Footer-->
-                <footer class="card w-auto mt-3">
-                    <div class="card-header bg-light p-3">
-                        <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit">
-                            Check out&nbsp;&nbsp;<i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                    </div>
-                </footer>
-            </div>
-        </div>
-    </div>
-</div>
+
+
 
 
 
