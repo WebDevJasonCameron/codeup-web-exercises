@@ -3,6 +3,9 @@
 ## 2022 02 25 | Day Off
 We have the 'day off' this Friday.  While this means I have the opportunity to work on some family project, I found some time to re-attack the bootstrap Ex.  I found this Ex both frustrating and rewarding.  I can see that bootstrap can provide some significant benefits to programmers.  However, it has also been a challenge for someone who likes more control with their web applications.  In truth, I can see you have the same amount of control with bootstrap as if you created all the CSS styles yourself.  To accomplish this, you need to understand how the third party CSS style interactions affect your work.  So, while it introduces additional complications to the dev process, it can expedite mundane styling standards that multiple devs can expect to work with (a common language so-to-speak).  Therefore, I have completed 75% of the initial Ex within the lesson plan.  Next, I need to introduce tab pages.   
 
+### 2100 | 1st Bootstrap Ex
+Completed the Pizza World Bootstrap Ex.  Here are some of the LL I attained from the Ex: One, you can (and should) use script inside the element tag to manipulate things that are not standard.  Two, bootstrap is not a streamlined template.  If a div needs a padding added to it several times, you will need to ensure the class attribute has that one statement inside it (thus the HTML code can become extremely bloated).  Three, the templating system is important for companies that might need to replace programmers (as the turn-over can be great in the industry). Four, getting something to look exactly the way you want it to look can be frustrating with the template system. However, when you have built the component, it can be replicated with ease.  Note: this will still require some time for newer programmers to figure out how the component is constructed.
+
 
 ---
 
