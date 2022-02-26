@@ -87,7 +87,7 @@
                 <!--Card Footer-->
                 <footer class="card w-auto mt-3">
                     <div class="card-header bg-light p-3">
-                        <button class="btn btn-primary float-end" type="submit">Next Step <i class="fa-solid fa-angle-right"></i></button>
+                        <button class="btn btn-primary float-end" type="submit">Next Step&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
                     </div>
                 </footer>
             </div>
@@ -154,8 +154,8 @@
                 <!--Card Footer-->
                 <footer class="card w-auto mt-3">
                     <div class="card-header bg-light p-3">
-                        <button class="btn btn-primary float-end rounded-0 rounded-right" type="submit">Next Step <i class="fa-solid fa-angle-right"></i></button>
-                        <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit"><i class="fa-solid fa-angle-left"></i>Previous Step</button>
+                        <button class="btn btn-primary float-end rounded-0 rounded-right" type="submit">Next Step&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
+                        <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit"><i class="fa-solid fa-angle-left"></i>&nbsp;&nbsp;Previous Step</button>
                     </div>
                 </footer>
             </div>
@@ -175,53 +175,74 @@
         </header>
         <div class="card">
             <div class="card-body py-3 m-auto" style="min-width: 98vw;">
-                <!--Cheese Size Card-->
+                <!--Meat Card-->
                 <section class="card">
                     <div class="card-header bg-light p-3">
                         Choose Meats
                     </div>
-                    <div class="car-header p-3">
-                        How Much?
+                    <div class="card p-3">
+                        <div class="form-check mx-0" >
+                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-beef">
+                            <label class="form-check-inline" for="topping-meat-beef" >Beef</label>
+                        </div>
                     </div>
-
-
+                    <div class="card p-3">
+                        <div class="form-check mx-0" >
+                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-ham">
+                            <label class="form-check-inline" for="topping-meat-ham" >Ham</label>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <div class="form-check mx-0" >
+                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-philly">
+                            <label class="form-check-inline" for="topping-meat-philly" >Philly Steak</label>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <div class="form-check mx-0" >
+                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-meat-bacon">
+                            <label class="form-check-inline" for="topping-meat-bacon" >Bacon</label>
+                        </div>
+                    </div>
                 </section>
 
-                <!--Sauce Card-->
+                <!--Non-Meat Card-->
                 <section class="card mt-3">
                     <div class="card-header bg-light p-3">
-                        Sauce
+                        Choose Non-Meets
                     </div>
-                    <!--Cheese-->
-                    <div class="car-header p-3">
-                        What Type?
+                    <div class="card p-3">
+                        <div class="form-check mx-0" >
+                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-green-peppers">
+                            <label class="form-check-inline" for="topping-non-meat-green-peppers" >Green Peppers</label>
+                        </div>
                     </div>
-                    <select name="cheese-quantity" id="sauce-type" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
-                        <option selected>Robust Inspired Tomato Sauce</option>
-                        <option value="pesto">Pesto</option>
-                        <option value="white-garlic">White Garlic Sauce</option>
-                        <option value="garlic-ranch">Garlic Ranch Sauce</option>
-                        <option value="humus">Hummus</option>
-                        <option value="buffalo">Buffalo Sauce</option>
-                        <option value="marinara">Marinara Sauce</option>
-                    </select>
-                    <div class="car-header p-3">
-                        What Type?
+                    <div class="card p-3">
+                        <div class="form-check mx-0" >
+                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-mushrooms">
+                            <label class="form-check-inline" for="topping-non-meat-mushrooms" >Mushrooms</label>
+                        </div>
                     </div>
-                    <!--Sauce-->
-                    <select name="cheese-quantity" id="sauce-quantity" class="form-select card py-3 mx-auto mb-3" style="width: 98%">
-                        <option selected>Regular</option>
-                        <option value="light-sauce">Light Sauce</option>
-                        <option value="extra-sauce">Extra Sauce</option>
-                    </select>
-
+                    <div class="card p-3">
+                        <div class="form-check mx-0" >
+                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-onions">
+                            <label class="form-check-inline" for="topping-non-meat-onions" >Philly Onions</label>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <div class="form-check mx-0" >
+                            <input  class="form-check-input" type="checkbox" name="beef" id="topping-non-meat-j-peppers">
+                            <label class="form-check-inline" for="topping-non-meat-j-peppers" >Jalapeño Peppers</label>
+                        </div>
+                    </div>
                 </section>
 
                 <!--Card Footer-->
                 <footer class="card w-auto mt-3">
                     <div class="card-header bg-light p-3">
-                        <button class="btn btn-primary float-end rounded-0 rounded-right" type="submit">Next Step <i class="fa-solid fa-angle-right"></i></button>
-                        <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit"><i class="fa-solid fa-angle-left"></i>Previous Step</button>
+                        <button class="btn btn-primary float-end rounded-0 rounded-left" type="submit">
+                            Check out&nbsp;&nbsp;<i class="fa-solid fa-cart-shopping"></i>
+                        </button>
                     </div>
                 </footer>
             </div>

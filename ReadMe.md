@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 02 25 | Day Off
+We have the 'day off' this Friday.  While this means I have the opportunity to work on some family project, I found some time to re-attack the bootstrap Ex.  I found this Ex both frustrating and rewarding.  I can see that bootstrap can provide some significant benefits to programmers.  However, it has also been a challenge for someone who likes more control with their web applications.  In truth, I can see you have the same amount of control with bootstrap as if you created all the CSS styles yourself.  To accomplish this, you need to understand how the third party CSS style interactions affect your work.  So, while it introduces additional complications to the dev process, it can expedite mundane styling standards that multiple devs can expect to work with (a common language so-to-speak).  Therefore, I have completed 75% of the initial Ex within the lesson plan.  Next, I need to introduce tab pages.   
+
+
+---
+
 ## 2022 02 24 | Morning
 Always start early in the class with updates and standard preparations.  This morning is no different.  My focus will be in inspecting the LS and Ex planned for the day.  I have not worked with Bootstrap.  Part of me feels like it is a cheat that employers might think is inferior to what we could do with 'fresh' code.  However, I think I can understand why we might want to use the tech stack.  (There is a Blog article in that: "What exactly is a 'tech stack'").  If we want to focus on building backend applications, using a front end template might be a better use of our time.  
 
