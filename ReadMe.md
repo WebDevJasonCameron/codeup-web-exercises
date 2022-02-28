@@ -1,7 +1,14 @@
 # Intro To Front End
 
+##2022 02 27 | Sunday
+Reviewing the LinkedIn Learning course: https://www.linkedin.com/learning/bootstrap-5-essential-training . There is a wonderful slide (notes) website that I can continue to return to for help in Bootstrap: www.raybo.org/slides_bootstrap5
+
+
+---
+
+
 ## 2022 02 26 | Bootstrap Grid
-Completed the first assignment.  I made it more difficult that it was at first.  Then I realized the overall page only needed one row with two columns.  
+Completed the first assignment.  I made it more difficult that it was at first.  Then I realized the overall page only needed one row with two columns.
 
 
 ---
