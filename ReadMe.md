@@ -1,6 +1,12 @@
 # Intro To Front End
 
-##2022 02 27 | Sunday
+## 2022 02 28 | Resume Ex
+Already completed this Ex over the weekend.  However, I found some ways to make it better.  Now,
+
+
+---
+
+## 2022 02 27 | Sunday
 Reviewing the LinkedIn Learning course: https://www.linkedin.com/learning/bootstrap-5-essential-training . There is a wonderful slide (notes) website that I can continue to return to for help in Bootstrap: www.raybo.org/slides_bootstrap5
 
 

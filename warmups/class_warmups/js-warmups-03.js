@@ -110,11 +110,11 @@
 // Write a function that accepts two int and returns the remainder
 // of dividing the larger value by the smaller value.
 // Division by zero return NaN
-function largeToSmall(n1, n2){
-    if(n1 === 0 || n2 === 0) return NaN
-    if(n1 > n2) return n1 % n2;
-    return n2 % n1;
-}
+// function largeToSmall(n1, n2){
+//     if(n1 === 0 || n2 === 0) return NaN
+//     if(n1 > n2) return n1 % n2;
+//     return n2 % n1;
+// }
 
 // console.log(largeToSmall(15, 2));
 // console.log(largeToSmall(2, 15));
@@ -132,17 +132,21 @@ function largeToSmall(n1, n2){
 // The string has a length greater or equal to one and contains only letters from a to z.
 
 // NOT ENOUGH TIME  !!!!!!!
-function printerError(x){
-    let output = 0;
-    for (let i = 0; i < x.length; i++) {
-        if(x[i] > 'm') {output++}
-    }
-    return '' + output + '/' + x.length
-}
-let response = 'aabbccccddmttxmdde'
-console.log(printerError(response));
+// function printerError(x){
+//     let output = 0;
+//     for (let i = 0; i < x.length; i++) {
+//         if(x[i] > 'm') {output++}
+//     }
+//     return '' + output + '/' + x.length
+// }
+// let response = 'aabbccccddmttxmdde'
+// console.log(printerError(response));
 
 
+/**
+ * 2022 02 28
+ * Additional Challenges
+ */
 
 
 
