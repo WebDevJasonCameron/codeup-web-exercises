@@ -1,6 +1,7 @@
 # Intro To Front End
 
-## 2022 03 01 | 
+## 2022 03 01 | Bootstrap Walk Through
+Started the Ex over for the third time.  I want to break down the whole problem into small manageable peaces.
 
 
 ---

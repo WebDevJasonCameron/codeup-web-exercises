@@ -46,6 +46,16 @@ yellow {background-color: var(--yellow)}
 green {background-color: var(--green)}
 blue {background-color: var(--blue)}
 
+.nav-background {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 59px;
+    width: 100%;
+    top: 37px;
+    z-index: -1000;
+}
+
 
 /*COMPONENTS*/
 .circle {
@@ -59,4 +69,16 @@ blue {background-color: var(--blue)}
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.images {
+    max-width: 100%;
+    border: .5em solid #e6e6e6;
+    border-radius: 4px;
+    background-size: cover;
+}
+
+
+.ipad-image {
+    background-image: url("../img/codeup_design_assets/images/ipad.jpg");
 }
