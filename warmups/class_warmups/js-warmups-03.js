@@ -148,13 +148,50 @@
  * Additional Challenges
  */
 
+// function isLockNessMonster(s){
+//     if(typeof s === 'number') s = s.toFixed(2);
+//     s = s.toString();
+//     if(s.includes('three fifty') === true) return true;
+//     if(s.includes('tree fiddy') === true) return true;
+//     if(s.includes('3.50') === true) return true;
+//     else return false;
+// }
+//
+// let s1 = 'three fifty';
+// let s2 = 'tree fiddy';
+// let s3 = '3.50';
+// let s4 = 'that will be three fifty';
+// let s5 = 'that will be tree fiddy';
+// let s6 = 'that will be 3.50';
+// let s7 = 'dunno';
+// let s8 = 3.50;
+//
+// console.log(isLockNessMonster(s1));
+// console.log(isLockNessMonster(s2));
+// console.log(isLockNessMonster(s3));
+// console.log(isLockNessMonster(s4));
+// console.log(isLockNessMonster(s5));
+// console.log(isLockNessMonster(s6));
+// console.log(isLockNessMonster(s7));
+// console.log(isLockNessMonster(s8));
+
+// Calc the amount of unlucky days
 
 
+// Find Day of Jan 1 of a particular year
+// function findJan01Day(year){
+//     let d = new Date(new Date().getFullYear(), 0, 1);
+//     let bd = 13;
+//     while(year = y)
+// }
+
+// Loop through year to identify the friday that also equals to the date 13
 
 
+// After the year is completed, return the number of fridays that also has the number 13
 
 
-
+// console.log(findJan01Day(2022));
 
 
 

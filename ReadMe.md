@@ -1,8 +1,15 @@
 # Intro To Front End
 
+## 2022 03 01 | 
+
+
+---
+
 ## 2022 02 28 | Resume Ex
 Already completed this Ex over the weekend.  However, I found some ways to make it better.  Now,
 
+
+---
 
 ### 1200 | Pair programming
 Working with Matthew Martinez!  Working on the sketch.
