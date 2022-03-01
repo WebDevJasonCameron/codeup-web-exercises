@@ -1,0 +1,62 @@
+/*BODY & HTML*/
+
+:root {
+    --red: #E6563B;
+    --yellow: #DEA03D;
+    --green: #00ABA9;
+    --white: #f0f0f0;
+    --gray: #E6E6E6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Anton', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.75rem;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+a {
+    font-family: 'Abel', sans-serif;
+}
+
+/*COLORS*/
+red {background-color: var(--red)}
+yellow {background-color: var(--yellow)}
+green {background-color: var(--green)}
+blue {background-color: var(--blue)}
+
+
+/*COMPONENTS*/
+.circle {
+    height: 105px;
+    width: 105px;
+    border: 10px solid var(--white);
+    border-radius: 50%;
+
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

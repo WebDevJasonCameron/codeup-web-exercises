@@ -4,6 +4,9 @@
 Already completed this Ex over the weekend.  However, I found some ways to make it better.  Now,
 
 
+### 1200 | Pair programming
+Working with Matthew Martinez!  Working on the sketch.
+
 ---
 
 ## 2022 02 27 | Sunday
