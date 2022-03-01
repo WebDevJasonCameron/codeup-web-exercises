@@ -17,6 +17,13 @@
     (function() {
         "use strict";
 
+        function hey(){
+            console.log('hey')
+            return 'got through'
+        }
+
+        let h = hey();
+
         let detonationTimer = 5;
                                                                 // 1. TODO: This function needs to be called
                                                                 // once every second
@@ -31,11 +38,13 @@
             detonationTimer--;
         }
 
+        let clickRedWire = setInterval(updateTimer, 1000);
 
                                                                 // 2. TODO: When this function runs, it needs to
                                                                 // cancel the interval/timeout for updateTimer()
         function defuseTheBOM() {
-
+            clearInterval(clickRedWire);
+            console.log('click')
         }
 
         // Don't modify anything below this line!
