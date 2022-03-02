@@ -6,6 +6,12 @@ It has been extremely busy the last few days.  We "completed" the bootstrap code
 ### 0900 | UnluckyDays
 Completed the warmup Ex from yesterday.  I thought I came up with a pretty neat way of completing the request.  After submitting it to CodeWars, I found that my code (while functional) was some spaghetti work!  Learning as I go...
 
+### 1330 | Bootstrap and DOM
+Working through the codeup design Ex.  Completed the cards, without actually using cards from BS.  The alignment is off for the moment.  A need to set up the BP for sm, md, lr, and lx.  
+
+### 1430 | DOM Ls
+Completed Ls with a pink square.
+
 
 ---
 
