@@ -176,22 +176,50 @@
 // console.log(isLockNessMonster(s8));
 
 // Calc the amount of unlucky days
+function unluckyDays(year){                                //   Function allows us to choose the year...
+    let startMonth;                                             //   Var for the month we will start at
+
+    if(year !== 2022) startMonth = 12 * (year - 2022);          //   Start month calc by subtracting from this year
+    else startMonth = 1;                                        // multiply by 12.  If we are searching this year, we
+                                                                // leave it to one
+    let output = 0;                                             //   Var for our output
+
+    for (let i = 0; i <12; i++) {                               //   For loop to count 12 months
+        let d = new Date(new Date().getFullYear(), startMonth, 13);
+                                                                //   Using built in JS .getFullYear() function and base
+                                                                // our whole count on what month we are starting on.
+                                                                // each time we loop, we search the 13th day of that
+                                                                // month.
+        d = d.toString();                                       //   This converts the previous response as a string
+        if(d.includes('Fri') === true) output ++;  //   If we find 'Fri' in that string, we add it to
+                                                                // the output count
+        startMonth ++;                                          //   Move up to the next month (Jan to Feb, etc)
+
+        console.log(d)                                          //   Logging d to see if this actually works!
+    }
+    return output + ' unlucky FRIDAY the 13ths';
+}
+
+console.log(unluckyDays(2030));
 
 
-// Find Day of Jan 1 of a particular year
-// function findJan01Day(year){
-//     let d = new Date(new Date().getFullYear(), 0, 1);
-//     let bd = 13;
-//     while(year = y)
-// }
+
+// let d = new Date();
+//
+// let date = d.getDate();
+// let month = d.getMonth() + 1;
+// let year = d.getFullYear();
+//
+// let dateStr = date + '/' + month + '/' + year;
+//
+// console.log(dateStr);
+
 
 // Loop through year to identify the friday that also equals to the date 13
 
 
 // After the year is completed, return the number of fridays that also has the number 13
 
-
-// console.log(findJan01Day(2022));
 
 
 

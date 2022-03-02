@@ -1,7 +1,13 @@
 # Intro To Front End
 
+## 2022 03 02 | Morning
+It has been extremely busy the last few days.  We "completed" the bootstrap codeup design project.  In truth, we got through about 35% of the project.  I needed to start over a few times to try and structure the project, so it could be better coded with bootstrap. Now I have a warmup Ex called unlucky days that I want to try and figure out before the class starts.
+
+
+---
+
 ## 2022 03 01 | Bootstrap Walk Through
-Started the Ex over for the third time.  I want to break down the whole problem into small manageable peaces.
+Started the Ex over for the third time.  I want to break down the whole problem into small manageable peaces.  
 
 
 ---
