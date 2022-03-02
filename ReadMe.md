@@ -1,7 +1,10 @@
 # Intro To Front End
 
 ## 2022 03 02 | Morning
-It has been extremely busy the last few days.  We "completed" the bootstrap codeup design project.  In truth, we got through about 35% of the project.  I needed to start over a few times to try and structure the project, so it could be better coded with bootstrap. Now I have a warmup Ex called unlucky days that I want to try and figure out before the class starts.
+It has been extremely busy the last few days.  We "completed" the bootstrap codeup design project.  In truth, we got through about 35% of the project.  I needed to start over a few times to try and structure the project, so it could be better coded with bootstrap. Now I have a warmup Ex called unlucky days that I want to try and figure out before the class starts. 
+
+### 0900 | UnluckyDays
+Completed the warmup Ex from yesterday.  I thought I came up with a pretty neat way of completing the request.  After submitting it to CodeWars, I found that my code (while functional) was some spaghetti work!  Learning as I go...
 
 
 ---
