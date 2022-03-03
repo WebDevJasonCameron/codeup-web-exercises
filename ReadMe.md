@@ -1,5 +1,11 @@
 # Intro To Front End
 
+# 2022 03 03 | DOM
+Word to remember (WTR): "Naming conventions."  Need to understand the third parameter in ```.addEventListener(1, 2, 3)```.  Worked on third CSS Bonus.  See notes on repo site'
+
+
+---
+
 ## 2022 03 02 | Morning
 It has been extremely busy the last few days.  We "completed" the bootstrap codeup design project.  In truth, we got through about 35% of the project.  I needed to start over a few times to try and structure the project, so it could be better coded with bootstrap. Now I have a warmup Ex called unlucky days that I want to try and figure out before the class starts. 
 
