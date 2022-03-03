@@ -1,0 +1,16 @@
+.wrapper {
+    padding-top: 50px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+
+.square {
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+}
+
+label {
+    margin-top: 20px;
+}

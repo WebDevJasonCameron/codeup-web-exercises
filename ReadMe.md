@@ -12,6 +12,9 @@ Working through the codeup design Ex.  Completed the cards, without actually usi
 ### 1430 | DOM Ls
 Completed Ls with a pink square.
 
+### 2030 | Finished for the day
+There is a lot done. Putting this away for the day.  Most work was done on the Bootstrap Ex.
+
 
 ---
 
