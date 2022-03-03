@@ -3,6 +3,8 @@
 # 2022 03 03 | DOM
 Word to remember (WTR): "Naming conventions."  Need to understand the third parameter in ```.addEventListener(1, 2, 3)```.  Worked on third CSS Bonus.  See notes on repo site'
 
+## 1530 | Coffee Plan
+Working on the Coffee Ex with Deon.  So far, we've complete 90% of the styling of the page.  We mod the original JS so that the outputs a string with HTML tags.  The last obstacle will be inputting the JS function that will search the array of objects for a specified criteria.
 
 ---
 
