@@ -3,8 +3,21 @@
 # 2022 03 03 | DOM
 Word to remember (WTR): "Naming conventions."  Need to understand the third parameter in ```.addEventListener(1, 2, 3)```.  Worked on third CSS Bonus.  See notes on repo site'
 
-## 1530 | Coffee Plan
-Working on the Coffee Ex with Deon.  So far, we've complete 90% of the styling of the page.  We mod the original JS so that the outputs a string with HTML tags.  The last obstacle will be inputting the JS function that will search the array of objects for a specified criteria.
+### 1530 | Coffee Plan
+Working on the Coffee Ex with Deon.  So far, we've complete 90% of the styling of the page.  We mod the original JS so that the outputs a string with HTML tags.  The last obstacle will be inputting the JS function that will search the array of objects for a specified criteria.  Don't forget to add the following in  ```e.prevent.default``` to keep the form from updating when entered.  
+
+```javascript
+
+    function functionName (e){
+        e.preventDefault();
+    }
+    
+```
+
+### 2200 | Cont Work
+Although we accomplished much during our peer programming assignment, I wanted to fork our accomplishments into a personal repo, so I can explore other avenues.  I was able to complete one of the functions we will work on tomorrow.  However, I am not exactly satisfied with the current design.  I find the elements 'jump' around when you change certain search criteria.  In truth, I think bootstrap would be best in showing off the functionality of the form and output (and yes I don't like saying this).  Once the functionality is completed, I believe I will focus my refactor efforts on the design... meaning, replacing current 'quick css' cowboy coding with clean style-templates. 
+
+
 
 ---
 
