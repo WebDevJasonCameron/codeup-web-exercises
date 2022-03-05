@@ -3,6 +3,9 @@
 ## 2022 03 04 | Updates
 I am not sure why GH isn't counting the work I am doing in other Repo (in other Org.).  However, Deon, Loren and I completed the Coffee project.  Both D and L did most of the typing while I tried to help in the logic.  Both of them added an amazing video in the background.  Some style problems occurred toward the end the day.  For some reason, the coffee cards started to stretch towards the bottom.  I know I've seen something like this, but I couldn't remember exactly what is the cause.  I would like to play with the code over the weekend to fix the issue.  
 
+### 2100 | Coffee Project
+Now that the group project is completed, I am working on my own cloned repo called "coffee project refactor."  I am sending updates to GH, but the system is not including it in my activity counter.  As such, I need to write notes in this log in order to receive credit for today's work.  As such, I made over ten updates to GH and only two will be noted.  
+
 
 ---
 
