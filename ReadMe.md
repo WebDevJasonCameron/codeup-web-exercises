@@ -1,5 +1,10 @@
 # Intro To Front End
 
+ ## 2022 03 07 | 
+Completed warm up. Updated the Coffee project.  Starting jQuery.  NOTE: look up Gilly's and Matt's project.  They did excellent job adding animations to their project.  Review the CSS and HTML (bootstrap).
+
+---
+
 ## 2022 03 04 | Updates
 I am not sure why GH isn't counting the work I am doing in other Repo (in other Org.).  However, Deon, Loren and I completed the Coffee project.  Both D and L did most of the typing while I tried to help in the logic.  Both of them added an amazing video in the background.  Some style problems occurred toward the end the day.  For some reason, the coffee cards started to stretch towards the bottom.  I know I've seen something like this, but I couldn't remember exactly what is the cause.  I would like to play with the code over the weekend to fix the issue.  
 
