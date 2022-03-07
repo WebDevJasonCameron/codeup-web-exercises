@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konami Code</title>
+  <link rel="shortcut icon" href="img/MoonConceptSmallPatch01.svg" type="image/x-icon">
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="jquery/jquery.js"></script>
+<script>
+  "use strict";
+
+  let codeInput = [];
+
+  function arrayCheck(c){
+    let cheatCode = [38, 38, 40, 40 37, 39, 37, 39, 66, 65]
+    for (let i = 0; i < codeInput.length; i++) {
+      if(codeInput[i] !== cheatCode[i]) return false
+    }
+    return true
+  }
+
+  $(document).keyup(function(event){
+    console.log(event.keyCode);
+    codeInput.push(event.keyCode)
+  });
+
+
+
+
+</script>
+</body>
+</html>
+
+<!--38, 38, 40, 40 37, 39, 37, 39, 66, 65 -->

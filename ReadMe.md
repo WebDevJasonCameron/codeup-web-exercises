@@ -6,6 +6,9 @@ Completed warm up. Updated the Coffee project.  Starting jQuery.  NOTE: look up 
 ### 1530 | Afternoon
 Started JQ lesson.  Also completed the JS quiz.  Started a LI Learning course to help retain lessons in class.  Completed the JQ intro Ex.  
 
+### 1630 | 2nd JQ Ex
+Completed second JQ Ex. Topic was on JQ Event handlers (Call Back Functions).  We will discuss this before leaving for the day.  Started the Konami Code Ex.  Still working...
+
 
 ---
 

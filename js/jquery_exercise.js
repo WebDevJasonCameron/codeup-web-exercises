@@ -69,7 +69,7 @@ $(document).ready(function() {
     //    the border has been removed.
     //
 
-    // Done
+    // $('.codeup:first").removeClass(class);
 
 
 
@@ -89,27 +89,58 @@ $(document).ready(function() {
     // 2. Using jQuery, set the font-size of all li elements to 20px.
     //
 
-    $('li').css('font-size', '20px');
+    // $('li').css('font-size', '20px');
 
     // 3. Craft selectors that highlight all the h1, p, and li elements.
     //
 
-    $('h1').css('background-color', 'blue');
-    $('p').css('background-color', 'blue');
-    $('li').css('background-color', 'blue');
+    // $('h1').css('background-color', 'blue');
+    // $('p').css('background-color', 'blue');
+    // $('li').css('background-color', 'blue');
 
 
     // 4. Create a jQuery statement to alert the contents of your h1
     //    element(s).
 
-    alert($('h1').html());
+    // alert($('h1').html());
 
     // Multiple Selectors
     //
     // 1. Combine your selectors that highlight all the h1, p, and li
     //    elements.
 
-    $('h1, p, li').css('background-color', 'blue');
+    // $('h1, p, li').css('background-color', 'blue');
 
+
+    // MOUSE OVER EVENTS =======================================================
+    //
+    // 1. Remove your custom jQuery code from previous exercises.
+    //
+
+    // Done
+
+    // 2. Add jQuery code that will change the background color of a h1
+    //    element when clicked.
+
+    $('h1').click(() => {
+        $('body').css('background-color', 'pink')
+    })
+
+    // 3. Make all paragraphs have a font size of 18px when they are
+    //   double-clicked.
+    //
+
+    $('p').click(() => {
+        $('p').css('font-size', '18px')
+    })
+
+    // 4. Set all li text color to red when the mouse is hovering; reset
+    //    to black when it is not.
+
+    $('li').hover(() => {
+        $('li').css('color', 'red')
+    }, () => {
+        $('li').css('color', 'black')
+    })
 
 });
