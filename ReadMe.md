@@ -1,7 +1,11 @@
 # Intro To Front End
 
- ## 2022 03 07 | 
+ ## 2022 03 07 | Monday
 Completed warm up. Updated the Coffee project.  Starting jQuery.  NOTE: look up Gilly's and Matt's project.  They did excellent job adding animations to their project.  Review the CSS and HTML (bootstrap).
+
+### 1530 | Afternoon
+Started JQ lesson.  Also completed the JS quiz.  Started a LI Learning course to help retain lessons in class.  Completed the JQ intro Ex.  
+
 
 ---
 
