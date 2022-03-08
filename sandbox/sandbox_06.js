@@ -44,16 +44,17 @@
 //
 // onlyOddNumbers([1, 2, 3, 4, 5, 6])
 
-function onlyOddNumbers2(arr) {
-    let output = [];                            //   First, set up an array var to catch the odd num
-    arr.forEach(function (num) {                //   Run a forEach 'loop' with 'num' param
-        if (num % 2 === 1) {                    //   if 'num' has a remainder of one,
-            output.push(num)                    // we push to the output array var
-        };
-    });
-    return output;
-}
-
-let myArray = [1, 2, 3, 4, 5, 6]
+// function onlyOddNumbers2(arr) {
+//     let output = [];                            //   First, set up an array var to catch the odd num
+//     arr.forEach(function (num) {                //   Run a forEach 'loop' with 'num' param
+//         if (num % 2 === 1) {                    //   if 'num' has a remainder of one,
+//             output.push(num)                    // we push to the output array var
+//         };
+//     });
+//     return output;
+// }
+//
+// let myArray = [1, 2, 3, 4, 5, 6]
 
 // console.log(onlyOddNumbers2(myArray));
+
