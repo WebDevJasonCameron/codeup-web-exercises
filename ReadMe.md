@@ -6,6 +6,9 @@ Started the day working through some lectures on jQuery.  The warmup for today w
 ### 1100 | Even More
 And of course, there are so many more ways to complete this assignment.
 
+### 1400 | jQuery Faq
+Completed the first part of the jQuery Faq Ex.  I had problems with the bonus section.  Although I had the right 'idea,' I tried to use arrow functions to complete the click method.  It didn't work (even when it worked on the one above.) I might have gotten it wrong somehow.  When I added the ```function (){}``` format, it worked without a problem.  I also used the ```this``` selector.  
+
 
 
 ---
