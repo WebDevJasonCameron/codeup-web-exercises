@@ -7,26 +7,54 @@
 <body>
 <h1>Konami Code</h1>
 
+<h2 id="response-text"></h2>
+
 <script src="jquery/jquery.js"></script>
 <script>
   "use strict";
 
+
+  // Array that will store UI (and be reset after failure)
   let codeInput = [];
 
+
+  // Compares UI with array
   function arrayCheck(c){
-    let cheatCode = [38, 38, 40, 40 37, 39, 37, 39, 66, 65]
-    for (let i = 0; i < codeInput.length; i++) {
+    const cheatCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+    for (let i = 0; i <= codeInput.length; i++) {
       if(codeInput[i] !== cheatCode[i]) return false
     }
     return true
   }
 
+  // Response to whether UI is correct
+  function response(r){
+    if(r === true){
+      $('body').css({
+        'background-color': 'green',
+        'color': 'white'
+      });
+      $('#response-text').text('30 LIVES!!!!!!')
+      codeInput = [];
+    } else {
+      $('body').css({
+        'background-color': 'white',
+        'color': 'black'
+      });
+      $('#response-text').text('3 Lives')
+      codeInput = [];
+    }
+  }
+
+  // Handles UI
   $(document).keyup(function(event){
-    console.log(event.keyCode);
-    codeInput.push(event.keyCode)
+    let keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode === 13){
+      response(arrayCheck(codeInput));
+    } else {
+      codeInput.push(event.keyCode);
+    }
   });
-
-
 
 
 </script>

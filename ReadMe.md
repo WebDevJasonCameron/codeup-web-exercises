@@ -9,6 +9,9 @@ Started JQ lesson.  Also completed the JS quiz.  Started a LI Learning course to
 ### 1630 | 2nd JQ Ex
 Completed second JQ Ex. Topic was on JQ Event handlers (Call Back Functions).  We will discuss this before leaving for the day.  Started the Konami Code Ex.  Still working...
 
+### 2100 | Konami Code
+I really love figuring out these problems.  This Ex required me to compare an array of user inputs with an existing "secret" code of inputs.  If the UI was correct, we supply 30 lives.  If not, the user only receives 3.  You could do more, but I'm not really creative when I'm in a problem-solving mode.  I added the additional goal to let the user retry entering the code if they messed up the first time.  That meant zeroing out the array and retrying.  It also meant resetting the JQ DOM changes if they correctly entered the key sequence.
+
 
 ---
 
