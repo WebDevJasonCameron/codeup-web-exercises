@@ -79,7 +79,36 @@ let operations3 = [
 // computeOperations(operations1, 10) // returns 20
 // computeOperations(operations2, 10) // returns 60
 // computeOperations(operations3, 10) // returns 0
-console.log(computeOperations(operations1, 10));
-console.log(computeOperations(operations2, 10));
-console.log(computeOperations(operations3, 10));        // 5 - 10 = -5 * -2 = -10 + 10 = 0
+// console.log(computeOperations(operations1, 10));
+// console.log(computeOperations(operations2, 10));
+// console.log(computeOperations(operations3, 10));        // 5 - 10 = -5 * -2 = -10 + 10 = 0
+
+
+function computeOperations(opArray, num){               //   Main Function
+    let output = num;
+
+    for (let i = 0; i < opArray.length; i++) {
+        if (opArray[i].operation === 'add') {
+            output = opArray[i].integer + output;
+        } else if (opArray[i].operation === 'subtract') {
+            output = output - opArray[i].integer
+        } else if (opArray[i].operation === 'multiply') {
+            output = opArray[i].integer * output;
+        } else {
+            output += opArray[i].integer / output;
+        }
+    }
+        return output;
+}
+
+    console.log(computeOperations(operations1, 10));
+    console.log(computeOperations(operations2, 10));
+    console.log(computeOperations(operations3, 10));
+
+
+
+
+
+
+
 

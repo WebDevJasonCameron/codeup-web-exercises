@@ -3,6 +3,10 @@
 ## 2022 03 08 | Warmup
 Started the day working through some lectures on jQuery.  The warmup for today was a lot of fun.  We were asked to run through what ever operation was given to us within an array of objects that held an operation and a number.  The function was to take in an array and a number.  The final output was that number, calculated with the existing operation and numbers in sequence.  While this was a little scary at first, I broke down the problem into bite size.  First, I realized I needed to create a calc function that would recognize the operations given within the objects.  Note, these were obviously in string format.  That actually made life easier because I could use a switch statement to turn each into an actual operator.  I first tripped up trying to figure out how to return an actual operator.  You can't.  You can however run the operator on two provided numbers and return the result.  That did it.  I created the main function that would call the calcFun each time the loop iterated through the objects.  Each time, the answer was fed into the output var.  That was then (in turn) used in the calcFun.  When it was completed, we returned the final result!  
 
+### 1100 | Even More
+And of course, there are so many more ways to complete this assignment.
+
+
 
 ---
 
