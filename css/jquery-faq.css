@@ -1,4 +1,13 @@
-.inv {
+/* extra styling to make the dt elements standout */
+dt {
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+
+.invisible {
     visibility: hidden;
 }
 
