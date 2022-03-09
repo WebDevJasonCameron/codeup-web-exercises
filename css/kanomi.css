@@ -2,6 +2,7 @@ body {
     background-color: #e3dfdf;
 }
 
+/* MULTIPLE GAMES*/
 #k-game-01-img {
     background-image: url("../media/k-game-01.gif");
     background-size: cover;
@@ -54,9 +55,4 @@ body {
     height: 500px;
 
     border: 10px solid gray;
-}
-
-#life-bar {
-    width: 300px;
-    height: 300px;
 }
