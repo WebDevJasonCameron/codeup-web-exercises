@@ -2,63 +2,68 @@
 <html>
 <head>
   <title>Konami Code</title>
+  <!--FAVICON-->
   <link rel="shortcut icon" href="img/MoonConceptSmallPatch01.svg" type="image/x-icon">
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--OVERRIDE-->
+  <link rel="stylesheet" href="css/kanomi.css">
 </head>
+
 <body>
-<h1>Konami Code</h1>
+  <h1 class="mt-4 text-center">Konami Code Game</h1>
+  <div class="container d-flex justify-content-center">
+    <div id="k-game-01-img">
 
-<h2 id="response-text"></h2>
+      <div class="container">
+        <div class="container d-flex justify-content-between py-2">
+          <div class="progress"
+               style="width: 45%; height: 30px">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                 id="player1-life-bar"
+                 role="progressbar"
+                 style="width: 50%" >
+              PLAYER 1 LIFE
+            </div>
+          </div>
+          <div class="progress" style="width: 40%; height: 30px">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                 id="player2-life-bar"
+                 role="progressbar"
+                 style="width: 50%">
+              PLAYER 2 LIFE
+            </div>
+          </div>
+        </div>
+      </div>
 
-<script src="jquery/jquery.js"></script>
-<script>
-  "use strict";
+      <div class="container d-flex align-items-center" style="width: 100%; height: 80%">
 
+          <div id="response-banner" class="w-100 h-25 text-center">
+              <h2 id="response-text" class="d-flex-block align-items-center mt-2">
+              </h2>
+          </div>
 
-  // Array that will store UI (and be reset after failure)
-  let codeInput = [];
-
-
-  // Compares UI with array
-  function arrayCheck(c){
-    const cheatCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
-    for (let i = 0; i <= codeInput.length; i++) {
-      if(codeInput[i] !== cheatCode[i]) return false
-    }
-    return true
-  }
-
-  // Response to whether UI is correct
-  function response(r){
-    if(r === true){
-      $('body').css({
-        'background-color': 'green',
-        'color': 'white'
-      });
-      $('#response-text').text('30 LIVES!!!!!!')
-      codeInput = [];
-    } else {
-      $('body').css({
-        'background-color': 'white',
-        'color': 'black'
-      });
-      $('#response-text').text('3 Lives')
-      codeInput = [];
-    }
-  }
-
-  // Handles UI
-  $(document).keyup(function(event){
-    let keycode = (event.keyCode ? event.keyCode : event.which);
-    if(keycode === 13){
-      response(arrayCheck(codeInput));
-    } else {
-      codeInput.push(event.keyCode);
-    }
-  });
+      </div>
 
 
-</script>
+
+        <h3 id="start-banner"></h3>
+      </div>
+    </div>
+<!--    <embed src="media/k-game-music-01.m4a" loop="true" autostart="true" width="2" height="0" id="random-music">-->
+
+
+  <!--SCRIPTS-->
+  <section>
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/f2796ec852.js" crossorigin="anonymous"></script>
+    <!--CDN JQuery-->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!--MY SCRIPT-->
+    <script src="js/konami.js"></script>
+  </section>
+
 </body>
 </html>
 
-<!--38, 38, 40, 40 37, 39, 37, 39, 66, 65 -->

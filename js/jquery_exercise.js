@@ -130,7 +130,7 @@ $(document).ready(function() {
     //   double-clicked.
     //
 
-    $('p').click(() => {
+    $('p').dblclick(() => {
         $('p').css('font-size', '18px')
     })
 

@@ -1,0 +1,62 @@
+body {
+    background-color: #e3dfdf;
+}
+
+#k-game-01-img {
+    background-image: url("../media/k-game-01.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1000px;
+    height: 500px;
+
+    border: 10px solid gray;
+}
+
+#k-game-02-img {
+    background-image: url("../media/k-game-02.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1000px;
+    height: 500px;
+
+    border: 10px solid gray;
+}
+
+#k-game-03-img {
+    background-image: url("../media/k-game-03.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1000px;
+    height: 500px;
+
+    border: 10px solid gray;
+}
+#k-game-04-img {
+    background-image: url("../media/k-game-04.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1000px;
+    height: 500px;
+
+    border: 10px solid gray;
+}
+
+#k-game-05-img {
+    background-image: url("../media/k-game-05.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1000px;
+    height: 500px;
+
+    border: 10px solid gray;
+}
+
+#life-bar {
+    width: 300px;
+    height: 300px;
+}
