@@ -87,7 +87,18 @@ $(document).ready(function() {
 
     const rndInt = randomIntFromInterval(1, 5)
     console.log(rndInt)
+
     let randomNum = rndInt;
+
+    // TRYING ANOTHER WAY... IT BROKE
+    // let theGame =  `k-game-' + rndInt + '-img`;
+    //
+    // $('#main-container>div').show(function (){
+    //     this.id = theGame;
+    // });
+
+
+
 
     // Switch to set up Game Content
     switch (randomNum){
