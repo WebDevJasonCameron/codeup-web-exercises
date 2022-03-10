@@ -1,6 +1,7 @@
 # Intro To Front End
 
 ## 2022 03 10 | Continue
+Completed warmup and walk through with jQuery FAQ ex.  Opened up the Ls to AJAX.  
 
 
 
