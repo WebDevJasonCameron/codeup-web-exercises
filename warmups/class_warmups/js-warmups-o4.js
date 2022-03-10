@@ -93,23 +93,23 @@
 //
 // Consider the following array of users:
 
-    let users = [
-        {
-            username: 'fsmith',
-            email: 'fsmith@email.com',
-            numberOfLogins: 23
-        },
-        {
-            username: 'ksmith',
-            email: 'ksmith@email.com',
-            numberOfLogins: 100
-        },
-        {
-            username: 'lsmith',
-            email: 'lsmith@email.com',
-            numberOfLogins: 10
-        }
-    ];
+    // let users = [
+    //     {
+    //         username: 'fsmith',
+    //         email: 'fsmith@email.com',
+    //         numberOfLogins: 23
+    //     },
+    //     {
+    //         username: 'ksmith',
+    //         email: 'ksmith@email.com',
+    //         numberOfLogins: 100
+    //     },
+    //     {
+    //         username: 'lsmith',
+    //         email: 'lsmith@email.com',
+    //         numberOfLogins: 10
+    //     }
+    // ];
 
 // 1. Create a function, returnFirstUser, that takes in an array of user objects and returns the first user object.
 //
@@ -121,11 +121,11 @@
 //     numberOfLogins: 23
 // }
 
-function getFirstUser(ua){
-    return ua[0]
-}
-
-console.log(getFirstUser(users));
+// function getFirstUser(ua){
+//     return ua[0]
+// }
+//
+// console.log(getFirstUser(users));
 
 
 
@@ -135,16 +135,16 @@ console.log(getFirstUser(users));
 // returnTotalUserLogins(users) should return... 133
 //
 
-function returnTotalUserLogins(ua){
-    let output = 0;
-
-    ua.forEach(function (u){
-        output = output + u.numberOfLogins;
-    });
-    return output;
-}
-
-console.log(returnTotalUserLogins(users));
+// function returnTotalUserLogins(ua){
+//     let output = 0;
+//
+//     ua.forEach(function (u){
+//         output = output + u.numberOfLogins;
+//     });
+//     return output;
+// }
+//
+// console.log(returnTotalUserLogins(users));
 
 
 // 3. (optional bonus) create a function, returnMostFrequentUser, that takes in an array of user objects and returns the
@@ -159,17 +159,19 @@ console.log(returnTotalUserLogins(users));
 //     numberOfLogins: 100
 // }
 
-function returnMostFrequentUser(u){
-    let mostLogs = u[0].numberOfLogins;
-    let userObj = u[0];
-    u.forEach(function (user){
-        if(user.numberOfLogins > mostLogs) {
-            mostLogs = user.numberOfLogins;
-            userObj = user;
-        }
-    });
-    return userObj
-}
-
-console.log(returnMostFrequentUser(users));
-
+// function returnMostFrequentUser(u){
+//     let mostLogs = u[0].numberOfLogins;
+//     let userObj = u[0];
+//     u.forEach(function (user){
+//         if(user.numberOfLogins > mostLogs) {
+//             mostLogs = user.numberOfLogins;
+//             userObj = user;
+//         }
+//     });
+//     return userObj
+// }
+//
+// console.log(returnMostFrequentUser(users));
+/**
+ * 2022 03 04
+ */

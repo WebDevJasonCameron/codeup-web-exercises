@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 03 10 | Continue
+
+
+
+---
+
 ## 2022 03 09 | Konami
 Completed the Konami Ex.  The code to complete to Ex was interesting.  The work to make everything look nice was the hardest.  There was a lot that needed to be done and scope creep was a danger.  However, keeping things small and taking one thing at a time is the most advantageous part of this lesson.  I actually accomplished a lot of the goals I wanted to achieve.  1) Multiple game BG. 2) Sound (partially accomplish). 3) Reloading the set so you could retry. 4) Added a flickering banner for the correct code. 5) Increased the power (life) bar to 100% when correct.  Also, provided an infinity icon within the bar. For the future: I could add screen shake!
 
