@@ -21,7 +21,7 @@
                              b[n].title +
             '            </header>' +
             '            <div id="days-spell" class="card-body">' +
-// We'll put SPELLS here later
+                                        // spellScript()    +
             '            </div>' +
             '            <main class="p-3">' +
                              b[n].content +
@@ -67,25 +67,22 @@
     }
 
     // Make Spell Script
-    function spellScript(s){
+    function spellScript(spellList){
         let numOfSpells = parseInt(getRandomNum(1, 10));
         let output = '';
 
         for (let i = 0; i < numOfSpells; i++) {
             let spellOfTheDay = parseInt(getRandomNum(1, 318));
-            output += '<span>' + s.results[spellOfTheDay].name + '</span><br>';
-
+            output += '<span>' + spellList.results[spellOfTheDay].name + '</span><br>';
         }
         return output
     }
 
     // Get D&D Spell Data
-    function getRandomSpell(){
-        let output = '';
+    function getRandomSpellList(){
         $.get('https://www.dnd5eapi.co/api/spells').done(function (d){
-            output += spellScript(d);
+            return d;
         })
-        return output;
     }
 
     // Will Use this to get a random spell selections
@@ -96,13 +93,15 @@
     // Runs the loop and inputs into blog-container
     function runBlogSite(){
         $.get('data/blog.json').done(function(d){
+            let spellList = getRandomSpellList();
             $('#blog-container').html(loopThroughData(d));
-            $('#days-spell').html(getRandomSpell());
+
         })
     }
 
     // Start
     runBlogSite();
 
+    // $('#days-spell').html(getRandomSpell());
 
 })();

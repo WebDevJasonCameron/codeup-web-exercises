@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Map</title>
+    <link rel="shortcut icon" href="img/MoonConceptSmallPatch01.svg" type="image/x-icon">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+
+
+<div id='map'></div>
+
+
+<section>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <script src="js/keys.js"></script>
+    <script>
+        "use strict";
+
+        mapboxgl.accessToken = MAPBOX_API_TOKEN;
+
+        const map = new mapboxgl.Map({
+            container: 'map',                               // container ID
+            style: 'mapbox://styles/mapbox/streets-v11',    // style URL
+            center: [-98.4916, 29.4252],                    // starting position [lng, lat]
+            zoom: 11                                         // starting zoom
+        });
+
+    </script>
+</section>
+</body>
+</html>
