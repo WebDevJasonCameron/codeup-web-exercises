@@ -1,12 +1,15 @@
 # Intro To Front End
 
+## 2022 03 11 | Catching Up
+Today we completed the AJAX assignments: Blog and Store.  Both were completed.  However, when I tried to add a second API to fill in data within each blog I would receive undefined.  I understand that it is because of the delay.  I'm trying to figure out how to keep that from happening.  As for the Map stuff, I'm slowly working through it.  Physically, I'm dealing with dry eyes.  That is slowing my progress. 
+
+---
+
 ## 2022 03 10 | Continue
 Completed warmup and walk through with jQuery FAQ ex.  Opened up the Ls to AJAX.  
 
 ### 2230 | Just too Busy
-I really don't have time to write about all the things I'm doing today... both coding and life circumstances.  I am currently focussing on the APIs, AJAX, Bootstrap, CSS, JS and JSON (to name a few things).  Finished the Ajax Store inventory Ex.  It looks really plain in the browser. However, there was a lot I needed to do on the 'inside' to make it look as clean as possible.  
-
-
+I really don't have time to write about all the things I'm doing today... both coding and life circumstances.  I am currently focussing on the APIs, AJAX, Bootstrap, CSS, JS and JSON (to name a few things).  Finished the Ajax Store inventory Ex.  It looks really plain in the browser. However, there was a lot I needed to do on the 'inside' to make it look as clean as possible.
 
 ---
 
