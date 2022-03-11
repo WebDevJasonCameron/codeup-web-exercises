@@ -172,6 +172,3 @@
 // }
 //
 // console.log(returnMostFrequentUser(users));
-/**
- * 2022 03 04
- */

@@ -116,28 +116,57 @@
 //
 // Examples:
 //
-let nums1 = [1, 2, 3, 4, 5];
-let nums2 = [2, 2, 3, 4, 5];
-let nums3 = [10, 0, -5, 4, 5];
-let nums4 = [2, 2, -5, 2, 2];
-let nums5 = [2, 2, 2, 2, 2];
+// let nums1 = [1, 2, 3, 4, 5];
+// let nums2 = [2, 2, 3, 4, 5];
+// let nums3 = [10, 0, -5, 4, 5];
+// let nums4 = [2, 2, -5, 2, 2];
+// let nums5 = [2, 2, 2, 2, 2];
+//
+// function addTwos(a){
+//     let output = 0;
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i] === 2 || a[i] === -2) {
+//             output = output + a[i];
+//         }
+//     }
+//     return output;
+// }
+//
+// console.log(addTwos(nums1)); // returns 2
+// console.log(addTwos(nums1)); // returns 4
+// console.log(addTwos(nums1)); // returns 0
+// console.log(addTwos(nums1)); // returns 8
+// console.log(addTwos(nums1)); // returns 10
 
-function addTwos(a){
-    let output = 0;
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] === 2 || a[i] === -2) {
-            output = output + a[i];
-        }
+/**
+ *  2022 03 11
+ */
+// Write a function, returnStringObject, that takes in a string and returns
+// an object with information about the string. The object should have properties
+// for stringValue and stringArray.
+//
+// Examples...
+//
+// returnStringObject('hello') // returns...
+//
+// {
+//   stringValue: 'hello',
+//   stringArray: ['h', 'e', 'l', 'l', 'o']
+// }
+//
+// returnStringObject('codeup') // returns...
+//
+// {
+//   stringValue: 'codeup',
+//   stringArray: ['c', 'o', 'd', 'e', 'u', 'p']
+// }
+
+function returnsStringObj(s){
+    return {
+        stringValue: s,
+        stringArray: s.split('')
     }
-    return output;
 }
 
-
-
-
-console.log(addTwos(nums1)); // returns 2
-console.log(addTwos(nums1)); // returns 4
-console.log(addTwos(nums1)); // returns 0
-console.log(addTwos(nums1)); // returns 8
-console.log(addTwos(nums1)); // returns 10
-
+console.log(returnsStringObj('hello'));
+console.log(returnsStringObj('codeup'));
