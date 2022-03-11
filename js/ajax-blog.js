@@ -11,65 +11,98 @@
 // 6. Add additional entries to blog.json and make sure your
 //    changes are reflected on the page.
 
+(function() {
+    "use strict";
+
+    // Assigns HTML tags to the Obj data
+    function scriptData(b, n){
+        return '<article class="card mx-3 mb-4 blog-cards">' +
+            '            <header class="card-header h3">' +
+                             b[n].title +
+            '            </header>' +
+            '            <div id="days-spell" class="card-body">' +
+// We'll put SPELLS here later
+            '            </div>' +
+            '            <main class="p-3">' +
+                             b[n].content +
+            '            </main>' +
+            '            <aside>' +
+            '                <ul class="list-group">' +
+            '                    <li class="list-group-item list-group-item-dark font-weight-bold">' +
+            '                        Categories' +
+            '                    </li>' +
+            '                       <div id="blog-cat">' +
+                                        loopThroughCat(b[n]) +
+            '                       </div>' +
+            '                </ul>' +
+            '            </aside>' +
+            '            <footer class="card-footer text-center">' +
+                             b[n].date +
+            '            </footer>' +
+            '        </article>'
+
+    }
+
+    // Loops through all the Obj in the Array
+    function loopThroughData(a){
 
 
+        let output = '';
+        for (let i = 0; i < a.length; i++) {
+            output += scriptData(a, i);
+        }
+        return output;
+    }
 
-// Will remove this in a minute
-function getBlog(b, n){
-    $('#blog-title').text(b[n].title);
-    $('#blog-content').text(b[n].content);
-    $('#blog-categories').text(b[n].categories[0]);
-    $('#blog-date').text(b[n].date);
-}
+    // Loops deeper in the Cat Array... Output goes to scriptData
+    function loopThroughCat(a){
+        let output = ''
+        for (let i = 0; i < a.categories.length; i++) {
+            output +=
+                '       <li class="list-group-item list-group-item-action">' +
+                            a.categories[i] +
+                '       </li>'
+        }
+        return output;
+    }
+
+    // Make Spell Script
+    function spellScript(s){
+        let numOfSpells = parseInt(getRandomNum(1, 10));
+        let output = '';
+
+        for (let i = 0; i < numOfSpells; i++) {
+            let spellOfTheDay = parseInt(getRandomNum(1, 318));
+            output += '<span>' + s.results[spellOfTheDay].name + '</span><br>';
+
+        }
+        return output
+    }
+
+    // Get D&D Spell Data
+    function getRandomSpell(){
+        let output = '';
+        $.get('https://www.dnd5eapi.co/api/spells').done(function (d){
+            output += spellScript(d);
+        })
+        return output;
+    }
+
+    // Will Use this to get a random spell selections
+    function getRandomNum(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    // Runs the loop and inputs into blog-container
+    function runBlogSite(){
+        $.get('data/blog.json').done(function(d){
+            $('#blog-container').html(loopThroughData(d));
+            $('#days-spell').html(getRandomSpell());
+        })
+    }
+
+    // Start
+    runBlogSite();
 
 
-function scriptData(b, n){
-    return '<article class="card">' +
-        '            <header class="card-header h3">' +
-                         b[n].title +
-        '            </header>' +
-        '            <div class="card-img">' +
-        '                Random Picture here' +
-        '            </div>' +
-        '            <main class="p-3">' +
-                         b[n].conent +
-        '            </main>' +
-        '            <aside>' +
-        '                <ul class="list-group">' +
-        '                    <li class="list-group-item list-group-item-dark font-weight-bold">' +
-        '                        Categories' +
-        '                    </li>' +
-        '                    <li class="list-group-item list-group-item-action">' +
-                                b[n].categories[0] +                                    // <--COME BACK TO THIS
-        '                    </li>' +
-        '                </ul>' +
-        '            </aside>' +
-        '            <footer class="card-footer text-center">' +
-                         b[n].date +
-        '            </footer>' +
-        '        </article>'
-
-}
-
-
-
-
-$(document).ready(function() {
-
-
-    $.get('data/blog.json').done(function(d){
-        getBlog(d, 0)
-    })
-
-
-
-
-
-
-
-
-
-
-
-
-});
+})();
