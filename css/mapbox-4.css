@@ -1,0 +1,14 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    width: 100vw;
+    height: 70vh;
+}

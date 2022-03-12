@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>First Map</title>
+  <title>MapBox 2</title>
   <link rel="shortcut icon" href="img/MoonConceptSmallPatch01.svg" type="image/x-icon">
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet'/>
   <style>
+    body {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+
     h1 {
       display: flex;
       justify-content: center;
@@ -22,43 +27,44 @@
     <h1 class="text-center mt-5">MapBox 2</h1>
     <div id='map' class="mt-5 text-center"></div>
 
-<section>
+<!--    SCRIPTS-->
+  <section>
+    <script src="js/mapbox-geocoder-utils.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <script src="js/keys.js"></script>
+    <script>
+      (function() {
+        "use strict";
 
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
-  <script src="js/keys.js"></script>
-  <script>
-    (function() {
-      "use strict";
+        mapboxgl.accessToken = MAPBOX_API_TOKEN;
 
-      mapboxgl.accessToken = MAPBOX_API_TOKEN;
+        // Mini - Exercise 2 (before markers)
+        // In this file, create a Mapbox map that shows Washington D.C. and
+        // places a marker on the Lincoln Memorial.
 
-      // Mini - Exercise 2 (before markers)
-      // In this file, create a Mapbox map that shows Washington D.C. and
-      // places a marker on the Lincoln Memorial.
+        let map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: [-77.0502, 38.8893],                    // Lincoln Memorial
+          zoom: 12
+        });
 
-      let map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-77.0502, 38.8893],                    // Lincoln Memorial
-        zoom: 12
-      });
+        var popup = new mapboxgl.Popup().setHTML('Lincoln Memorial')
 
-      var popup = new mapboxgl.Popup().setHTML('Lincoln Memorial')
+        let marker = new mapboxgl.Marker({draggable: true})
+        .setLngLat([-77.0502, 38.8893]).addTo(map);
 
-      let marker = new mapboxgl.Marker({draggable: true})
-      .setLngLat([-77.0502, 38.8893]).addTo(map);
-
-      // Bonus: when the marker is dragged and released, display the coordinates in an h1
-      marker.on('dragend', function (){
-        alert(marker.getLngLat());
-      })
+        // Bonus: when the marker is dragged and released, display the coordinates in an h1
+        marker.on('dragend', function (){
+          alert(marker.getLngLat());
+        })
 
 
 
 
-    })();
+      })();
 
-  </script>
-</section>
+    </script>
+  </section>
 </body>
 </html>
