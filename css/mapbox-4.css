@@ -12,3 +12,10 @@ h1 {
     width: 100vw;
     height: 70vh;
 }
+
+#info-here {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
