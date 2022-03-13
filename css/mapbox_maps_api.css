@@ -1,0 +1,21 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    width: 100vw;
+    height: 60vh;
+}
+
+#info-here {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}

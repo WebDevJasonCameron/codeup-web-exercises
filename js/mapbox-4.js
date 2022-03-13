@@ -34,7 +34,7 @@
         reverseGeocode({lng: -155.5828, lat: 19.8968}, MAPBOX_API_TOKEN).then(function (results){
             $('#info-here').text('Moving to' + results + ' at the position 155.5828 : 19.8968');
             resetLocation([-155.5828, 19.8968]);
-            map.setZoom(7);
+            map.setZoom(5);
 
         })
     }
