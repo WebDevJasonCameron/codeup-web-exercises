@@ -20,37 +20,64 @@
     // Build Card HTML
     function buildCardScript(obj){
         return '' +
-            '        <div class="wx-card card mx-2"' +
-            '            <div class="card-header text-center"' +
-            '                <div id="wx-date" aria-label="Weather Date"' +
-                                obj.dt +
-            '                </div' +
-            '            </div' +
-            '            <div class="card-body"' +
-            '                <div class="wx-temp" aria-label="temperature">' +
-                                obj.temp.day +
-            '               </div' +
-            '                <img class="wx-img">' +
-                                'IMG ICON' +
-            '                </img' +
-            '                <hr' +
-            '                <div class="wx-description" aria-label="description">' +
-            '' +
-            '                   </div' +
-            '                <div class="wx-humidity" aria-label="humidity">HUMIDITY</div' +
-            '                <hr' +
-            '                <div class="wx-wind" aria-label="wind">WIND</div' +
-            '                <div class="wx-pressure" aria-label="pressure">PRESSURE</div' +
-            '            </div' +
-            '        </div>'
+            '        <article class="wx-card card mx-2">' +
+            '            <div class="card-header text-center">' +
+            '                <div aria-label="Weather Date">' +
+                                 transDate(obj.dt) +
+            '                </div>' +
+            '            </div>' +
+            '            <div class="card-body">' +
+            '                <div class="text-center" aria-label="temperature">' +
+                                obj.temp.day + '°F / ' + obj.temp.night + '°F' +            <!--TEMP-->
+            '               </div>' +
+            '                <div class="wx-img text-center">' +
+                                obj.weather[0].icon +                                       <!--ICON-->
+            '                </div>' +
+            '<hr>' +
+            '                <div class="mx-3 py-2" aria-label="description">' +
+            '                   Description: ' +
+                                '<b>' +
+                                    obj.weather[0].description   +                          <!--DESCRIPTION-->
+            '                   </b>' +
+            '                </div>' +
+            '                <div class="mx-3" aria-label="humidity">' +
+            '                   Humidity: ' +
+            '                   <b>' +
+                                    obj.humidity   +                                        <!--HUMIDITY-->
+            '                   </b>' +
+            '                </div>' +
+            '<hr>' +
+            '                <div class="mx-3 py-2" aria-label="wind">' +
+            '                   Wind: ' +
+            '                   <b>' +
+                                    obj.wind_deg + '° | ' + obj.wind_speed + 'kt' +         <!--WIND-->
+            '                   </b>' +
+            '                </div>' +
+            '                <div class="mx-3" aria-label="pressure">' +
+            '                   Pressure: ' +
+            '                   <b>' +
+                                    obj.pressure +         <!--WIND-->
+            '                   </b>' +
+            '                </div>' +
+            '            </div>' +
+            '        </article>'
     }
 
+    // Loop through 5Day Forecast
     function loopThroughWxList(wxList){
-        for (let i = 0; i < (wxList.length -2); i++) {
+        let output = ''
+        for (let i = 0; i < (wxList.length -3); i++) {
             console.log(wxList[i]);
+            output += buildCardScript(wxList[i]);
         }
+        return output
     }
 
+    // Change Unix Time Stamp to Normal date
+    function transDate(unixTimeStamp){
+        let date = new Date(unixTimeStamp * 1000).toDateString();
+        return date
+    }
 
     /**
      *  WX
@@ -66,7 +93,7 @@
         }).done(function (data){
             // console.log(data.daily);
 
-            loopThroughWxList(data.daily)
+            $('#wx-card-container').html(loopThroughWxList(data.daily));
 
 
 
@@ -89,7 +116,9 @@
 
 // BASE                     .daily[0]                               <--Cycle Through
 // DATE:                        .dt
-// DAY'S TEMP:                  .temp.day
+// TEMP:
+//          DAY                     .temp.day
+//          NIGHT                   .temp.night
 // DESCRIPTION:                 .weather[0].description
 // IMG:                         .weather[0].icon
 // HUMIDITY:                    .humidity
