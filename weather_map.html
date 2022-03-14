@@ -14,9 +14,55 @@
 
 
 <body>
-    <!--TITLE AND MAP-->
-    <h1>Weather Map</h1>
+    <!-- NAV -->
+    <nav class="navbar navbar-light bg-primary text-white">
+        <div class="container-fluid d-flex mx-4 align-items-baseline text-white">
+            <a class="navbar-brand text-white " href="#">
+                <img src="img/MoonConceptSmallPatch01.svg" width="50" height="50" class="d-inline-block align-top" alt="">
+                 <span class="navbar-brand mb-0 h1 text-white mx-3">Weather App</span>
+            </a>
+            <p id="name-of-city">
+                City Name Goes Here
+            </p>
+        </div>
+    </nav>
+
+    <!--FORM-->
+    <div class="container p-5">
+        <label for="place-input">Place</label>
+        <input type="text" id="place-input" class="mx-2">
+        <button class="btn-primary px-3" >Find</button>
+    </div>
+
+    <!--CARDS-->
+    <div id="wx-card-container" class="container">
+        <div class="wx-card card mx-2">
+            <div class="card-header text-center">
+                <div id="wx-date" aria-label="Weather Date">
+                    DATE HERE
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="wx-temp" aria-label="temperature">TEMP</div>
+                <img class="wx-img">IMG</img>
+                <hr>
+                <div class="wx-description" aria-label="description">DESCRIPTION</div>
+                <div class="wx-humidity" aria-label="humidity">HUMIDITY</div>
+                <hr>
+                <div class="wx-wind" aria-label="wind">WIND</div>
+                <div class="wx-pressure" aria-label="pressure">PRESSURE</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--MAP-->
     <div id="map"></div>
+
+
+
+
 
 
 
