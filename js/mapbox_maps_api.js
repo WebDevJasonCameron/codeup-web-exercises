@@ -105,9 +105,8 @@
     function setMarksAndPops(obj){
         let cord = [obj.position.lat, obj.position.long];
         let marker = new mapboxgl.Marker({
-            color: '#F84C4C',
-            }
-        )
+            color: '#F84C4C'
+        })
             .setLngLat(cord)
             .addTo(map);
 
