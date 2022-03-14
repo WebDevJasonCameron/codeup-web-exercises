@@ -161,12 +161,12 @@
 //   stringArray: ['c', 'o', 'd', 'e', 'u', 'p']
 // }
 
-function returnsStringObj(s){
-    return {
-        stringValue: s,
-        stringArray: s.split('')
-    }
-}
-
-console.log(returnsStringObj('hello'));
-console.log(returnsStringObj('codeup'));
+// function returnsStringObj(s){
+//     return {
+//         stringValue: s,
+//         stringArray: s.split('')
+//     }
+// }
+//
+// console.log(returnsStringObj('hello'));
+// console.log(returnsStringObj('codeup'));

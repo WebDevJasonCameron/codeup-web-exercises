@@ -14,16 +14,17 @@
 </head>
 
 <body>
+    <!--TITLE AND MAP-->
     <h1 class="text-center py-4">MapBox Maps API</h1>
     <p id='map'></p>
 
+    <!--FORM-->
     <div class="container d-flex justify-content-center">
         <div class="card w-75 ">
             <div class="card-header">
-
                 <h5>Interactive Panel</h5>
             </div>
-
+            <!--Left and Right Parts of the Form-->
             <div class="card-body">
                 <div class="row">
                     <!--LEFT-->
@@ -39,7 +40,7 @@
                         </div>
                     </div>
                     <!--RIGHT-->
-                    <div class="col-4 bg-secondary bg-opacity-10 p-3" id="right-key-box">
+                    <div class="col-4 bg-secondary bg-opacity-10 p-3 mapboxgl-ctrl" id="right-key-box">
                             <label for="zoom-selector" class="label">Zoom</label>
                             <select class="form-select mt-2" id="zoom-selector" aria-label="Zoom functions: 5, 15, or 20">
                                 <option value="5">5</option>
@@ -56,6 +57,7 @@
         </div>
     </div>
 
+    <!--HERE FOR TESTING-->
     <div id="info-here" class="h1 mt-3 text-center"></div>
 
     <!--SCRIPTS-->

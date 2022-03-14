@@ -54,6 +54,7 @@
     //    <--DONE
 
     // 4. Add a button that will hide all markers.
+    //    <--DONE
 
     // 5. Using this marker animation example as a starting point, animate
     //    a marker to bounce up and down. Alter the animation to stop after
@@ -104,7 +105,7 @@
     function setMarksAndPops(obj){
         let cord = [obj.position.lat, obj.position.long];
         let marker = new mapboxgl.Marker({
-            color: '#F84C4C'
+            color: '#F84C4C',
             }
         )
             .setLngLat(cord)
@@ -188,8 +189,9 @@
         findOnMap(address, name)
     })
     $('#hide-points').click(function (){
-        markers.addClass('hide')
-    })
+        $('.mapboxgl-marker').toggleClass('hide')
+    });
+
 
     // RUN -------------------------------
     loopThroughObj(placesToEat);
