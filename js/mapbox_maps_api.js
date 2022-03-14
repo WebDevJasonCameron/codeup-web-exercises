@@ -36,11 +36,37 @@
     //    restaurants with information about each. Create an array of
     //    objects with information about each restaurant to accomplish
     //    this. Use a .forEach() loop rather than a for loop.
-    //    <--
+    //    <-- DONE
+
+    // BONUS:
+
+    // 1. Info windows can contain basic HTML, not just plain text. Add
+    //    some additional information about your restaurant to the popup
+    //    such as why it is your favorite, dishes you like, images, etc.
+    //    <--DONE
+
+    // 2. Add a select input that allows the user to change the zoom level
+    //    to 5, 15, or 20.
+    //    <--DONE
+
+    // 3. Add a text box for the user to enter an address that will use
+    //    geocoding to center the map and place a marker on that location.
+
+    // 4. Add a button that will hide all markers.
+
+    // 5. Using this marker animation example as a starting point, animate
+    //    a marker to bounce up and down. Alter the animation to stop after
+    //    two seconds. Make the amount of bounce animation scale according
+    //    to zoom level.
+
+    // 6. Replace the generic marker icon with an image that is more
+    //    appropriate for each restaurant. A tutorial for this can be found
+    //    here.
 
 
     mapboxgl.accessToken = MAPBOX_API_TOKEN;
 
+    // Build Map
     let map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
@@ -48,23 +74,75 @@
         zoom: 9
     });
 
-    geocode('1920 Jefferson Ave, Tacoma, WA 98402', MAPBOX_API_TOKEN).then(function (result){
-        $('#info-here').text(result.join(', '));
-        let marker = new mapboxgl.Marker()              //   Marker set
-            .setLngLat(result)
+    // User Input address is found and placed on map
+    function findOnMap(address, name){
+        geocode(address, MAPBOX_API_TOKEN).then(function (cord) {
+            let obj = markAndPopObj(name, address, cord);
+            setMarksAndPops(obj)
+            centerOnLoco(cord);
+            $('#info-here').text(cord);
+        });
+    }
+
+    // Make new MarkAndPopObj
+    function markAndPopObj(name, address, cord){
+        return {
+            name: name,
+            remarks: 'User Input',
+            address: address,
+            phone: 'n/a',
+            position: {
+                lat: cord[0],
+                long: cord[1]
+            }
+        }
+    }
+
+    // Builds both the markers and popups
+    function setMarksAndPops(obj){
+        let cord = [obj.position.lat, obj.position.long];
+        let marker = new mapboxgl.Marker()
+            .setLngLat(cord)
             .addTo(map);
 
         let popup = new mapboxgl.Popup()
-            .setLngLat(result)
-            .setHTML('<p>Pal-Do World Market</p>');
+            .setLngLat(cord)
+            .setHTML(setPopInnerHTML(obj))
 
         marker.setPopup(popup);
-    });
+    }
 
+    // Adds text to the popups based on obj info
+    function setPopInnerHTML(obj){
+        return '<h4>' + obj.name + '</h4>' +
+            '<p>Notes: ' + obj.remarks + '</p>' +
+            '<p>Address: ' + obj.address + '</p>' +
+            '<p>Phone: ' + obj.phone + '</p>';
+    }
+
+    // First Loop through all obj
+    function loopThroughObj(objList){
+        objList.forEach(function (obj){
+            setMarksAndPops(obj);
+        });
+    }
+
+    // Zoom controls
+    function zoomControls(z){
+        map.setZoom(z)
+    }
+
+    // Center on Location
+    function centerOnLoco(loco){
+        map.setCenter(loco)
+    }
+
+    // VARS & OBJS------------------------
+    // Array of obj
     let placesToEat = [
         {
             name: 'Pal-Do World Market',
-            remarks: 'Have the best Korean food court im Lakewood'
+            remarks: 'Have the best Korean food court im Lakewood',
             address: '9701 S Tacoma Way, Lakewood, WA 98499',
             phone: 'n/a',
             position: {
@@ -94,7 +172,21 @@
         }
     ]
 
+    // EVENT LISTENERS -------------------
+    // Applies ZoomControls
+    $('#zoom-selector').on('change', function (){
+        zoomControls(document.getElementById('zoom-selector').value);
+    })
+    $('#submit-loco').click(function (){
+        let address = document.getElementById('user-input-location-address');
+        let name = document.getElementById('user-input-location-name');
+        findOnMap(address, name)
+    })
 
+    // RUN -------------------------------
+    loopThroughObj(placesToEat);
 
 })();
 
+// let locoName = 'Barnes & Noble'
+// let loco = 'Lakewood Mall, 5711 Main St SW, Lakewood, WA 98499'

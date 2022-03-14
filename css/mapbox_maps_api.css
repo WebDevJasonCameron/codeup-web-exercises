@@ -1,6 +1,5 @@
 body {
-    background-color: #000000;
-    color: #FFFFFF;
+
 }
 
 h1 {
@@ -11,7 +10,9 @@ h1 {
 #map {
     width: 100vw;
     height: 60vh;
+    border: 4px solid #000000;
 }
+
 
 #info-here {
     font-size: 25px;

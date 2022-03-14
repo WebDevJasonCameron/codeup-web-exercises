@@ -14,13 +14,51 @@
 </head>
 
 <body>
-<h1 class="text-center py-4">MapBox Maps API</h1>
-<p id='map'></p>
+    <h1 class="text-center py-4">MapBox Maps API</h1>
+    <p id='map'></p>
 
+    <div class="container d-flex justify-content-center">
+        <div class="card w-75 ">
+            <div class="card-header">
 
-<div id="info-here" class="h1 mt-3 text-center"></div>
+                Key
+            </div>
 
-<!--SCRIPTS-->
+            <div class="card-body">
+                <div class="row">
+                    <!--LEFT-->
+                    <div class="col-8 p-2 pt-0" id="left-key-box">
+                        <div>
+                            <div class="mb-3">
+                                <label class="form-label">New Location Pin</label>
+                                <input type="text" name="user-input-location-name" id="user-input-location-name" class="form-control mt-2" placeholder="Enter Location Name">
+                                <input type="text" name="user-input-location-address" id="user-input-location-address" class="form-control mt-2" placeholder="Enter Location Address">
+                                <button class="btn btn-dark mt-2 w-100" id="submit-loco">Submit Location Pin</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--RIGHT-->
+                    <div class="col-4 bg-secondary bg-opacity-10 p-3" id="right-key-box">
+                            <label for="zoom-selector" class="label">Zoom</label>
+                            <select class="form-select mt-2" id="zoom-selector" aria-label="Zoom functions: 5, 15, or 20">
+                                <option value="5">5</option>
+                                <option class="text-muted" value="9" selected>9</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                        <label for="hide-points" class="label mt-2">Markers</label>
+                        <button class="btn btn-primary w-100 mt-2" id="hide-points">Hide Points</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="info-here" class="h1 mt-3 text-center"></div>
+
+    <!--SCRIPTS-->
 <section>
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
