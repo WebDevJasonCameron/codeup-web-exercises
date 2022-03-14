@@ -17,6 +17,43 @@
         zoom: 9
     });
 
+    // 1. Set up a draggable marker
+    function setMarker(){
+        let marker = new mapboxgl.Marker({
+            draggable: true
+        })
+            .setLngLat([-98.4916, 29.4252])
+            .addTo(map);
+    }
+
+    /**
+     *  WX
+     */
+    // Get WX
+    function getWeather(){
+        $.get('https://api.openweathermap.org/data/2.5/onecall', {
+            lat: 29.4252,
+            lon: -98.4916,
+            appid: WEATHER_TOKEN,
+            exclude: 'minutely, hourly, current, alerts,',
+            units: 'imperial'
+        }).done(function (data){
+            // console.log(data.daily);
+
+            $('#wx-card-container').html(loopThroughWxList(data.daily));
+
+
+        }).fail(function (jqXhr, status, error) {
+            console.log(jqXhr);
+            console.log(status);
+            console.log(error);
+        })
+    }
+
+
+    /**
+     * HELPER FUNCTIONS
+     */
     // Build Card HTML
     function buildCardScript(obj){
         return '' +
@@ -79,38 +116,20 @@
         return date
     }
 
+
+
+
     /**
-     *  WX
+     *  EVENT LISTENERS
      */
-    // Get WX
-    function getWeather(){
-        $.get('https://api.openweathermap.org/data/2.5/onecall', {
-            lat: 29.4252,
-            lon: -98.4916,
-            appid: WEATHER_TOKEN,
-            exclude: 'minutely, hourly, current, alerts,',
-            units: 'imperial'
-        }).done(function (data){
-            // console.log(data.daily);
 
-            $('#wx-card-container').html(loopThroughWxList(data.daily));
-
-
-
-
-        }).fail(function (jqXhr, status, error) {
-            console.log(jqXhr);
-            console.log(status);
-            console.log(error);
-        })
-    }
 
 
     /**
-     *  TEST
+     *  RUN
      */
     getWeather();
-
+    setMarker();
 
 })();
 
@@ -127,3 +146,16 @@
 //          SPEED                   .wind_speed
 // PRESSURE:                    .pressure
 
+/**
+ * THINKING THE PROCESS OUT...
+ *
+ *      1. Set global Var for one Lat Long to the value of SA.
+ *      2. GEO-REF to get lat long
+ *      3. Set marker to start with SA GEO-REF lat long
+ *      4. When address is changed in input, new GEO-REF lat long is computed
+ *      5. Marker is moved (fancy animation would be nice here for transition and zoom)
+ *      6.
+ *
+ *      ~ Should there be a global Var for one Lat Long?
+ *      ~ City name could change based on its current value
+ */
