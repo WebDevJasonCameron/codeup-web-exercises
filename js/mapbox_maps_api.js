@@ -51,6 +51,7 @@
 
     // 3. Add a text box for the user to enter an address that will use
     //    geocoding to center the map and place a marker on that location.
+    //    <--DONE
 
     // 4. Add a button that will hide all markers.
 
@@ -81,6 +82,7 @@
             setMarksAndPops(obj)
             centerOnLoco(cord);
             $('#info-here').text(cord);
+            console.log(obj);
         });
     }
 
@@ -101,7 +103,10 @@
     // Builds both the markers and popups
     function setMarksAndPops(obj){
         let cord = [obj.position.lat, obj.position.long];
-        let marker = new mapboxgl.Marker()
+        let marker = new mapboxgl.Marker({
+            color: '#F84C4C'
+            }
+        )
             .setLngLat(cord)
             .addTo(map);
 
@@ -178,9 +183,12 @@
         zoomControls(document.getElementById('zoom-selector').value);
     })
     $('#submit-loco').click(function (){
-        let address = document.getElementById('user-input-location-address');
-        let name = document.getElementById('user-input-location-name');
+        let address = document.getElementById('user-input-location-address').value;
+        let name = document.getElementById('user-input-location-name').value;
         findOnMap(address, name)
+    })
+    $('#hide-points').click(function (){
+        markers.addClass('hide')
     })
 
     // RUN -------------------------------
@@ -190,3 +198,6 @@
 
 // let locoName = 'Barnes & Noble'
 // let loco = 'Lakewood Mall, 5711 Main St SW, Lakewood, WA 98499'
+
+// 126.929962,37.555813
+// 126.929962,37.555813
