@@ -17,14 +17,41 @@
         zoom: 9
     });
 
-    // 1. Set up a draggable marker
-    function setMarker(){
+    function findOnMap(address){                                        //   Used when user inputs address
+        geocode(address, MAPBOX_API_TOKEN).then(function(coords){
+            gCoordinates = coords;
+            centerOnLoco(gCoordinates);
+            moveMarker(gCoordinates);
+            findLocalCity(gCoordinates)
+            getWeather();
+        })
+    }
+    function centerOnLoco(coord){
+        map.setCenter(coord)
+    }
+    function findLocalCity(){                                      //   Used when the marker changes
+        reverseGeocode({lat: gCoordinates[1], lng: gCoordinates[0]}, MAPBOX_API_TOKEN).then(function (data){
+            let city = data;
+            city = city.replace(/[0-9]/g, '').split(', ');
+            city = city[1] + ', ' + city[2];
+            $('#name-of-city').text(city)
+        })
+    }
+
+    function createMarker(coord){
         let marker = new mapboxgl.Marker({
             draggable: true
         })
-            .setLngLat([-98.4916, 29.4252])
+            .setLngLat(coord)
             .addTo(map);
+
+
+        return marker;
     }
+    function moveMarker(coord){
+        gMarker.setLngLat(coord);
+    }
+
 
     /**
      *  WX
@@ -32,13 +59,13 @@
     // Get WX
     function getWeather(){
         $.get('https://api.openweathermap.org/data/2.5/onecall', {
-            lat: 29.4252,
-            lon: -98.4916,
+            lat: gCoordinates[1],
+            lon: gCoordinates[0],
             appid: WEATHER_TOKEN,
             exclude: 'minutely, hourly, current, alerts,',
             units: 'imperial'
         }).done(function (data){
-            // console.log(data.daily);
+            // console.log(data);
 
             $('#wx-card-container').html(loopThroughWxList(data.daily));
 
@@ -68,7 +95,9 @@
                                 obj.temp.day + '°F / ' + obj.temp.night + '°F' +            <!--TEMP-->
             '               </div>' +
             '                <div class="wx-img text-center">' +
-                                obj.weather[0].icon +                                       <!--ICON-->
+
+            '<img src="http://openweathermap.org/img/w/' + obj.weather[0].icon + '.png" alt="current weather">' +
+                                    <!--ICON-->
             '                </div>' +
             '<hr>' +
             '                <div class="mx-3 py-2" aria-label="description">' +
@@ -104,24 +133,51 @@
     function loopThroughWxList(wxList){
         let output = ''
         for (let i = 0; i < (wxList.length -3); i++) {
-            console.log(wxList[i]);
+            // console.log(wxList[i]);
             output += buildCardScript(wxList[i]);
         }
         return output
     }
 
-    // Change Unix Time Stamp to Normal date
+    // Translates Unix Time Stamp to Normal date
     function transDate(unixTimeStamp){
         let date = new Date(unixTimeStamp * 1000).toDateString();
         return date
     }
 
 
+    /**
+     *  VARS, ARRAYS & OBJ
+     */
+    // Starting Marker Coordinators
+    let gCoordinates = [-98.4916, 29.4252]
+    let gMarker = createMarker(gCoordinates);
+
 
 
     /**
      *  EVENT LISTENERS
      */
+    // Global Marker updates gCoordinates on end drag
+    gMarker.on("dragend", function(data) {
+        gCoordinates = [data.target._lngLat.lng, data.target._lngLat.lat];
+        getWeather(gCoordinates);
+        findLocalCity(gCoordinates);
+    })
+
+    // Submit Btn: Get UI address Input and run 'findOnMap' function
+    $('#address-submit').click(function (){
+        let address = document.getElementById('address-input').value;
+        findOnMap(address);
+    })
+
+    // Enter Key: Same as above
+    $('#address-input').keydown(function (e){
+        if(e.keyCode === 13){
+            let address = document.getElementById('address-input').value;
+            findOnMap(address);
+        }
+    })
 
 
 
@@ -129,9 +185,31 @@
      *  RUN
      */
     getWeather();
-    setMarker();
+
+    /**
+     *  TEST
+     */
+    // findLocalCity(gCoordinates);
 
 })();
+
+/**
+ * MARKER TRAVERSE
+ */
+
+// MARKER                   data.target
+// LAT:                         ._lngLat.lat
+// LONG:                        ._lngLat.lng
+
+// let lat = 40.7128;
+// let long = -74.0060;
+
+// NEW YORK COORDINATES     -74.0060, 40.7128
+
+
+/**
+ *  MAP TRAVERSE
+ */
 
 // BASE                     .daily[0]                               <--Cycle Through
 // DATE:                        .dt

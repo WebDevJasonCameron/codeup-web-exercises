@@ -18,24 +18,25 @@
     <nav class="navbar navbar-light bg-primary text-white">
         <div class="container-fluid d-flex mx-4 align-items-baseline text-white">
             <a class="navbar-brand text-white " href="#">
-                <img src="img/MoonConceptSmallPatch01.svg" width="50" height="50" class="d-inline-block" alt="weather Moon icon">
+                <img src="img/MoonConceptSmallPath_sun.svg" width="50" height="50" class="d-inline-block" alt="weather Moon icon">
                  <span class="navbar-brand mb-0 h1 text-white mx-3">Weather App</span>
             </a>
             <p id="name-of-city">
-                City Name Goes Here
+                San Antonio, Texas
             </p>
         </div>
     </nav>
 
     <!--FORM-->
     <div class="py-5 text-center">
-        <label for="place-input">Place</label>
-        <input type="text" id="place-input" class="mx-2 w-75">
-        <button class="btn-primary px-3" >Find</button>
+        <label for="address-input">Place</label>
+        <input type="text" id="address-input" class="mx-2 w-75">
+        <button id="address-submit" class="btn-primary px-3" >Find</button>
     </div>
 
+
     <!--CARDS-->
-    <div id="wx-card-container" class="d-flex justify-content-cente">
+    <div id="wx-card-container" class="d-flex justify-content-center">
         <div class="wx-card card mx-2">
             <div class="card-header text-center">
                 <div id="wx-date" aria-label="Weather Date">
@@ -54,7 +55,6 @@
             </div>
         </div>
     </div>
-
 
 
     <!--MAP-->
