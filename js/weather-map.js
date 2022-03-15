@@ -13,24 +13,22 @@
     let map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-98.4916, 29.4252],                    // Tacoma WA
+        center: [-98.4916, 29.4252],
         zoom: 9
     });
 
     function findOnMap(address){                                        //   Used when user inputs address
         geocode(address, MAPBOX_API_TOKEN).then(function(coords){
-            gCoordinates = coords;
-            centerOnLoco(gCoordinates);
-            moveMarker(gCoordinates);
-            findLocalCity(gCoordinates)
-            getWeather();
+            tempHoldNewCoord = coords;                                  //   Temp hold coord so flyover works
+            flyToLocation(tempHoldNewCoord);                            //   <--From Mapbox Tutorial "fly over"
+            moveMarker(tempHoldNewCoord);
+            findLocalCity(tempHoldNewCoord)
+            getWeather(tempHoldNewCoord);
+            gCoordinates = tempHoldNewCoord;
         })
     }
-    function centerOnLoco(coord){
-        map.setCenter(coord)
-    }
-    function findLocalCity(){                                      //   Used when the marker changes
-        reverseGeocode({lat: gCoordinates[1], lng: gCoordinates[0]}, MAPBOX_API_TOKEN).then(function (data){
+    function findLocalCity(coord){                                      //   Used when the marker changes
+        reverseGeocode({lat: coord[1], lng: coord[0]}, MAPBOX_API_TOKEN).then(function (data){
             let city = data;
             city = city.replace(/[0-9]/g, '').split(', ');
             city = city[1] + ', ' + city[2];
@@ -57,10 +55,10 @@
      *  WX
      */
     // Get WX
-    function getWeather(){
+    function getWeather(coord){
         $.get('https://api.openweathermap.org/data/2.5/onecall', {
-            lat: gCoordinates[1],
-            lon: gCoordinates[0],
+            lat: coord[1],
+            lon: coord[0],
             appid: WEATHER_TOKEN,
             exclude: 'minutely, hourly, current, alerts,',
             units: 'imperial'
@@ -84,7 +82,7 @@
     // Build Card HTML
     function buildCardScript(obj){
         return '' +
-            '        <article class="wx-card card mx-2">' +
+            '        <article class="wx-card card mx-2 d-flex w-75 keep-parent">' +
             '            <div class="card-header text-center">' +
             '                <div aria-label="Weather Date">' +
                                  transDate(obj.dt) +
@@ -128,21 +126,60 @@
             '            </div>' +
             '        </article>'
     }
+    function buildCardContainerScript(str){
+        return '' +
+            '    <div class="d-flex flex-column align-items-center flex-md-row justify-content-md-center">' +
+                    str +
+            '    </div>'
+    }
 
     // Loop through 5Day Forecast
     function loopThroughWxList(wxList){
         let output = ''
         for (let i = 0; i < (wxList.length -3); i++) {
-            // console.log(wxList[i]);
             output += buildCardScript(wxList[i]);
         }
-        return output
+        output = buildCardContainerScript(output)
+        return output;
     }
 
     // Translates Unix Time Stamp to Normal date
     function transDate(unixTimeStamp){
         let date = new Date(unixTimeStamp * 1000).toDateString();
         return date
+    }
+
+    // Fly to location
+    function flyToLocation(newCoord){
+        const target = isAtStart ? newCoord : gCoordinates;
+        isAtStart = !isAtStart;
+        map.flyTo({
+            center: target,
+            zoom: 9,
+            bearing: 0,
+            speed: 0.5,
+            curve:1,
+            easing: (t) => t,
+            essential: true
+        });
+    }
+
+    // Toggle Map to night mode
+    function toggleMap(){
+        if(click % 2 === 0 ){
+            map.setStyle('mapbox://styles/mapbox/streets-v11');
+        } else {
+            map.setStyle('mapbox://styles/mapbox/dark-v10');
+        }
+    }
+
+    // Toggle Logo to night mode
+    function toggleLogo(){
+        if(click % 2 === 0 ){
+            $('#logo-img').attr("src", "img/MoonConceptSmallPath_sun.svg");
+        } else {
+            $('#logo-img').attr("src", "img/MoonConceptSmallPatch_moon.svg");
+        }
     }
 
 
@@ -152,6 +189,9 @@
     // Starting Marker Coordinators
     let gCoordinates = [-98.4916, 29.4252]
     let gMarker = createMarker(gCoordinates);
+    let tempHoldNewCoord = '';                                  //   Used in Fly Over Function
+    let isAtStart = true;
+    let click = 1;                                              //   Used in night mode tracking
 
 
 
@@ -179,17 +219,21 @@
         }
     })
 
+    // Night Mode???
+    $('#moon-btn').on('click', function(){
+        $('.wx-card').toggleClass('night-mode');
+        $('body').toggleClass('night-mode');
+        $('#main-nav').toggleClass('dark-nav').toggleClass('bg-primary');
+        toggleMap();
+        toggleLogo();
+        click ++;
+    })
 
 
     /**
      *  RUN
      */
-    getWeather();
-
-    /**
-     *  TEST
-     */
-    // findLocalCity(gCoordinates);
+    getWeather(gCoordinates);
 
 })();
 

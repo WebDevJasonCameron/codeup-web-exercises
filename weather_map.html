@@ -15,10 +15,10 @@
 
 <body>
     <!-- NAV -->
-    <nav class="navbar navbar-light bg-primary text-white">
+    <nav id="main-nav" class="navbar navbar-light bg-primary text-white">
         <div class="container-fluid d-flex mx-4 align-items-baseline text-white">
-            <a class="navbar-brand text-white " href="#">
-                <img src="img/MoonConceptSmallPath_sun.svg" width="50" height="50" class="d-inline-block" alt="weather Moon icon">
+            <a id="moon-btn" class="navbar-brand text-white " href="#">
+                <img id="logo-img" src="img/MoonConceptSmallPath_sun.svg" width="50" height="50" class="d-inline-block" alt="weather Moon icon">
                  <span class="navbar-brand mb-0 h1 text-white mx-3">Weather App</span>
             </a>
             <p id="name-of-city">
@@ -36,7 +36,7 @@
 
 
     <!--CARDS-->
-    <div id="wx-card-container" class="d-flex justify-content-center">
+    <div id="wx-card-container">
         <div class="wx-card card mx-2">
             <div class="card-header text-center">
                 <div id="wx-date" aria-label="Weather Date">

@@ -2,6 +2,11 @@
     font-size: 14px;
 }
 
+.night-mode {                                                          /*Night modes???  */
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
 #map {
     width: 100vw;
     height: 60vh;
@@ -10,5 +15,13 @@
 .wx-card {
     width: 350px;
     margin: 0 20px 20px 0;
+}
 
+.keep-parent {
+    background-color: inherit;
+    color: inherit;
+}
+
+.dark-nav {
+    background-color: #1933a2;
 }
