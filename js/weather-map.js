@@ -93,7 +93,7 @@
             '            </div>' +
             '            <div class="card-body">' +
             '                <div class="text-center" aria-label="temperature">' +
-                                obj.temp.day + '°F / ' + obj.temp.night + '°F' +            <!--TEMP-->
+                                Math.round(obj.temp.day) + '°F / ' + Math.round(obj.temp.night) + '°F' +            <!--TEMP-->
             '               </div>' +
             '                <div class="wx-img text-center">' +
 
@@ -117,7 +117,7 @@
             '                <div class="mx-3 py-2" aria-label="wind">' +
             '                   Wind: ' +
             '                   <b>' +
-                                    obj.wind_deg + '° | ' + obj.wind_speed + 'kt' +         <!--WIND-->
+                                    obj.wind_deg + '° | ' + Math.round(obj.wind_speed) + ' mph' +         <!--WIND-->
             '                   </b>' +
             '                </div>' +
             '                <div class="mx-3" aria-label="pressure">' +
