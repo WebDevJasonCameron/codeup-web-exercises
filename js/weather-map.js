@@ -17,6 +17,34 @@
         zoom: 9
     });
 
+    /**
+     *  WX
+     */
+    // Get WX
+    function getWeather(coord){
+        $.get('https://api.openweathermap.org/data/2.5/onecall', {
+            lat: coord[1],
+            lon: coord[0],
+            appid: WEATHER_TOKEN,
+            exclude: 'minutely, hourly, current, alerts,',
+            units: 'imperial'
+        }).done(function (data){
+            // console.log(data);
+
+            $('#wx-card-container').html(loopThroughWxList(data.daily));
+
+
+        }).fail(function (jqXhr, status, error) {
+            console.log(jqXhr);
+            console.log(status);
+            console.log(error);
+        })
+    }
+
+
+    /**
+     * Main Functions
+     */
     function findOnMap(address){                                        //   Used when user inputs address
         geocode(address, MAPBOX_API_TOKEN).then(function(coords){
             tempHoldNewCoord = coords;                                  //   Temp hold coord so flyover works
@@ -48,31 +76,6 @@
     }
     function moveMarker(coord){
         gMarker.setLngLat(coord);
-    }
-
-
-    /**
-     *  WX
-     */
-    // Get WX
-    function getWeather(coord){
-        $.get('https://api.openweathermap.org/data/2.5/onecall', {
-            lat: coord[1],
-            lon: coord[0],
-            appid: WEATHER_TOKEN,
-            exclude: 'minutely, hourly, current, alerts,',
-            units: 'imperial'
-        }).done(function (data){
-            // console.log(data);
-
-            $('#wx-card-container').html(loopThroughWxList(data.daily));
-
-
-        }).fail(function (jqXhr, status, error) {
-            console.log(jqXhr);
-            console.log(status);
-            console.log(error);
-        })
     }
 
 
@@ -194,7 +197,6 @@
     let click = 1;                                              //   Used in night mode tracking
 
 
-
     /**
      *  EVENT LISTENERS
      */
@@ -219,11 +221,12 @@
         }
     })
 
-    // Night Mode???
+    // Night Mode
     $('#moon-btn').on('click', function(){
         $('.wx-card').toggleClass('night-mode');
         $('body').toggleClass('night-mode');
         $('#main-nav').toggleClass('dark-nav').toggleClass('bg-primary');
+        $('#main-form').toggleClass('dark-form');
         toggleMap();
         toggleLogo();
         click ++;

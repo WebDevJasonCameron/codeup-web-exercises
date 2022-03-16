@@ -2,11 +2,6 @@
     font-size: 14px;
 }
 
-.night-mode {                                                          /*Night modes???  */
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
 #map {
     width: 100vw;
     height: 60vh;
@@ -22,6 +17,15 @@
     color: inherit;
 }
 
+.night-mode {                                                          /*Night modes???  */
+    background-color: #383737;
+    color: #FFFFFF;
+}
+
 .dark-nav {
     background-color: #1933a2;
+}
+
+.dark-form {
+    background-color: #383737;
 }
