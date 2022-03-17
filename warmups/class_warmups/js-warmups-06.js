@@ -7,43 +7,76 @@
 // property called 'firstName'.
 //
 //     Example...
+//
+// let users = [
+//     {
+//         firstName: 'Bob',
+//         lastName: 'Smith',
+//         email: 'bob@email.com'
+//     },
+//     {
+//         firstName: 'Sally',
+//         lastName: 'Smith',
+//         email: 'sally@email.com'
+//     },
+//     {
+//         firstName: 'Fred',
+//         lastName: 'Smith',
+//         email: 'fred@email.com'
+//     },
+//     {
+//         firstName: 'Cathy',
+//         lastName: 'Smith',
+//         email: 'cathy@email.com'
+//     },
+//     {
+//         firstName: 'Joe',
+//         lastName: 'Smith',
+//         email: 'joe@email.com'
+//     },
+// ];
+//
+// // createFirstNamesArray(users); // returns... ['Bob', 'Sally', 'Fred', 'Cathy', 'Joe']
+//
+// function createFirstNamesArray(a){
+//     let output = [];
+//     a.forEach(function (person){
+//         output.push(person.firstName);
+//     })
+//     return output;
+// }
+//
+// console.log(createFirstNamesArray(users));
 
-let users = [
-    {
-        firstName: 'Bob',
-        lastName: 'Smith',
-        email: 'bob@email.com'
-    },
-    {
-        firstName: 'Sally',
-        lastName: 'Smith',
-        email: 'sally@email.com'
-    },
-    {
-        firstName: 'Fred',
-        lastName: 'Smith',
-        email: 'fred@email.com'
-    },
-    {
-        firstName: 'Cathy',
-        lastName: 'Smith',
-        email: 'cathy@email.com'
-    },
-    {
-        firstName: 'Joe',
-        lastName: 'Smith',
-        email: 'joe@email.com'
-    },
-];
+/**
+ * 2022 03 17
+ */
 
-// createFirstNamesArray(users); // returns... ['Bob', 'Sally', 'Fred', 'Cathy', 'Joe']
+// JQUERY APPROACH
+// $('#change-color').click(function (){
+//     $('#square').css('background-color', 'green');
+// })
 
-function createFirstNamesArray(a){
-    let output = [];
-    a.forEach(function (person){
-        output.push(person.firstName);
-    })
-    return output;
+// VJS
+// Action
+function changeColorAction(){
+   document.getElementById('square')
+       .style
+       .backgroundColor = 'green';
+}
+function resetPage(){
+   window.location.reload();
 }
 
-console.log(createFirstNamesArray(users));
+// Var
+let changeColorBtn = document.getElementById('change-color-btn');
+let changeColorResetBtn = document.getElementById('change-color-reset-btn');
+
+// Event Listeners
+changeColorBtn.addEventListener('click', changeColorAction);
+changeColorResetBtn.addEventListener('click', resetPage);
+
+
+
+
+

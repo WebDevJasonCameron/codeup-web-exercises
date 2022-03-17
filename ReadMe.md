@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 03 17 | St Patrick's Day
+
+
+
+---
+
 ## 2022 03 16 | Map Box and WX Map
 For the last few days we have been learning how to utilize APIs.  This means we needed to create a few different mini and full Ls using popular mapBox and openWeather APIs.  Yesterday, I completed a weather app that allows the user to input a location.  That input is translated into coord and then sends the user to that place via the map display.  It also populates the HTML with JS constructed HTML cards, showing dynamic data from the openWeather API.  There were several items that needed to be worked through for this application to work properly.  In truth, I am still noticing some 'bugs' that need to be fixed were this to be a final product for customer use.  Here are the things I accomplished during the project:
 1. Accessing APIs for data
