@@ -1,7 +1,7 @@
 # Intro To Front End
 
 ## 2022 03 17 | St Patrick's Day
-Hello.  This is a test.  
+Today we went over ES6.  It could be confusing.  However, there are a lot of things I could see as being helpful.  I also worked on the Weather App.  I added some styles, animations and fixed a few buts with the night mode.  I have some ideas to make this project better.  For instance, I would like to add modals that provide detail information about the day's weather.  I will need to add a button to each card.  I will also need to make a function that builds a modal script with all the new information.  Each button should be attached to each different modal (not sure how that is going to happen...). Another feature could include changing the F to C for temperature.  
 
 
 ---
