@@ -85,14 +85,14 @@
     // Build Card HTML
     function buildCardScript(obj){
         return '' +
-            '        <article class="wx-card card w-100 mx-2 d-flex keep-parent shadow-lg">' +
+            '        <article class="wx-card card w-100 mx-2 d-flex keep-parent">' +
             '            <div class="card-header text-center">' +
             '                <div aria-label="Weather Date">' +
                                  transDate(obj.dt) +
             '                </div>' +
             '            </div>' +
             '            <div class="card-body">' +
-            '                <div class="text-center" aria-label="temperature">' +
+            '                <div class="text-center" aria-label="temperature" style="font-size: 2em">' +
                                 Math.round(obj.temp.day) + '°F / ' + Math.round(obj.temp.night) + '°F' +            <!--TEMP-->
             '               </div>' +
             '                <div class="wx-img text-center">' +
@@ -225,12 +225,17 @@
     $('#moon-btn').on('click', function(){
         $('.wx-card').toggleClass('night-mode');
         $('body').toggleClass('night-mode');
-        $('#main-nav').toggleClass('dark-nav').toggleClass('bg-primary');
+        $('#main-nav').toggleClass('dark-nav').toggleClass('day-nav');
         $('#main-form').toggleClass('dark-form');
         toggleMap();
         toggleLogo();
         getWeather(gCoordinates);
         click ++;
+    })
+
+    // Card calls Modal
+    $('.wx-card').click(function(){
+        $('wx-modal').modal('show');
     })
 
 

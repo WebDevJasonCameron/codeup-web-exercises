@@ -2,20 +2,22 @@
     font-size: 14px;
 }
 
-#moon-btn:hover {
-    width: 60px;
-    height: 60px;
-    transition: width 2s, height 2s;
-}
-
 #map {
     width: 100vw;
     height: 60vh;
 }
 
 .wx-card {
-    width: 350px;
+    /*width: 350px;*/
     margin: 0 20px 20px 0;
+    transition: .3s;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.wx-card:hover {
+    transform: scale(0.98);
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
 .keep-parent {
@@ -29,7 +31,11 @@
 }
 
 .dark-nav {
-    background-color: #1933a2;
+    background-image: linear-gradient(45deg, #0F2027, #203A43, #2C5364);
+}
+
+.day-nav {
+    background-image: linear-gradient(45deg, #6767ef, #ee850d, #0d0dee);
 }
 
 .dark-form {

@@ -15,7 +15,7 @@
 
 <body>
     <!-- NAV -->
-    <nav id="main-nav" class="navbar navbar-light bg-primary text-white">
+    <nav id="main-nav" class="navbar navbar-light day-nav text-white border-bottom border-dark">
         <div class="container-fluid d-flex mx-4 align-items-baseline text-white">
             <a id="moon-btn" class="navbar-brand text-white " href="#">
                 <img id="logo-img" src="img/MoonConceptSmallPath_sun.svg" width="50" height="50" class="d-inline-block" alt="weather Moon icon">
@@ -60,6 +60,26 @@
     <!--MAP-->
     <div id="map"></div>
 
+    <!--MODAL-->
+    <div class="modal fade text-dark" id="wx-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">MORE DETAILS ABOUT THE DAY</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lots of data here!!!
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!--SCRIPTS-->
     <section>
@@ -68,6 +88,8 @@
         <!--MAPBOX JS-->
         <script src="js/mapbox-geocoder-utils.js"></script>
         <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+        <!--BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!--KEYS-->
         <script src="js/keys.js"></script>
         <!--MY JS-->
