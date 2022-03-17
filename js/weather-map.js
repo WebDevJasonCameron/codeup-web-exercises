@@ -85,7 +85,7 @@
     // Build Card HTML
     function buildCardScript(obj){
         return '' +
-            '        <article class="wx-card card mx-2 d-flex w-75 keep-parent">' +
+            '        <article class="wx-card card w-100 mx-2 d-flex keep-parent shadow-lg">' +
             '            <div class="card-header text-center">' +
             '                <div aria-label="Weather Date">' +
                                  transDate(obj.dt) +
@@ -131,7 +131,7 @@
     }
     function buildCardContainerScript(str){
         return '' +
-            '    <div class="d-flex flex-column align-items-center flex-md-row justify-content-md-center">' +
+            '    <div class="d-flex flex-column p-3 align-items-center flex-md-row justify-content-md-center">' +
                     str +
             '    </div>'
     }
@@ -229,6 +229,7 @@
         $('#main-form').toggleClass('dark-form');
         toggleMap();
         toggleLogo();
+        getWeather(gCoordinates);
         click ++;
     })
 
@@ -239,20 +240,6 @@
     getWeather(gCoordinates);
 
 })();
-
-/**
- * MARKER TRAVERSE
- */
-
-// MARKER                   data.target
-// LAT:                         ._lngLat.lat
-// LONG:                        ._lngLat.lng
-
-// let lat = 40.7128;
-// let long = -74.0060;
-
-// NEW YORK COORDINATES     -74.0060, 40.7128
-
 
 /**
  *  MAP TRAVERSE

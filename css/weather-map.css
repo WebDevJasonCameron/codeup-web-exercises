@@ -2,6 +2,12 @@
     font-size: 14px;
 }
 
+#moon-btn:hover {
+    width: 60px;
+    height: 60px;
+    transition: width 2s, height 2s;
+}
+
 #map {
     width: 100vw;
     height: 60vh;
@@ -18,7 +24,7 @@
 }
 
 .night-mode {                                                          /*Night modes???  */
-    background-color: #383737;
+    background-color: #58585e;
     color: #FFFFFF;
 }
 
@@ -27,5 +33,5 @@
 }
 
 .dark-form {
-    background-color: #383737;
+    background-color: #58585e;
 }
