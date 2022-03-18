@@ -29,7 +29,7 @@
             exclude: 'minutely, hourly, current, alerts,',
             units: 'imperial'
         }).done(function (data){
-            // console.log(data);
+            console.log(data.daily[0]);
 
             $('#wx-card-container').html(loopThroughWxList(data.daily));
 
@@ -84,56 +84,65 @@
      */
     // Build Card HTML
     function buildCardScript(obj){
-        return '' +
-            '        <article class="wx-card card w-100 mx-2 d-flex keep-parent">' +
-            '            <div class="card-header text-center">' +
-            '                <div aria-label="Weather Date">' +
-                                 transDate(obj.dt) +
-            '                </div>' +
-            '            </div>' +
-            '            <div class="card-body">' +
-            '                <div class="text-center" aria-label="temperature" style="font-size: 2em">' +
-                                Math.round(obj.temp.day) + '°F / ' + Math.round(obj.temp.night) + '°F' +            <!--TEMP-->
-            '               </div>' +
-            '                <div class="wx-img text-center">' +
-
-            '<img src="http://openweathermap.org/img/w/' + obj.weather[0].icon + '.png" alt="current weather">' +
-                                    <!--ICON-->
-            '                </div>' +
-            '<hr>' +
-            '                <div class="mx-3 py-2" aria-label="description">' +
-            '                   Description: ' +
-                                '<b>' +
-                                    obj.weather[0].description   +                          <!--DESCRIPTION-->
-            '                   </b>' +
-            '                </div>' +
-            '                <div class="mx-3" aria-label="humidity">' +
-            '                   Humidity: ' +
-            '                   <b>' +
-                                    obj.humidity   +                                        <!--HUMIDITY-->
-            '                   </b>' +
-            '                </div>' +
-            '<hr>' +
-            '                <div class="mx-3 py-2" aria-label="wind">' +
-            '                   Wind: ' +
-            '                   <b>' +
-                                    obj.wind_deg + '° | ' + Math.round(obj.wind_speed) + ' mph' +         <!--WIND-->
-            '                   </b>' +
-            '                </div>' +
-            '                <div class="mx-3" aria-label="pressure">' +
-            '                   Pressure: ' +
-            '                   <b>' +
-                                    obj.pressure +         <!--WIND-->
-            '                   </b>' +
-            '                </div>' +
-            '            </div>' +
-            '        </article>'
+        return `
+                     <article class="wx-card card w-100 mx-2 d-flex keep-parent">
+                         <div class="card-header text-center">
+                             <div aria-label="Weather Date">
+                                 ${transDate(obj.dt)}
+                             </div>
+                        </div>
+                         <div class="card-body">
+                            <div class="text-center" aria-label="temperature" style="font-size: 2em">
+                                ${Math.round(obj.temp.day)}                           <!--TEMP-->
+                                °F / 
+                                ${Math.round(obj.temp.night)} 
+                                °F     
+                            </div>
+                             <div class="wx-img text-center">
+                                                                                       <!--ICON-->
+             <img src="http://openweathermap.org/img/w/${obj.weather[0].icon}.png" alt="current weather">
+                                    
+                             </div>
+            <hr>
+                             <div class="mx-3 py-2" aria-label="description">
+                               Description: <br>
+                                <b>
+                                    ${obj.weather[0].description}                       <!--DESCRIPTION-->
+                               </b>
+                            </div>
+                            <div class="mx-3" aria-label="humidity">
+                               Humidity:
+                               <b>
+                                    ${obj.humidity}                                      <!--HUMIDITY-->
+                               </b>
+                            </div>
+            <hr>
+                            <div class="mx-3 py-2" aria-label="wind">
+                               Wind:
+                               <b>
+                                   ${obj.wind_deg}° | ${Math.round(obj.wind_speed)} mph  <!--WIND-->
+                               </b>
+                            </div>
+                            <div class="mx-3" aria-label="pressure">
+                               Pressure: 
+                               <b>
+                                   ${obj.pressure}                                       <!--WIND-->
+                               </b>
+                            </div>
+                        </div>
+                        <button class="details-btn btn active day-btn" data-toggle="modal" data-target="#wx-modal-1">
+                           Details
+                        </button>
+                    </article>`
     }
     function buildCardContainerScript(str){
-        return '' +
-            '    <div class="d-flex flex-column p-3 align-items-center flex-md-row justify-content-md-center">' +
-                    str +
-            '    </div>'
+        return `
+                <div class="d-flex flex-column p-3 align-items-center flex-md-row justify-content-md-center">
+                   ${str}
+                </div>`
+    }
+    function buildModalScript(obj){
+
     }
 
     // Loop through 5Day Forecast
@@ -247,9 +256,8 @@
 })();
 
 /**
- *  MAP TRAVERSE
+ *  WX OBJ TRAVERSE
  */
-
 // BASE                     .daily[0]                               <--Cycle Through
 // DATE:                        .dt
 // TEMP:
@@ -264,15 +272,17 @@
 // PRESSURE:                    .pressure
 
 /**
- * THINKING THE PROCESS OUT...
- *
- *      1. Set global Var for one Lat Long to the value of SA.
- *      2. GEO-REF to get lat long
- *      3. Set marker to start with SA GEO-REF lat long
- *      4. When address is changed in input, new GEO-REF lat long is computed
- *      5. Marker is moved (fancy animation would be nice here for transition and zoom)
- *      6.
- *
- *      ~ Should there be a global Var for one Lat Long?
- *      ~ City name could change based on its current value
+ * ADDITIONAL DETAILS
  */
+// DEW POINT:                    .dew_point
+// MOON STUFF:
+//          PHASE                .moon_phase
+//          SET                  .moonset
+// SUN STUFF:
+//          RISE                 .sunrise
+//          SET                  .sunset
+// FEELS LIKE:
+//          DAY                  .day
+//          NIGHT                .night
+//          EVE                  .eve
+//          MORN                 .morn

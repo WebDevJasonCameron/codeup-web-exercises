@@ -12,12 +12,21 @@
     margin: 0 20px 20px 0;
     transition: .3s;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
 }
 
 .wx-card:hover {
     transform: scale(0.98);
     box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.day-btn {
+    background-color: inherit;
+    color: inherit;
+}
+
+.day-btn:hover {
+    background-color:  rgba(0, 0, 0, 0.08);
+    color: inherit;
 }
 
 .keep-parent {

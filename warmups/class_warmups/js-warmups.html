@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../../img/MoonConceptSmallPatch01.svg" type="image/x-icon">
     <title>Warm Ups</title>
+    <style>
+        .square {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+        }
+
+    </style>
+
+
 </head>
 <body>
     <h1>JS Warmups</h1>
@@ -26,6 +36,7 @@
         <li>2022 03 11: </li>
         <li>2022 03 15:</li>
         <li>2022 03 17: DOM Manipulation</li>
+        <li>2022 03 18: DOM Manipulation</li>
     </ul>
 
 
@@ -34,20 +45,23 @@
     <button id="btn2">Press if after 12pm </button>
     <p id="the-answers">Here!</p>
 
-    <div id="square" style="width: 250px; height: 250px; background-color: #777"></div>
-    <button id="change-color-btn">Change color</button>
-    <br>
-    <button id="change-color-reset-btn">Reset</button>
+<!--    <div id="square" style="width: 250px; height: 250px; background-color: #777"></div>-->
+<!--    <button id="change-color-btn">Change color</button>-->
+<!--    <br>-->
+<!--    <button id="change-color-reset-btn">Reset</button>-->
+
+    <div class="square" data-color="blue"></div>
+    <div class="square" data-color="red"></div>
+    <div class="square" data-color="green"></div>
 
 
-
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <!--    <script src="js-warmups.js"></script>-->
 <!--    <script src="js-warmups-02.js"></script>-->
 <!--    <script src="js-warmups-03.js"></script>-->
 <!--    <script src="js-warmups-04.js"></script>-->
 <!--    <script src="js-warmups-05.js"></script>-->
     <script src="js-warmups-06.js"></script>
-
 
 </body>
 </html>

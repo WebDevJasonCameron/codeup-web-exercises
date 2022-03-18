@@ -59,24 +59,43 @@
 
 // VJS
 // Action
-function changeColorAction(){
-   document.getElementById('square')
-       .style
-       .backgroundColor = 'green';
-}
-function resetPage(){
-   window.location.reload();
-}
+// function changeColorAction(){
+//    document.getElementById('square')
+//        .style
+//        .backgroundColor = 'green';
+// }
+// function resetPage(){
+//    window.location.reload();
+// }
+//
+// // Var
+// let changeColorBtn = document.getElementById('change-color-btn');
+// let changeColorResetBtn = document.getElementById('change-color-reset-btn');
+//
+// // Event Listeners
+// changeColorBtn.addEventListener('click', changeColorAction);
+// changeColorResetBtn.addEventListener('click', resetPage);
 
-// Var
-let changeColorBtn = document.getElementById('change-color-btn');
-let changeColorResetBtn = document.getElementById('change-color-reset-btn');
+/**
+ * 2022 03 18
+ */
+// JQUERY
+$('.square').hover(function (){
+    console.log($(this).attr('data-color'));
+    const $targetColor = $(this).attr('data-color');
+    $(this).css('background-color', $targetColor);
+}, function(){
+    $(this).css('background-color', 'white');
+})
 
-// Event Listeners
-changeColorBtn.addEventListener('click', changeColorAction);
-changeColorResetBtn.addEventListener('click', resetPage);
-
-
-
-
-
+// VSJ
+document.querySelectorAll('.square').forEach(function(el){
+    element.addEventListener('mouseCenter', function(event){
+        // console.log(event.target);
+        const targetColor = event.target.dataset.color;
+        event.target.style.bacgroundColor = targetColor
+    })
+    element.addEventListener('mouseLeave', function(event){
+        event.target.style.backgroundColor = 'white';
+    })
+})
