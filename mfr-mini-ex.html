@@ -68,14 +68,14 @@
    * INSTRUCTORS
    */
   const dogNames = dogs.map((dog) => dog.dogName);
-  console.log(newDogNameArray);
+  console.log(dogNames);
 
 
   // TODO 2: using map, create a new array of dog ages from the dogs array
+  // console.log('Exercise 2:');
   /**
    * MY POOR ATTEMPT
    */
-  // console.log('Exercise 2:');
   // const newDogAgeArray = [];
   // const pushDogAge = () => {
   //   dogs.map((dog) => {
@@ -92,7 +92,10 @@
 
 
   // TODO 3: using map, create a new array of dog objects from the dogs array that only have dog names and age properties and values
-  // console.log('Exercise 3:');
+  console.log('Exercise 3:');
+  /**
+   * MY POOR ATTEMPT
+   */
   // const newDogObjArray = [];
   // const pushDogObj = () => {
   //   dogs.map((dog) => {
@@ -123,43 +126,107 @@
 
   // TODO 4: using filter, create a new array containing only dogs younger than 10 years old
   console.log('Exercise 4:');
+  /**
+   * MY POOR ATTEMPT
+   */
+  const youngDogs = dogs.filter((d) => d.age < 10)
+  console.log(youngDogs);
+  /**
+   * INSTRUCTORS
+   */
 
   // TODO 5: using filter, create a new array containing only dogs named 'Lexie'
   console.log('Exercise 5:');
+  /**
+   * MY POOR ATTEMPT
+   */
+  const lexieDogs = dogs.filter((d) => d.dogName.includes('Lexie'));
+  console.log(lexieDogs);
+  /**
+   * INSTRUCTORS
+   */
+  const dogsNamedLexie = dogs.filter(({dogName}) => dogName === 'Lexie');
 
   // TODO 6: using filter, create a new array containing only dogs that are trained and younger than 10
   console.log('Exercise 6:');
-
+  /**
+   * MY POOR ATTEMPT
+   */
+  const trainedAndYoungDogs = dogs.filter((d) => d.isTrained && d.age < 10);
+  console.log(trainedAndYoungDogs);
+  /**
+   * INSTRUCTORS
+   */
+  const getYoungAndTrained = (dog) => dog.age < 10 && dog.isTrained;
+  const youngAndTrainedDogs = dogs.filter(getYoungAndTrained);
+  console.log(youngAndTrainedDogs);
 
   // REDUCE
 
   // TODO 7: using reduce, return a string containing all dog names together with no spaces ("BubblesLexieDoggy...")
   console.log('Exercise 7:');
+  // const dogNameString = dogs.reduce((previousValue, currentValue) => {
+  //   return previousValue.dogName + currentValue.dogName
+  // })
+  //
+  // console.log(dogNameString);
+
+  const allDogNames = dogs.reduce((previousValue, currentValue) => previousValue + currentValue.dogName, '');
+  console.log(allDogNames);
+
 
   // TODO 8: using reduce, return the total of adding all dog ages together (18)
   console.log('Exercise 8:');
 
+  const totalDogsAges = dogs.reduce((previousValue, currentValue) => previousValue + currentValue.age, 0);
+  console.log(totalDogsAges);
+
   // TODO 9: using reduce, return an array of dog objects with all isTrained properties set to true
   console.log('Exercise 9:');
+  const trainedDogs = dogs.reduce((pv, cv) => {
+    if(cv.isTrained) pv.push(cv);
+    return pv
+  }, [])
+
+  console.log(trainedDogs);
+
+  // const allDogsNowTrained = dogs.reduce((pv, cv) => {
+  //   pv.push({
+  //     ...cv,
+  //     isTrained: true,
+  //   })
+  //     return pv
+  // }, [])
+  //
+  // console.log(allDogsNowTrained);
 
 
   // EXTRA CHALLENGES
 
   // TODO 10: what is the average age of each dog?
   console.log('Exercise 10:');
+  const averageDogAge = dogs.reduce((pv, cv, i, a) =>  pv + cv.age / (a.length + 1), 0  );
+  console.log(averageDogAge);
 
   // TODO 11: what is the average age of dogs that are trained?
   console.log('Exercise 11:');
+  const averageAgeOfTrainedDogs = trainedDogs.reduce((pv, cv, i, a) =>  pv + cv.age / (a.length + 1), 0  );
+  console.log(averageAgeOfTrainedDogs);
 
   // TODO 12: what is the average length of names of untrained dogs?
   console.log('Exercise 12:');
+  const averageLengthOfNames = dogs.filter(({isTrained}) => !isTrained).reduce((pv, cv, i, a) => pv + cv.dogName.length / (a.length + 1), 0);
+  console.log(averageLengthOfNames);
 
   // TODO 13: what are the combined ages of all dogs in dog years? (7x more than a human year)
   console.log('Exercise 13:');
+  const combinedAges = dogs.reduce((pv, cv) => pv + (cv.age * 7), 0);
+  console.log(combinedAges);
 
   // TODO 14: create a string of the first letters of each dog name for dogs three years old (should be "LF")
   console.log('Exercise 14:');
-
+  const oddStringOfNames = dogs.filter((d) => d.age === 3 ).reduce((pv, cv, i, a) => pv + cv.dogName[0], '');
+  console.log(oddStringOfNames);
 </script>
 </body>
 </html>
