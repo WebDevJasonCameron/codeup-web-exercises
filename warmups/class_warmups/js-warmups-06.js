@@ -86,10 +86,8 @@
     // MINE
     $('.square').hover( function () {
         $(  this ).addClass('yellow');
-        console.log('hover');
     }, function (){
         $( this ).removeClass('yellow');
-        console.log('hover');
     })
     //
     //

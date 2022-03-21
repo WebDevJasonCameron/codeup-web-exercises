@@ -1,5 +1,11 @@
 # Intro To Front End
 
+## 2022 03 21 | Promises
+Studying promises in class today...
+
+
+---
+
 ## 2022 03 20 | Entries
 I can see that the log entries to this readme.md will become more and more spares due to needing to work with in separate repose.  It doesn't make sense to write notes within one repo only to rewrite the same things in this one.  I do like the idea of keeping everything together.  If anything, I will continue to write about the work, notes, and LL I gather through my time in CodeUp within this one md.  
 
