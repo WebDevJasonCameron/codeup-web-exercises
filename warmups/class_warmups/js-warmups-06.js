@@ -76,26 +76,46 @@
 // changeColorBtn.addEventListener('click', changeColorAction);
 // changeColorResetBtn.addEventListener('click', resetPage);
 
-/**
- * 2022 03 18
- */
 // JQUERY
-$('.square').hover(function (){
-    console.log($(this).attr('data-color'));
-    const $targetColor = $(this).attr('data-color');
-    $(this).css('background-color', $targetColor);
-}, function(){
-    $(this).css('background-color', 'white');
-})
+// })
 
-// VSJ
-document.querySelectorAll('.square').forEach(function(el){
-    element.addEventListener('mouseCenter', function(event){
-        // console.log(event.target);
-        const targetColor = event.target.dataset.color;
-        event.target.style.bacgroundColor = targetColor
+/**
+ * 2022 03 21
+ */
+    // JQUERY
+    // MINE
+    $('.square').hover( function () {
+        $(  this ).addClass('yellow');
+        console.log('hover');
+    }, function (){
+        $( this ).removeClass('yellow');
+        console.log('hover');
     })
-    element.addEventListener('mouseLeave', function(event){
-        event.target.style.backgroundColor = 'white';
-    })
-})
+    //
+    //
+    // INSTRUCTORS
+    // $('.square').on('click', function () {
+    //     $(this).toggleClass('yellow');
+    //     console.log('click')
+    // })
+
+    // VJS
+    // const changingColorsSquares = document.querySelectorAll('#changingColors .square');
+    // function toggleColor(e){
+    //     console.log(e)
+    //     e.target.style.backgroundColor = "" ? e.target.style.backgroundColor = 'yellow' : e.target.style.backgroundColor = '';
+    // }
+    // changingColorsSquares.forEach(square => square.addEventListener('click', toggleColor))
+
+
+
+
+
+
+
+
+
+
+
+
+

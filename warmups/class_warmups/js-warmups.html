@@ -5,11 +5,26 @@
     <link rel="shortcut icon" href="../../img/MoonConceptSmallPatch01.svg" type="image/x-icon">
     <title>Warm Ups</title>
     <style>
+        /*.square {*/
+        /*    width: 250px;*/
+        /*    height: 250px;*/
+        /*    border: 1px solid black;*/
+        /**/
+
+        #square {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
         .square {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             border: 1px solid black;
         }
+        .yellow {
+            background-color: yellow;
+        }
+
 
     </style>
 
@@ -37,6 +52,7 @@
         <li>2022 03 15:</li>
         <li>2022 03 17: DOM Manipulation</li>
         <li>2022 03 18: DOM Manipulation</li>
+        <li>2022 03 21: DOM Manipulation</li>
     </ul>
 
 
@@ -50,9 +66,17 @@
 <!--    <br>-->
 <!--    <button id="change-color-reset-btn">Reset</button>-->
 
-    <div class="square" data-color="blue"></div>
-    <div class="square" data-color="red"></div>
-    <div class="square" data-color="green"></div>
+<!--    <div class="square" data-color="blue"></div>-->
+<!--    <div class="square" data-color="red"></div>-->
+<!--    <div class="square" data-color="green"></div>-->
+
+    <div id="changingColors">
+        <h2>The squares that change colors</h2>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
