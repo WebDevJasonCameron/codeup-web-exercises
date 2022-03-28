@@ -141,9 +141,6 @@
                    ${str}
                 </div>`
     }
-    function buildModalScript(obj){
-
-    }
 
     // Loop through 5Day Forecast
     function loopThroughWxList(wxList){

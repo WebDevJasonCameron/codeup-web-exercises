@@ -84,11 +84,11 @@
  */
     // JQUERY
     // MINE
-    $('.square').hover( function () {
-        $(  this ).addClass('yellow');
-    }, function (){
-        $( this ).removeClass('yellow');
-    })
+    // $('.square').hover( function () {
+    //     $(  this ).addClass('yellow');
+    // }, function (){
+    //     $( this ).removeClass('yellow');
+    // })
     //
     //
     // INSTRUCTORS
@@ -105,11 +105,34 @@
     // }
     // changingColorsSquares.forEach(square => square.addEventListener('click', toggleColor))
 
+/**
+ * 2022 03 28
+ */
 
+// Create a function, encodeStr, that takes in a string and returns the string of
+// characters with the following substitutions:
 
+// ‘a’ or ‘A’ becomes ‘@’
+// ‘i’ or ‘I’ becomes ‘1’
+// ‘s’ or ‘S’ becomes ‘$’
 
+// encodeStr(‘apple’) // returns ‘@pple’
+// encodeStr(‘codeup’) // returns ‘codeup’
+// encodeStr(‘SASS’) // returns ‘$@$$’
+// encodeStr(‘bike’) // returns ‘b1ke’
 
+function encodeStr(s){
+    let output = s.toLowerCase();
+    output = output.replace('a', '@')
+        .replace('i', '1')
+        .replace('s', '$');
+    return output;
+}
 
+console.log(encodeStr('apple'));
+console.log(encodeStr('codeup'));
+console.log(encodeStr('SASS'));
+console.log(encodeStr('bike'));
 
 
 
