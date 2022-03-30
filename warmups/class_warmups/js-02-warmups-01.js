@@ -10,6 +10,7 @@
 // vowel alphabetically. (2 'a's and 2 'e's should 'a')
 //
 // If no vowels are in the string return false.
+/**
 function returnMostCommonVowel(s){
     let a = 0
     let e = 0;
@@ -44,5 +45,72 @@ console.log(returnMostCommonVowel("Hello my name is jason"));
 console.log(returnMostCommonVowel("AAAAAAAaaaaaaagggghhhhhh!!!!!!"));
 console.log(returnMostCommonVowel("There were sea shells by the sea shore"));
 console.log(returnMostCommonVowel("nnnnnnnnn"));
+*/
+
+// INSTRUCTOR
 
 
+
+
+/**
+ * 2022 03 30
+ */
+//================================= WARM UP
+//
+// Create a function, returnAvgAdminSalary, that takes in an array of users and returns
+// the average salary of all admins. Round to the nearest dollar.
+//
+// Example:
+
+const users = [
+  {
+    name: 'Fred',
+    isAdmin: true,
+    salary: 20000
+  },
+  {
+    name: 'Cathy',
+    isAdmin: false,
+    salary: 40000
+  },
+  {
+    name: 'Sally',
+    isAdmin: true,
+    salary: 80000
+  },
+  {
+    name: 'Kyle',
+    isAdmin: true,
+    salary: 50000
+  },
+  {
+    name: 'Cynthia',
+    isAdmin: false,
+    salary: 100000
+  }
+];
+
+// My Approach
+
+function returnAvgAdminSalary(a){
+    let output = 0;
+    let length = 0;
+    a.forEach(function(u){
+        if(u.isAdmin === true) {
+            output += u.salary;
+            length ++;
+        }
+    })
+    output = output / length;
+    return output;
+}
+/**
+// Instructor
+function returnAvgAdminSalaryInstr(a){
+    const admin = users.filter(u => u.isAdmin);
+    return admin.reduce((accum, curr) => + accum + curr.salary, 0) / admin.length;
+}
+
+console.log(returnAvgAdminSalary(users), "returns 50000");
+console.log(returnAvgAdminSalaryInstr(users), "Instructor");
+ */
